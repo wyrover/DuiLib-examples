@@ -35,7 +35,10 @@ workspace(path.getname(os.realpath(".")))
         includedirs
         {          
             "3rdparty/DuiLib",
-            "3rd",               
+            "3rdparty",
+            "3rd", 
+            "%{THIRD_PARTY}",
+            "%{THIRD_PARTY}/wtl"
         }    
         links
         {
@@ -51,6 +54,33 @@ workspace(path.getname(os.realpath(".")))
     end
 
     group "duilib"
+        project "cactus_lite"            
+            kind "SharedLib"            
+            defines { "_WINDOWS", "_USRDLL", "DLL_EXPORTS", "CACTUS_DLL", "CACTUS_EXPORTS" }               
+            buildoptions { "/EHsc", "/Zm200" }   
+            flags { "NoManifest" }
+            files
+            {
+                "%{THIRD_PARTY}/cactus/cactus.h",
+                "%{THIRD_PARTY}/cactus/cactus_types.h",
+                "%{THIRD_PARTY}/cactus/cactus_thread_helper.h",
+                "%{THIRD_PARTY}/cactus/cactus_thread_helper.cpp",
+                --"%{THIRD_PARTY}/cactus/cactus_file.cpp",  
+                
+                "%{BOOK_CODE_PATH}/include/buildcfg/vs2015/dll_version.rc",
+                "%{BOOK_CODE_PATH}/include/buildcfg/vs2015/versionno.rc2",                
+                "%{BOOK_CODE_PATH}/include/buildcfg/vs2015/buildcfg.h"
+            }             
+            removefiles
+            {
+                
+            }
+            includedirs
+            {            
+                "%{THIRD_PARTY}",
+                "3rdparty"    
+            }                
+
         project "DuiLib"            
             kind "StaticLib"            
             defines { "_WINDOWS", "UILIB_STATIC" }     
@@ -67,14 +97,17 @@ workspace(path.getname(os.realpath(".")))
             }
             includedirs
             {            
-                "3rdparty/DuiLib"    
+                "3rdparty/DuiLib",
+                "%{THIRD_PARTY}",
+                "3rdparty"
             }
             links
             {
                 "oledlg.lib",
                 "winmm.lib",
                 "comctl32.lib",
-                "Riched20.lib"                
+                "Riched20.lib",
+                "cactus_lite.lib"
             }
             pchsource "3rdparty/DuiLib/StdAfx.cpp" 
             pchheader "StdAfx.h"
@@ -103,14 +136,18 @@ workspace(path.getname(os.realpath(".")))
             }
             includedirs
             {            
-                "3rdparty/DuiLib"    
+                "3rdparty/DuiLib",
+                "%{THIRD_PARTY}",
+                "3rdparty"
             }
             links
             {
                 "oledlg.lib",
                 "winmm.lib",
                 "comctl32.lib",
-                "Riched20.lib"                
+                "Riched20.lib",
+                "cactus_lite.lib"
+              
             }
             pchsource "3rdparty/DuiLib/StdAfx.cpp" 
             pchheader "StdAfx.h"
@@ -133,215 +170,26 @@ workspace(path.getname(os.realpath(".")))
         for i = #matches, 1, -1 do           
             create_duilib_project(path.getname(matches[i]), "src/basic_demos")
         end
---        
---
---    group "demos"
---
---        project "duidemo"
---            location "build"
---            targetdir "bin/duidemo"
---            kind "WindowedApp"              
---            defines { "_WINDOWS", "UILIB_STATIC" }
---            files
---            {
---                "Demos/duidemo/**.h",
---                "Demos/duidemo/**.cpp",
---                "Demos/duidemo/**.rc"
---            }
---            includedirs
---            {          
---                "DuiLib",
---                "3rd",               
---            }    
---            links
---            {
---                "comctl32.lib"
---            }
---            link_libs
---            {
---                "DuiLib-s.lib",
---            }
---            
---    
---        project "gamebox"
---            location "build"
---            targetdir "bin/gamebox"
---            kind "WindowedApp"              
---            defines { "_WINDOWS", "UILIB_STATIC" }
---            files
---            {
---                "Demos/gamebox/**.h",
---                "Demos/gamebox/**.cpp",
---                "Demos/gamebox/**.rc"
---            }
---            includedirs
---            {          
---                "DuiLib",
---                "3rd",               
---            }    
---            links
---            {
---                "comctl32.lib"
---            }
---            link_libs
---            {
---                "DuiLib-s.lib",
---            } 
---    
---        project "xlgamebox"
---            location "build"
---            targetdir "bin/xlgamebox"
---            kind "WindowedApp"              
---            defines { "_WINDOWS", "UILIB_STATIC" }
---            files
---            {
---                "Demos/xlgamebox/**.h",
---                "Demos/xlgamebox/**.cpp",
---                "Demos/xlgamebox/**.rc"
---            }
---            includedirs
---            {          
---                "DuiLib",
---                "3rd",               
---            }    
---            links
---            {
---                "comctl32.lib"
---            }
---            link_libs
---            {
---                "DuiLib-s.lib",
---            } 
---            
---        project "transwnd"
---            location "build"
---            targetdir "bin/transwnd"
---            kind "WindowedApp"              
---            defines { "_WINDOWS", "UILIB_STATIC" }
---            files
---            {
---                "Demos/transwnd/**.h",
---                "Demos/transwnd/**.cpp",
---                "Demos/transwnd/**.rc"
---            }
---            includedirs
---            {          
---                "DuiLib",
---                "3rd",               
---            }    
---            links
---            {
---                "comctl32.lib"
---            }
---            link_libs
---            {
---                "DuiLib-s.lib",
---            }   
---
---        project "bdwallpaper"
---            location "build"
---            targetdir "bin/bdwallpaper"
---            kind "WindowedApp"              
---            defines { "_WINDOWS", "UILIB_STATIC" }
---            files
---            {
---                "Demos/bdwallpaper/**.h",
---                "Demos/bdwallpaper/**.cpp",
---                "Demos/bdwallpaper/**.rc"
---            }
---            includedirs
---            {          
---                "DuiLib",
---                "3rd",               
---            }    
---            links
---            {
---                "comctl32.lib"
---            }
---            link_libs
---            {
---                "DuiLib-s.lib",
---            }   
---
---        project "animationWindow"
---            location "build"
---            targetdir "bin/animationWindow"
---            kind "WindowedApp"              
---            defines { "_WINDOWS", "UILIB_STATIC" }
---            files
---            {
---                "Demos/animationWindow/**.h",
---                "Demos/animationWindow/**.cpp",
---                "Demos/animationWindow/**.rc"
---            }
---            includedirs
---            {          
---                "DuiLib",
---                "3rd",               
---            }    
---            pchsource "Demos/animationWindow/stdafx.cpp" 
---            pchheader "stdafx.h"
---            links
---            {
---                "comctl32.lib"
---            }
---            link_libs
---            {
---                "DuiLib-s.lib",
---            }   
---            
---
---        project "ADMonSetup"
---            location "build"
---            targetdir "bin/ADMonSetup"
---            kind "WindowedApp"              
---            defines { "_WINDOWS", "UILIB_STATIC" }
---            files
---            {
---                "Demos/ADMonSetup/**.h",
---                "Demos/ADMonSetup/**.cpp",
---                "Demos/ADMonSetup/**.rc"
---            }
---            includedirs
---            {          
---                "DuiLib",
---                "3rd",               
---            }    
---            links
---            {
---                "comctl32.lib"
---            }
---            link_libs
---            {
---                "DuiLib-s.lib",
---            }
---            
---        project "TroyBrowser"
---            location "build"
---            targetdir "bin/TroyBrowser"
---            kind "WindowedApp"              
---            defines { "_WINDOWS", "UILIB_STATIC" }
---            files
---            {
---                "Demos/TroyBrowser/**.h",
---                "Demos/TroyBrowser/**.cpp",
---                "Demos/TroyBrowser/**.rc"
---            }
---            includedirs
---            {
---                "DuiLib"
---                        
---            }
---            links
---            { 
---                "DuiLib.lib",
---                "TroyControls.lib",
---                "comctl32.lib"
---            }
---            libdirs
---            {
---                "bin/lib",
---                "Demos/TroyBrowser/Lib"
---            }
---
---        create_duilib_project("HiDPITest", "Demos")
+        
+
+    group "demos"
+        create_duilib_project("duidemo2", "src")
+        create_duilib_project("duidemo", "src")
+        create_duilib_project("gamebox", "src")
+        create_duilib_project("xlgamebox", "src")
+        create_duilib_project("transwnd", "src")
+        create_duilib_project("bdwallpaper", "src")
+        create_duilib_project("animationWindow", "src")
+        create_duilib_project("ADMonSetup", "src")
+        create_duilib_project("TroyBrowser", "src")
+            links
+            {                 
+                "TroyControls.lib",                
+            }
+            libdirs
+            {
+                
+                "src/TroyBrowser/Lib"
+            }
+
+        create_duilib_project("HiDPITest", "src")
