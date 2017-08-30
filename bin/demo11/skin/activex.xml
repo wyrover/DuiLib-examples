@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <VerticalLayout name="VerticalLayoutUI1" width="60" height="30">
+        <HorizontalLayout name="HorizontalLayoutUI1" width="397" height="33">
+            <Edit name="editIePath" float="true" pos="7,9,0,0" width="313" height="17" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Button name="btnGoIe" text="Go" float="true" pos="341,8,0,0" width="44" height="17" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+        </HorizontalLayout>
+        <ActiveX name="ie" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false" float="true" pos="10,40,0,0" width="382" height="300" />
+    </VerticalLayout>
+</Window>

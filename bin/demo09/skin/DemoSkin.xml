@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="800,600" caption="0,0,0,64" sizebox="4,4,6,6" roundcorner="4,4" mininfo="400,300"> 
+    <Font name="宋体" size="13" bold="true" />
+    <Font name="宋体" size="12" bold="true" underline="true"/>
+    <Font name="宋体" size="12" />
+    <Font name="宋体" size="22" bold="true"/>
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	<Default name="HScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,0,16,16' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,0,34,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,0,52,16' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,0,70,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,18,16,34' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,18,34,34' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,18,52,34' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,18,70,34' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,36,16,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,36,34,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,36,52,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,36,70,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,54,16,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,54,34,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,54,52,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,54,70,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,72,16,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,72,34,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,72,52,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,72,70,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	<Default name="DateTime" value="width=&quot;120&quot; height=&quot;23&quot; bordercolor=&quot;#FFCECECE&quot; bordersize=&quot;1&quot; textpadding=&quot;4,2,4,2&quot; arrowimage=&quot;file='sys_datetimesel_btn.png' source='0,0,85,18'&quot;" />
+	
+    <VerticalLayout bkimage="file='bg.png' corner='6,97,6,29'" inset="1,0,1,0"> 
+		<HorizontalLayout name="appCaption" height="64">
+			<HorizontalLayout name="captionTitle" childpadding="6"> 
+				<Control width="10" />	<!-- 占空位，占据左边10个单位大小空位 -->
+				<VerticalLayout>
+					<Control height="20" />
+					<Label text="Demo演示窗体" textcolor="#FF447AA1" width="200" font="3" />
+				</VerticalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout name="captionSysBtn" width="126" height="24" inset="0,1,0,0">
+				<Button name="menuBtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_menu.png' source='52,0,78,17'" hotimage="file='sys_dlg_menu.png' source='26,0,52,17'" pushedimage="file='sys_dlg_menu.png' source='0,0,26,17'"/>
+				<Button name="minBtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_min.png' source='52,0,78,17'" hotimage="file='sys_dlg_min.png' source='26,0,52,17'" pushedimage="file='sys_dlg_min.png' source='0,0,26,17'"/>
+				<Button name="maxBtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_max.png' source='52,0,78,17'" hotimage="file='sys_dlg_max.png' source='26,0,52,18'" pushedimage="file='sys_dlg_max.png' source='0,0,26,17'"/>
+				<Button name="restoreBtn" visible="false" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_restore.png' source='52,0,78,17'" hotimage="file='sys_dlg_restore.png' source='26,0,52,17'" pushedimage="file='sys_dlg_restore.png' source='0,0,26,17'" />
+				<Button name="closeBtn" maxwidth="45" maxheight="17" normalimage="file='sys_dlg_close.png' source='90,0,135,17'" hotimage="file='sys_dlg_close.png' source='45,0,90,17'" pushedimage="file='sys_dlg_close.png' source='0,0,45,17'"/>
+			</HorizontalLayout>
+		</HorizontalLayout> <!-- 标题区结束 -->
+		
+		<VerticalLayout name="appBody" bkcolor="#FFFFFFFF">
+			<HorizontalLayout name="tab_header" height="30" bkimage="file='header_bk.png' corner='4,4,4,4'" inset="6,3,0,0">
+				<Option width="78" text="演示列表" name="demo_tab" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="tab_header" selected="true" />
+				<Option width="78" text="Web演示" name="web_tab" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="tab_header" />
+				<HorizontalLayout />
+			</HorizontalLayout>	 <!-- 列表导航 -->
+
+			<TabLayout name="tab_switch">
+			  <VerticalLayout name="demo_list" itemsize="48,48" bordersize="0" bordercolor="#FF768D9B" childpadding="12" vscrollbar="true">
+				<HorizontalLayout name="demo_list_tab_header" height="30" bkimage="file='header_bk.png' corner='4,4,4,4'">
+					<Option width="78" text="基本控件" name="demo_list_basic_ctrl" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="demo_list_header" selected="true" />
+					<Option width="78" text="高级控件" name="demo_list_rich_ctrl" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="demo_list_header" />
+					<HorizontalLayout />
+				</HorizontalLayout>
+
+				<TabLayout name="demo_list_tab_switch">
+					<VerticalLayout name="demo_list_basic_ctrl_panel" inset="2,2,2,2">
+						<Label height="1" bkimage="hor_line.bmp" />
+						
+						<HorizontalLayout height="60">
+							<Label text="按钮控件" textcolor="#FF555555" glowsize="0" font="font13" width="80" />
+							<VerticalLayout>
+								<Control />
+								<HorizontalLayout height="30" childpadding="12">
+									<Button name="button1" text="普通按钮" textcolor="#FF555555" normalimage="res='button_normal.png' corner='4,4,4,4'" hotimage="res='button_hover.png' corner='4,4,4,4'" pushedimage="res='button_pushed.png' corner='4,4,4,4'" width="100" />
+									<Button name="button2" text="图标按钮" textcolor="#FF555555" normalimage="res='button_normal.png' corner='4,4,4,4'" hotimage="res='button_hover.png' corner='4,4,4,4'" pushedimage="res='button_pushed.png' corner='4,4,4,4'" width="100" textpadding="20,0,0,0" foreimage="dest='4,7,20,23' res='icon.png'" />
+									<Button name="sendbtn" text="命令按钮(&S)" textcolor="#FF555555" normalimage="res='button_normal.png' corner='4,4,4,4'" hotimage="res='button_hover.png' corner='4,4,4,4'" pushedimage="res='button_pushed.png' corner='4,4,4,4'" shortcut="S" width="120" />
+								</HorizontalLayout>
+								<Control />
+							</VerticalLayout>
+						</HorizontalLayout> <!-- 按钮控件结束 -->
+						
+						<Label height="1" bkimage="hor_line.bmp" />
+
+						<HorizontalLayout height="60" bkcolor="#FFFFFFFF">
+							<Label text="输入控件" textcolor="#FF555555" glowsize="0" font="font13" width="80" />
+							<VerticalLayout >
+								<Control />
+								<HorizontalLayout height="24" childpadding="12">
+									<Edit name="button1" tooltip="普通控件" text="普通控件" bkimage="res='button_pushed.png' corner='6,6,6,6'" />
+									<Edit name="button1" tooltip="只读控件" text="只读控件" bkimage="res='button_pushed.png' corner='6,6,6,6'" readonly="true" />
+									<Edit name="button1" tooltip="数字控件" text="12345678" bkimage="res='button_pushed.png' corner='6,6,6,6'" numberonly="true" />
+									<Edit name="button1" tooltip="密码控件" text="12345678" bkimage="res='button_pushed.png' corner='6,6,6,6'" password="true" />
+								</HorizontalLayout>
+								<Control />
+							</VerticalLayout>
+						</HorizontalLayout> <!-- Edit控件结束 -->
+						
+						<Label height="1" bkimage="hor_line.bmp" />
+						
+						<HorizontalLayout height="60">
+							<Label text="Combo控件" textcolor="#FF555555" glowsize="0" font="font13" width="80" />
+							<VerticalLayout>
+								<Control />
+								<HorizontalLayout height="23" childpadding="12">
+									<Combo name="font_type" droptype="droplist" width="100" height="22" textpadding="4,1,1,1" normalimage="file='combo.png' source='0,0,100,22' corner='2,2,20,2'" hotimage="file='combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='combo.png' source='0,44,100,66' corner='2,2,22,2'">
+										<ListLabelElement text="微软雅黑" selected="true" height="23" />
+										<ListLabelElement text="宋体" height="23" />
+										<ListLabelElement text="黑体" height="23" />
+										<ListLabelElement text="幼圆" height="23" />
+										<ListLabelElement text="楷体" height="23" />
+									</Combo>
+									<Combo name="font_size" droptype="droplist" width="50" height="22" textpadding="4,1,1,1" normalimage="file='combo.png' source='0,0,100,22' corner='2,2,20,2'" hotimage="file='combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='combo.png' source='0,44,100,66' corner='2,2,22,2'">
+										<ListLabelElement text="01" selected="true" height="23" />
+										<ListLabelElement text="02" height="23" />
+										<ListLabelElement text="03" height="23" />
+										<ListLabelElement text="04" height="23" />
+										<ListLabelElement text="05" height="23" />
+										<ListLabelElement text="06" height="23" />
+										<ListLabelElement text="07" height="23" />
+										<ListLabelElement text="08" height="23" />
+										<ListLabelElement text="09" height="23" />
+										<ListLabelElement text="10" height="23" />
+										<ListLabelElement text="11" height="23" />
+										<ListLabelElement text="12" height="23" />
+										<ListLabelElement text="13" height="23" />
+										<ListLabelElement text="14" height="23" />
+										<ListLabelElement text="15" height="23" />
+									</Combo>
+								</HorizontalLayout>
+								<Control />
+							</VerticalLayout>
+						</HorizontalLayout> <!-- Combo控件结束 -->
+						
+						<Label height="1" bkimage="hor_line.bmp" />
+						
+						<HorizontalLayout height="60">
+							<Label text="进度条控件" textcolor="#FF555555" glowsize="0" font="font13" width="80" />
+							<VerticalLayout>
+								<Control />
+								<HorizontalLayout height="20" childpadding="12">
+									 <Progress name="ProgressBar" width="300" bkcolor="#FF555555" foreimage="file='processforce.png' corner='10,0,10,0'" min="0" max="100" maxheight="12" height="12"/>
+								</HorizontalLayout>
+								<Control />
+							</VerticalLayout>
+						</HorizontalLayout> <!-- 进度条控件结束 -->
+						
+						<Label height="1" bkimage="hor_line.bmp" />
+					</VerticalLayout>	<!-- 基本控件结束 -->
+					
+					<VerticalLayout name="demo_list_basic_rich_panel" inset="2,2,2,2" vscrollbar="true">
+						<Label height="1" bkimage="hor_line.bmp" />
+						<HorizontalLayout height="180" bkcolor="#FFFFFFFF" inset="0,6,0,6">
+							<Label text="ListView控件" textcolor="#FF555555" glowsize="0" font="font13" width="80" />
+							<VerticalLayout bordersize="1" bordercolor="#FF666666" inset="2,2,2,2">
+								<List name="listview" vscrollbar="true" hscrollbar="true" headerbkimage="file='list_header_bg.png'" itemtextstyle="center">
+									<ListHeader height="24" menu="true">
+										<ListHeaderItem text="姓名" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="1" />
+										<ListHeaderItem text="学号" width="200" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="1" />
+										<ListHeaderItem text="成绩" width="200" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="1" />
+									</ListHeader>
+								</List>
+							</VerticalLayout>
+						</HorizontalLayout> <!-- List控件结束 -->
+
+						<Label height="1" bkimage="hor_line.bmp" />
+						
+						<HorizontalLayout height="120" bkcolor="#FFFFFFFF" inset="0,6,0,6">
+							<Label text="RichEdit控件" textcolor="#FF555555" glowsize="0" font="font13" width="80" />
+								<VerticalLayout bordersize="1" bordercolor="#FF666666" inset="2,2,2,2">
+									<RichEdit name="wordedit" readonly="false" vscrollbar="true" autovscroll="true" />
+								</VerticalLayout>
+						</HorizontalLayout> <!-- RichEdit控件结束 -->
+						
+						<Label height="1" bkimage="hor_line.bmp" />
+
+						<HorizontalLayout height="120" bkcolor="#FFFFFFFF" inset="0,6,0,6">
+							<Label text="Tree控件" textcolor="#FF555555" glowsize="0" font="font13" width="80" />
+							<VerticalLayout bordersize="1" bordercolor="#FF666666" inset="2,2,2,2">
+								<TreeView bkcolor="#ffffffff" visiblefolderbtn="true" visiblecheckbtn="true" vscrollbar="true" >
+									<TreeNode text="A1" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+										<TreeNode text="B1" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+											<TreeNode text="C1" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+												<TreeNode text="D1" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+													<Button text="扩展按钮" width="100" />
+												</TreeNode>
+												<Button text="扩展按钮" width="100" />
+											</TreeNode>
+											<Edit text="扩展文本框" tipvalue="扩展文本框" width="100" />
+										</TreeNode>
+										<Edit text="扩展文本框" tipvalue="扩展文本框" width="100" />
+									</TreeNode>
+									<TreeNode text="A2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+										<TreeNode text="B2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+											<TreeNode text="C2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+												<TreeNode text="D2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+													<Option text="扩展单选框" width="100" group="RadioBoxTest" />
+												</TreeNode>
+												<Option text="扩展单选框" width="100" group="RadioBoxTest" />
+											</TreeNode>
+											<CheckBox text="扩展复选框" width="100" />
+										</TreeNode>
+										<CheckBox text="扩展复选框" width="100" />
+									</TreeNode>
+								</TreeView>
+							</VerticalLayout>
+						</HorizontalLayout> <!-- Tree控件结束 -->
+						
+						<Label height="1" bkimage="hor_line.bmp" />
+						
+						<HorizontalLayout height="30">
+							<Label text="时间控件" textcolor="#FF555555" glowsize="0" font="font13" width="80" />
+							<VerticalLayout bordersize="1" bordercolor="#FF666666" inset="2,2,2,2">
+								<HorizontalLayout height="24">
+									<Label text="请选择时间：" width="100" align="center"/>
+									<DateTime name="DateTimeCtrl" />
+								</HorizontalLayout>
+							</VerticalLayout>
+						</HorizontalLayout>	<!-- 时间控件结束 -->
+						
+						<Label height="1" bkimage="hor_line.bmp" />
+					</VerticalLayout> <!-- 高级控件结束 -->
+				</TabLayout>
+			  </VerticalLayout>
+			  <WebBrowser name="webbrowserBtn" homepage="http://www.who1753.com" autonavi="true" />
+			</TabLayout>
+		</VerticalLayout> <!-- 客户区结束 -->
+		
+		<HorizontalLayout height="4" />
+	</VerticalLayout>
+</Window>

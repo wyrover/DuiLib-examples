@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="576,400">
+    <VerticalLayout name="VerticalLayoutUI1" width="554" height="400">
+        <HorizontalLayout name="HorizontalLayoutUI1" width="426" height="8" />
+        <HorizontalLayout name="HorizontalLayoutUI2" width="525" height="183">
+            <List name="lstNormal" width="400" height="183" bkcolor="#FFFFFFFF" menu="true" itemtextcolor="#FF000000" itembkcolor="#FFE2DDDF" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" headerbkimage="file=&apos;list_header_bg.png&apos;" itemshowhtml="true" vscrollbar="true" hscrollbar="true" itemalign="center" itemaltbk="true">
+                <ListHeader height="24" bkimage="file=&apos;list_header_bg.png&apos;" menu="true">
+                    <ListHeaderItem text="No" width="30" minwidth="16" textcolor="#FF000000" sepwidth="2" align="center" hotimage="file=&apos;list_header_hot.png&apos;" pushedimage="file=&apos;list_header_pushed.png&apos;" sepimage="file=&apos;list_header_sep.png&apos;" />
+                    <ListHeaderItem text="Domain" width="260" minwidth="16" textcolor="#FF000000" sepwidth="2" align="center" hotimage="file=&apos;list_header_hot.png&apos;" pushedimage="file=&apos;list_header_pushed.png&apos;" sepimage="file=&apos;list_header_sep.png&apos;" />
+                    <ListHeaderItem text="Description" width="240" minwidth="16" textcolor="#FF000000" sepwidth="2" align="center" hotimage="file=&apos;list_header_hot.png&apos;" pushedimage="file=&apos;list_header_pushed.png&apos;" sepimage="file=&apos;list_header_sep.png&apos;" />
+                </ListHeader>
+            </List>
+        </HorizontalLayout>
+		<HorizontalLayout height="10" />
+        <HorizontalLayout name="HorizontalLayoutUI3" width="525" height="150" inset="10,0,0,0">
+            <MyList name="lstControl" width="400" height="150" vscrollbar="true"bkcolor="#FF103668"/>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

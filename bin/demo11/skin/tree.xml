@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <VerticalLayout name="VerticalLayoutUI1" width="60" height="30" inset="10,10,0,0">
+        <Tree name="Tree1" width="398" height="268" bkcolor="#EEEEEEEE" itemtextcolor="#FF000000" header="hidden" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" vscrollbar="true" hscrollbar="true" vscrollbarstyle="width=&quot;10&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot;">
+        </Tree>
+    </VerticalLayout>
+</Window>
