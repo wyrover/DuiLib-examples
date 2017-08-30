@@ -4,8 +4,13 @@
 
 #pragma once
 
+#if !defined(WIN32_LEAN_AND_MEAN)
 #define WIN32_LEAN_AND_MEAN	
+#endif
+
+#if !defined(_CRT_SECURE_NO_DEPRECATE)
 #define _CRT_SECURE_NO_DEPRECATE
+#endif
 
 #include <windows.h>
 #include <objbase.h>
