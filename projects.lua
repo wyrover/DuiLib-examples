@@ -193,3 +193,5 @@ workspace(path.getname(os.realpath(".")))
             }
 
         create_duilib_project("HiDPITest", "src")
+        create_duilib_project("menu_win_shadow_demo", "src")
+        
