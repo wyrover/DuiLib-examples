@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Default name="Button" value="normalimage=&quot;file=&apos;btn_frame_normal.png&apos; fade=&apos;200&apos;&quot; hotimage=&quot;file=&apos;btn_frame_hot.png&apos; fade=&apos;200&apos;&quot; pushedimage=&quot;file=&apos;btn_frame_push.png&apos; fade=&apos;200&apos;&quot; " />
+    <VerticalLayout name="VerticalLayoutUI1" width="60" height="30">
+        <Container name="ContainerUI2" width="434" height="60" bordercolor="#00FF0000">
+            <Button name="ButtonUI3" text="Default2" float="true" pos="214,12,0,0" width="76" height="33" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_frame_normal.png&apos; fade=&apos;200&apos;" hotimage="file=&apos;btn_frame_hot.png&apos; fade=&apos;200&apos;" pushedimage="file=&apos;btn_frame_push.png&apos; fade=&apos;200&apos;" />
+            <Button name="ButtonUI4" float="true" pos="327,12,0,0" align="center" normalimage="file=&apos;btn_frame_normal.png&apos; fade=&apos;200&apos;" hotimage="file=&apos;btn_frame_hot.png&apos; fade=&apos;200&apos;" pushedimage="file=&apos;btn_frame_push.png&apos; fade=&apos;200&apos;" />
+            <Label name="LabelUI1" text="模板：" float="true" pos="18,16,0,0" width="60" height="30" textcolor="#000000FF" disabledtextcolor="#FFA7A6AA" />
+            <Button name="ButtonUI2" text="Default1" float="true" pos="111,16,0,0" width="87" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_frame_normal.png&apos; fade=&apos;200&apos;" hotimage="file=&apos;btn_frame_hot.png&apos; fade=&apos;200&apos;" pushedimage="file=&apos;btn_frame_push.png&apos; fade=&apos;200&apos;" />
+        </Container>
+        <VerticalLayout name="ContainerUI3" width="435" height="71" bordercolor="#00008080" sepheight="4">
+            <Button name="ButtonUI5" text="查找" float="true" pos="108,5,0,0" width="65" height="62" bkimage="file=&apos;find.png&apos; dest=&apos;10,2,50,42&apos;" textpadding="0,0,0,2" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="centerbottom" normalimage="file=&apos;find.png&apos; dest=&apos;10,2,50,42&apos;" hotimage="file=&apos;find_hover.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;find_pushed.png&apos; mask=&apos;0xffffffff&apos;" />
+            <Label name="LabelUI2" text="一张图片：" float="true" pos="21,25,0,0" width="60" height="30" textcolor="#00FF00FF" disabledtextcolor="#FFA7A6AA" />
+            <Button name="ButtonUI1" float="true" pos="220,22,0,0" width="45" height="17" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;close_onepic.png&apos; source=&apos;90,0,135,17&apos; fade=&apos;200&apos;" hotimage="file=&apos;close_onepic.png&apos; source=&apos;45,0,90,17&apos; fade=&apos;200&apos;" pushedimage="file=&apos;close_onepic.png&apos; source=&apos;0,0,45,17&apos; fade=&apos;200&apos;" />
+        </VerticalLayout>
+        <Container name="ContainerUI4" width="436" height="43" bordercolor="#00FF00FF">
+            <Label name="LabelUI3" text="单选框：" float="true" pos="22,5,0,0" width="60" height="30" textcolor="#00FFFF00" disabledtextcolor="#FFA7A6AA" />
+            <Option name="OptionUI1" text="单选框１" float="true" pos="116,12,0,0" width="82" height="19" textpadding="22,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;radio_un.png&apos; dest=&apos;0,0,20,20&apos;" group="group" selected="true" selectedimage="file=&apos;radio_sel.png&apos; dest=&apos;0,0,20,20&apos;" />
+            <Option name="OptionUI2" text="单选框２" float="true" pos="221,12,0,0" width="82" height="19" textpadding="22,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;radio_un.png&apos; dest=&apos;0,0,20,20&apos;" group="group" selectedimage="file=&apos;radio_sel.png&apos; dest=&apos;0,0,20,20&apos;" />
+			<Option name="OptionUI3" text="单选框３" float="true" pos="314,12,0,0" width="82" height="19" textpadding="22,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;radio_un.png&apos; dest=&apos;0,0,20,20&apos;" group="group" selectedimage="file=&apos;radio_sel.png&apos; dest=&apos;0,0,20,20&apos;" />
+        </Container>
+        
+        <Container name="ContainerUI5" width="435" height="62" bordercolor="#00000080">
+            <Label name="LabelUI4" text="复选框：" float="true" pos="21,17,0,0" width="60" height="30" textcolor="#00800080" disabledtextcolor="#FFA7A6AA" />
+            <Option name="OptionUI4" text="复选框１" float="true" pos="117,22,0,0" width="101" height="18" textcolor="#00800000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;check_un.png&apos; dest=&apos;0,0,20,20&apos;" selected="true" selectedimage="file=&apos;check_sel.png&apos; dest=&apos;0,0,20,20&apos;" />
+            <Option name="OptionUI5" text="复选框２" float="true" pos="241,21,0,0" width="101" height="18" textcolor="#00000080" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;check_un.png&apos; dest=&apos;0,0,20,20&apos;" selectedimage="file=&apos;check_sel.png&apos; dest=&apos;0,0,20,20&apos;" />
+        </Container>
+    </VerticalLayout>
+</Window>

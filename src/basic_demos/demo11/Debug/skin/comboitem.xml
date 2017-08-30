@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <HorizontalLayout name="HorizontalLayoutUI1" width="371" height="50" bkcolor="#FFFFFFFF" bkcolor2="#FFFFFFFF" bordercolor="#FFFFFFFF" focusbordercolor="#FF000000">
+
+        <Control name="comboitemimage" float="true" pos="2,3,0,0" width="17" height="17" mouse="false" />
+        <Text name="comboitemname" float="true" pos="24,3,0,0" width="371" height="17" mouse="false" textpadding="2,0,2,0" align="wrap" />
+        <Text name="comboitemlink" float="true" pos="24,25,0,0" width="371" height="28" mouse="false" textpadding="2,0,2,0" showhtml="true" align="wrap" />
+
+    </HorizontalLayout>
+</Window>
