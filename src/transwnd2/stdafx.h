@@ -17,19 +17,17 @@
 #include <memory.h>
 #include <tchar.h>
 
-
+#include <string>
 // TODO: 在此处引用程序需要的其他头文件
 #include "Uilib.h"
+#include "resource.h"
 using namespace DuiLib;
-
-#include "FrameWnd.h"
-
-
+using namespace std;
 
 #pragma warning(disable:4192)
 
 #ifdef _UNICODE
-	typedef std::wstring	tstring;
+typedef std::wstring	tstring;
 #else
-	typedef std::string		tstring;
+typedef std::string		tstring;
 #endif

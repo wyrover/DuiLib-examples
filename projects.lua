@@ -158,10 +158,75 @@ workspace(path.getname(os.realpath(".")))
             filter "files:3rdparty/DuiLib/Utils/unzip.cpp"
                 flags { "NoPCH" }  
             
+    
+    group "UiLib"
+        
+        project "UiLib_Dll"            
+            kind "SharedLib"       
+            targetname "UiLib"
+            defines { "_WINDOWS", "UILIB_EXPORTS" }                           
+            files
+            {
+                "3rdparty/UiLib/**.h",
+                "3rdparty/UiLib/**.cpp",  
+                "3rdparty/UiLib/**.c"
+            }             
+            removefiles
+            {
+                 
+            }
+            includedirs
+            {            
+                "3rdparty/UiLib",                
+            }
+            links
+            {
+                "oledlg.lib",
+                "winmm.lib",
+                "comctl32.lib",
+                "Riched20.lib",
+                
+              
+            }
+            pchsource "3rdparty/UiLib/StdAfx.cpp" 
+            pchheader "StdAfx.h"
+              
 
-            
+            filter "files:3rdparty/UiLib/Utils/*.c"
+                flags { "NoPCH" }
+            filter "files:3rdparty/UiLib/Utils/XUnzip.cpp"
+                flags { "NoPCH" }  
             
     
+        project "cloneKuGou"          
+            targetdir "bin/cloneKuGou"
+            kind "WindowedApp"               
+            defines { "_WINDOWS", "UILIB_STATIC" }
+            files
+            {                                  
+                "src/cloneKuGou/**.h",
+                "src/cloneKuGou/**.cpp",
+                "src/cloneKuGou/**.c",
+                "src/cloneKuGou/**.rc",
+                
+            }
+            removefiles
+            {               
+            }
+            includedirs
+            {          
+                "3rdparty/UiLib",
+                "3rdparty",               
+                "%{THIRD_PARTY}/wtl"
+            }    
+            links
+            {
+                "comctl32.lib"
+            }
+            link_libs
+            {
+                "UiLib.lib",
+            }
 
     group "basic-examples"       
         
@@ -195,4 +260,9 @@ workspace(path.getname(os.realpath(".")))
         create_duilib_project("HiDPITest", "src")
         create_duilib_project("menu_win_shadow_demo", "src")
         create_duilib_project("transwnd2", "src")
+        
+
+        
+        
+
         
