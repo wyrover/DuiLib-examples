@@ -277,6 +277,7 @@ namespace DuiLib
 
 	LRESULT WindowImplBase::OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 	{
+        m_shadowui.Create(*this, &m_pm);
 		// 调整窗口样式
 		LONG styleValue = ::GetWindowLong(*this, GWL_STYLE);
 		styleValue &= ~WS_CAPTION;
@@ -311,6 +312,9 @@ namespace DuiLib
 		m_pm.AddNotifier(this);
 		// 窗口初始化完毕
 		InitWindow();
+
+        m_shadowui.CopyShadow(m_pm.GetShadow());
+
 		return 0;
 	}
 
@@ -352,6 +356,8 @@ namespace DuiLib
 
 	LRESULT WindowImplBase::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 	{
+        m_shadowui.ParentProc(this->m_hWnd, uMsg, wParam, lParam);
+
 		LRESULT lRes = 0;
 		BOOL bHandled = TRUE;
 		switch (uMsg)

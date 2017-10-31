@@ -369,8 +369,8 @@ namespace DuiLib {
 			ResizeMenu();
 		}
 		GetMenuUI()->m_pWindow = this;
-		m_pm.GetShadow()->ShowShadow(bShowShadow);
-		m_pm.GetShadow()->Create(&m_pm);
+		m_pm.GetShadow()->ShowShadow(bShowShadow);        
+		m_pm.GetShadow()->Create(m_pm.GetPaintWindow(), &m_pm);
 		return 0;
 	}
 

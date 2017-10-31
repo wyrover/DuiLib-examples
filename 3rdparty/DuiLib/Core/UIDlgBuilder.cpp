@@ -315,7 +315,7 @@ namespace DuiLib {
 							rcCorner.top = _tcstol(pstr + 1, &pstr, 10);    ASSERT(pstr);    
 							rcCorner.right = _tcstol(pstr + 1, &pstr, 10);  ASSERT(pstr);    
 							rcCorner.bottom = _tcstol(pstr + 1, &pstr, 10); ASSERT(pstr);    
-							pManager->GetShadow()->SetShadowCorner(rcCorner);
+							pManager->GetShadow()->SetCorner(rcCorner);
 						}
 						else if( _tcsicmp(pstrName, _T("shadowimage")) == 0 ) {
 							pManager->GetShadow()->SetImage(pstrValue);

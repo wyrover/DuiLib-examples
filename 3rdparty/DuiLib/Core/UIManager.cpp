@@ -1794,7 +1794,9 @@ namespace DuiLib {
 	{
 		ASSERT(::IsWindow(m_hWndPaint));
 		// 创建阴影窗口
-		m_shadow.Create(this);
+		//m_shadow.Create(this->GetPaintWindow(), this);
+
+
 
 		// Reset any previous attachment
 		SetFocus(NULL);

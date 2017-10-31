@@ -14,7 +14,7 @@ namespace DuiLib
 		, public IQueryControlText
 	{
 	public:
-		WindowImplBase(){};
+		WindowImplBase(){ m_bShadow = true; };
 		virtual ~WindowImplBase(){};
 		// 只需主窗口重写（初始化资源与多语言接口）
 		virtual void InitResource(){};
@@ -66,6 +66,9 @@ namespace DuiLib
 		virtual LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam);
 		virtual LRESULT HandleCustomMessage(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled);
 		virtual LONG GetStyle();
+    private:
+        bool      m_bShadow;
+        CShadowUI m_shadowui;
 	};
 }
 
