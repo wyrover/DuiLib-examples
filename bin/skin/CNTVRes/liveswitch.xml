@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window  roundcorner="3,3" size="50, 42"  alpha="200">
+  <VerticalLayout bkcolor="#FF101010">
+        <Button name="ls_sd"  text="标准" padding="0,0,0,0" width="50" height="20" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FF676767" hottextcolor="#FFF0F0F0"  pushedtextcolor="#FFA0A0A0" borderround="3,3" />
+        <Button name="ls_hs"  text="高速" padding="0,1,0,0" width="50"  height="20" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FF676767" hottextcolor="#FFF0F0F0"  pushedtextcolor="#FFA0A0A0" borderround="3,3"/>
+</VerticalLayout>
+</Window>

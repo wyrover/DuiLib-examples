@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="780,600"  caption="0,0,0,30" >
+  <Font name="微软雅黑" size="19"  bold="true"/>
+  <VerticalLayout  bkcolor="#FF232323">
+  	    <HorizontalLayout name="p_topboader" height="2" visible="false" >
+           <Button  height="2"  mouse="false" bkimage="top_boader.png" />
+       </HorizontalLayout>
+  	   <HorizontalLayout bkcolor="#FF000000">
+  	   	  <HorizontalLayout name="p_leftboader" width="2">
+             <Button  padding="0,0,0,0" width="2" mouse="false" bkimage="left_boader.png" />
+          </HorizontalLayout>
+  	     <Container  bkcolor="#FF000000" >
+          <TabLayout name="p_tablayout" bkcolor="#FF000000"  padding="2,2,2,2">
+          	 <VerticalLayout bkcolor="#FF000000">     	 	
+          	 </VerticalLayout>
+          	 <VerticalLayout bkcolor="#FF000000">
+          	 	  <HorizontalLayout bkcolor="#FF000000">
+	              </HorizontalLayout>
+	              <HorizontalLayout>
+	              	 <HorizontalLayout bkcolor="#FF000000">
+	                 </HorizontalLayout>
+          	             <!--Button name="p_openfile"  tooltip="打开本地文件" text="" inset="85,0,0,0" textcolor="#FFA5A5A5" hottextcolor="#FFEE0000"  font="0" width="184" height="43" normalimage="openfilenormal.png" hotimage="openfilehot.png" pushedimage="openfilenormal.png"/-->
+      	     	         <Picture pwidth="200" pheight="70" visible="true" picture="play_null.png"/>
+      	     	     <HorizontalLayout bkcolor="#FF000000">
+	                 </HorizontalLayout>
+      	     	  </HorizontalLayout>
+      	     	  <HorizontalLayout bkcolor="#FF000000">
+	              </HorizontalLayout>
+      	     </VerticalLayout>
+      	     <Container  name="p_loading">     
+      	     	<!--Picture  name="p_playerbk" pwidth="750" pheight=" 468" picture="playerbk.png"   pminiwidth="300" pminiheight=" 241" minipicture="playerbkmini.png" visible="false"  bkcolor="#FF000000"/-->          
+                <Flash name="p_loadingflash"  mouse="false" width="550" height="400" visible="true" file="loading.swf" delaycreate="true"/>            
+             </Container>   
+             <!--ActiveX  name="p_liveplayer"  clsid="{C728DAB8-FDF5-4CD7-89DD-879D25794C77}" modulename="CCTVPlayer.ocx" delaycreate="false" bkcolor="#FF000000" /-->  
+             <ActiveX  name="p_liveplayer2"  clsid="{9450CD11-7D3E-4F3B-B0EE-146F2FFA5323}" modulename="P2PPlayer2.dll" delaycreate="false" bkcolor="#FF000000" />  
+             <ActiveX  name="p_hdsplayer"  clsid="{4FDF95CB-BECC-409C-9157-AA103003FB91}" modulename="HDSPlayer.dll" delaycreate="false" bkcolor="#FF000000" />  
+             <ActiveX  name="p_mp4player"   clsid="{17C7B943-2717-4BD9-83ED-CDA333B7ADB6}" modulename="MP4Player.dll" delaycreate="false" bkcolor="#FF000000"/>
+             <!--ActiveX  name="p_flvplayer"  clsid="{B398FBEB-702B-4CC9-88B5-E2316A2EB998}" modulename="FlvPlayer.dll" delaycreate="false" bkcolor="#FF000000" /-->  
+             <!--ActiveX  name="p_nativeplayer"  clsid="{2217BC6A-E9ED-4C6E-8F3F-7D7EAE185DC8}" modulename="NativePlayer.dll" delaycreate="false" bkcolor="#FF000000" /-->
+             <!--ActiveX  name="p_hevcplayer"  clsid="{9CBD9F24-D348-48D5-8596-9D66A57AA5BA}" modulename="FlvDsPlayer.dll" delaycreate="false" bkcolor="#FF000000" /-->  
+          </TabLayout> 
+        </Container>
+          <HorizontalLayout name="p_rightboader" width="2">
+             <Button  padding="0,0,0,0" width="2" mouse="false" bkimage="right_boader.png" />
+           </HorizontalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout name="p_bottomboader" height="2" visible="false">
+           <Button  height="2"  mouse="false" bkimage="bottom_boader.png" />
+      </HorizontalLayout>
+      <Advertisement name="p_floatadv" float="true">
+      </Advertisement>
+      <Advertisement name="p_banneradv" float="true">
+      </Advertisement>
+       <Advertisement name="p_postadv" float="true">
+      </Advertisement>
+   </VerticalLayout>
+</Window>

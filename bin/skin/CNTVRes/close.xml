@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="11,11" roundcorner="0,0">
+     <Container  name="fc_closecontainer" float="true" pos="100,5,100,5"  minwidth="11" minheight="11"  alpha="200" bkcolor="#FF000000" visible="true">	 
+         <Button name="fc_close"  tooltip="关闭" padding="0,1,1,0"  width="11" height="11" normalimage="file='pt_close.png' source='0,0,11,11'" hotimage="file='pt_close.png' source='11,0,22,11'" pushedimage="file='pt_close.png' source='22,0,33,11'"/>
+     </Container>       
+</Window>

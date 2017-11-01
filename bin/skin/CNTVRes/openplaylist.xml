@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="19, 70" roundcorner="3,3">	
+		<HorizontalLayout  width="19">
+			<!--Button name="btn_switch" visible="true" float="true" pos="0,0,18,70" width="18" height="70" normalimage="pl_btn_hide_normal.png" hotimage="pl_btn_hide_hot.png"/-->
+			<Button name="btn_hideplaylist" visible="true" float="true" pos="0,0,18,70" width="19" height="70" normalimage="pl_btn_hide_normal.png" hotimage="pl_btn_hide_hot.png"/>
+			<Button name="btn_openplaylist" visible="false" float="true" pos="0,0,18,70" width="19" height="70" normalimage="pl_btn_open_normal.png" hotimage="pl_btn_open_hot.png"/>
+		</HorizontalLayout>	
+</Window>

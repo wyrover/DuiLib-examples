@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,26"  size="326,159" roundcorner="5,5" showdirty="false" >
+  <Font name="微软雅黑" size="10" />
+  <Font name="微软雅黑" size="12" />
+  <Font name="微软雅黑" size="14" />
+  <Font name="宋体" size="13" bold="true" />
+  <Font name="宋体" size="12" bold="true" />
+  <Font name="宋体" size="12" />
+  <Font name="宋体" size="14" bold="true" />
+  <Font name="微软雅黑" size="8" />
+  <Default name="Edit" value="enabled=&quot;false&quot; bordercolor=&quot;#FF000000&quot; bordersize=&quot;1&quot; font=&quot;8&quot; textcolor=&quot;#FF666666&quot;" />
+  <Default name="Label" value="align=&quot;left&quot;" />
+  <Default name="SkinOption" value="group=&quot;skin_group&quot; maxwidth=&quot;82&quot; align=&quot;left&quot; textpadding=&quot;46,0,0,0&quot; normalimage=&quot;file='uiitem.png' source='0,0,13,13' dest='22,3,35,16'&quot; selectedimage=&quot;file='uiitem.png' source='13,0,26,13' dest='22,3,35,16'&quot; disabledimage=&quot;file='uiitem.png' source='26,0,39,13' dest='22,3,35,16'&quot;" />
+  <!--main page-->
+  <VerticalLayout name="MainContainer" bkcolor="#FF3D475C">
+            <HorizontalLayout  height="30">
+            <Label text="定时关机" padding="10,3,0,0" width="60" height="24" textcolor="#00B3C2DB" disabledtextcolor="#FFA7A6AA" font="6" />
+              <Button name="btnClose" padding="220,2,0,0" width="24" height="24" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png"/>
+            </HorizontalLayout>
+    
+   <HorizontalLayout name="containers" bordercolor="#FF0C0C0C" height="90" padding="17,5,0,0" bordersize="0">
+      <Button name="image1" padding="8,15,0,0" width="53" height="53" normalimage="warning.png"/>
+      <VerticalLayout name="normal">
+        <HorizontalLayout height="35" padding="0,-5,0,0">
+          <Text padding="20,20,0,0" width="10" textcolor="#00B3C2DB" text="您的电脑将在"/>
+          <Label name="shutdowncount" padding="10,20,0,0" width="11" text="15" textcolor="#00B3C2DB" font="10"/>
+          <Text padding="10,20,0,0" width="80" textcolor="#00B3C2DB" text="秒后 自动关机！"/>
+        </HorizontalLayout>
+                
+        <HorizontalLayout height="20" padding="0,15,0,0"> 
+          <Text padding="20,0,0,0" width="60" textcolor="#00B3C2DB" text="如需取消，请点击“取消”按钮。"/>
+          <Option name="suretoshut" />
+        </HorizontalLayout>        
+      </VerticalLayout>
+    </HorizontalLayout>
+     <Control height="1" bkcolor="#FF2D3239" />
+     <HorizontalLayout height="34">
+      <Button name="btnok" text="关机" textcolor="#FF2CDDFF" disabledtextcolor="#FFA7A6AA" font="3" align="center" />
+      <Control width="1" bkcolor="#FF2D3239" />
+      <Button name="btncancel" text="取消" textcolor="#FF2CDDFF" disabledtextcolor="#FFA7A6AA" font="3" align="center" />
+     </HorizontalLayout>
+  </VerticalLayout>

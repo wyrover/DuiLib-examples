@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window  roundcorner="3,3" size="50, 90"  alpha="200">
+  <Font name="宋体" size="14" /> 
+  <VerticalLayout bkcolor="#FF101010">
+        <!--Button name="rp_hd"  text="高清" padding="0,0,0,0" width="50"  height="30" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF"   pushedtextcolor="#FFA0A0A0" disabledtextcolor="#FF5A5A5A"  font="0" /-->
+		<!--Button name="rp_sd"  text="标清" padding="0,0,0,0" width="50" height="30" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF"   pushedtextcolor="#FFA0A0A0" disabledtextcolor="#FF5A5A5A"  font="0" /-->
+        <Button name="rp_fd"  text="流畅" padding="0,0,0,0" width="50" height="30" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF"   pushedtextcolor="#FFA0A0A0" disabledtextcolor="#FF5A5A5A"  font="0" />
+        <Button name="rp_nd"  text="标清" padding="0,0,0,0" width="50" height="30" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF"   pushedtextcolor="#FFA0A0A0" disabledtextcolor="#FF5A5A5A"  font="0" />
+		<!--Button name="rp_rd"  text="极速" padding="0,0,0,0" width="50" height="30" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF"   pushedtextcolor="#FFA0A0A0" disabledtextcolor="#FF5A5A5A"  font="0" /-->
+		<Button name="rp_ad"  text="高清" padding="0,0,0,0" width="50" height="30" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF"   pushedtextcolor="#FFA0A0A0" disabledtextcolor="#FF5A5A5A"  font="0" />
+</VerticalLayout>
+</Window>

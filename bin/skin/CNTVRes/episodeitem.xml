@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <EpisodeItem   width="98" height="80" padding="6,2,0,2" >
+           <Container padding="0,0,0,0"  bkcolor="#FF000000" name="content" bordersize="1">
+        	  <Button name="image" bordercolor="#FF2B2B2B" focusbordercolor="#FF8C8C8C" bordersize="1"  bkcolor="#FF000000"/>
+        	  <Label name="dur"  textcolor="#FFA5A5A5" float="true" pos="1,1,97,14"   textpadding="2,0,0,0" align="left" bkcolor="#88000000"/> 
+        	  <Button name="title" float="true" pos="1,62,97,79"  textpadding="2,0,0,0" textcolor="#FFA5A5A5"  align="left" endellipsis="true" bkcolor="#88000000"/>
+       	  </Container> 
+    </EpisodeItem>
+</Window>

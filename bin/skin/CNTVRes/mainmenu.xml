@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="141,256">
+  <Font name="微软雅黑" size="12" bold="false" default="true" />
+  <Font name="微软雅黑" size="12" bold="true"/>
+  <Default name="Menu" value="itemtextpadding=&quot;5,0,0,0&quot; bkimage=&quot;file='menu_bk.png'&quot; itemselectedimage=&quot;menu_selected.png&quot; itemselectedtextcolor=&quot;0xFFFFFFFF&quot; itemtextcolor=&quot;0xFFFFFFFF&quot;" />
+  <Default name="MenuElement" value="height=&quot;28&quot;"/>
+  <Menu itemtextcolor="0xFFFFFFFF" bkimage="file='menu_bk.png' source='0,0,141,256'">
+    <!--MenuElement name="menu_launch" text="开机自动运行" height="32">
+      <HorizontalLayout>
+        <Option name ="launch_status" bkimage="file='uiitem.png' source='0,15,14,25' dest='100,6,15,16'" visible="false"/>
+      </HorizontalLayout>
+    </MenuElement-->
+    <MenuElement name="menu_mini2tip" text="最小化到托盘" height="32"/>
+    <MenuElement name="menu_setting" text="设置..."/>
+    <MenuElement name="menu_update" text="检查更新..."/> 
+    <MenuElement name="menu_shutdown" text="定时关机..." />
+    <MenuElement name="menu_official" padding="0,0,0,0" text="官方网站" />
+    <MenuElement name="menu_feedback" padding="0,0,0,0" text="反馈" /> 
+    <MenuElement name="menu_help" text="帮助"/>
+    <MenuElement name="menu_about" padding="0,0,0,0" text="关于" />
+     <MenuElement name="menu_exit" padding="0,0,0,0" text="退出" /> 
+     </Menu>
+</Window>

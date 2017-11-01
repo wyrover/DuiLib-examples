@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,40" size="358,246"  roundcorner="5,5" showdirty="false" >
+	<WebBrowser name="webbrowser" pos="-1,-1,360,248" delaycreate="false" visible="true" bkcolor="#FFFFFFFF"/>
+</Window>

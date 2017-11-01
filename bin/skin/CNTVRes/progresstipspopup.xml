@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window   size="65, 20"  alpha="200" roundcorner="3,3">
+  <VerticalLayout>
+        <Button name="pc_progresstips"  text="00:00:00" maxwidth="63" height="20" bkcolor="#FF101010"  textcolor="#FF676767" borderround="3,3"/>
+</VerticalLayout>
+</Window>

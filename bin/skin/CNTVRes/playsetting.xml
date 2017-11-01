@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,26" size="360,280"  roundcorner="4,4" showdirty="false" >
+  <Font name="宋体" size="13" />
+  <Font name="宋体" size="16" bold="true"/>
+  <Font name="宋体" size="12" />
+  <Font name="宋体" size="13" bold="true" />
+  <Font name="宋体" size="12" bold="true" />
+  <Font name="宋体" size="12" />
+  <Font name="宋体" size="14" bold="false" />
+  <Font name="微软雅黑" size="8" />
+  <Font name="宋体" size="15" />
+  <!--main page-->
+ 	<VerticalLayout name="MainContainer" bkimage="player_set_bg.png" >
+ 		<HorizontalLayout maxheight="30">
+    	<!--Button name="logo" padding="10,8,0,0" width="51" height="20" bkimage="logo.png"/-->
+      <Text mouse="false" padding="10,10,0,0" text="设  置" textcolor="#ffb3c2db" font="1"/>
+      <Button name="btnclose" padding="254,2,0,0"  width="28" height="32" normalimage="file='mf_close_normal.png'" hotimage="file='mf_close_hover.png'" pushedimage="file='mf_close_normal.png'"/>
+    </HorizontalLayout>
+    <HorizontalLayout name="options" padding="20,20,0,0" width="300" height="28">
+	    <Option name="colorset" padding="15,0,0,0" width = "76" align="left" text="画面比例" textcolor="#ffb3c2db" selectedtextcolor="#ff2bdeff" font="6" selected="true" group="true" selectedimage="file='set_select.png' source='0,0,74,33' dest='-15,0,70,30'" normalimage="file='set_seting_bg.png' source='0,0,312,102' dest='-15,0,70,30'"/>
+	    <Option name="imageset" visible="false" padding="20,0,0,0" align="left" text="画面质量" textcolor="#ffb3c2db" selectedtextcolor="#ff2bdeff" font="6" group="true" selectedimage="file='set_select.png' source='0,0,74,33' dest='-15,0,70,30'" normalimage="file='set_seting_bg.png' source='0,0,312,102' dest='-15,0,70,30'"/>
+	</HorizontalLayout>
+		<HorizontalLayout name="containers" bordercolor="#FF0C0C0C"  padding="20,0,0,0">
+	    <TabLayout name="switch">
+	    	<VerticalLayout name="image" padding="0,10,0,0" textcolor="#FFFFFFFF" bkimage="player_switch_bg.png" width="320" height="141">
+	    	  <HorizontalLayout height="30" width="320" padding="0,54,0,0" >
+	    	  	<HorizontalLayout></HorizontalLayout>
+	    		<Option name="original" maxwidth="80" group="close_group" align="left" textpadding="30,0,0,0" text="原始比例" textcolor="#FFccdbe8" normalimage="file='set_option_un.png' source='0,0,22,22' dest='2,4,24,26'" selectedimage="file='set_option_select.png' source='0,0,22,22' dest='2,4,24,26'" disabledimage="file='set_option_un.png' source='0,0,22,22' dest='2,4,24,26'" selected="true"/>
+	    		<Option name="standard" maxwidth="50" group="close_group" align="left" textpadding="30,0,0,0" text="4:3" textcolor="#FFccdbe8" normalimage="file='set_option_un.png' source='0,0,22,22' dest='2,4,24,26'" selectedimage="file='set_option_select.png' source='0,0,22,22' dest='2,4,24,26'" disabledimage="file='set_option_un.png' source='0,0,22,22' dest='2,4,24,26'"/>
+	    		<Option name="wide" maxwidth="60" group="close_group" align="left" textpadding="30,0,0,0" text="16:9" textcolor="#FFccdbe8" normalimage="file='set_option_un.png' source='0,0,22,22' dest='2,4,24,26'" selectedimage="file='set_option_select.png' source='0,0,22,22' dest='2,4,24,26'" disabledimage="file='set_option_un.png' source='0,0,22,22' dest='2,4,24,26'"/>
+	    		<Option name="tile" maxwidth="80" group="close_group" align="left" textpadding="30,0,0,0" text="平铺" textcolor="#FFccdbe8" normalimage="file='set_option_un.png' source='0,0,22,22' dest='2,4,24,26'" selectedimage="file='set_option_select.png' source='0,0,22,22' dest='2,4,24,26'" disabledimage="file='set_option_un.png' source='0,0,22,22' dest='2,4,24,26'"/>
+	    			<HorizontalLayout></HorizontalLayout>
+	 				</HorizontalLayout>
+	 				<!--HorizontalLayout height="20" padding="20,30,0,0">
+	    			<Label padding="10,0,0,0" height="25" width="60" textcolor="#FF000000" text="画面大小：" />
+	    			<Button name="btnminus" padding="25,10,0,0"  width="10" height="2" bkimage="set-up_icon_minus.png" />
+	    			<Slider name="bp_brightness" tooltip="调整画面大小"  padding="10,9,0,0" width="200"  height="5" align="center" min="0" max="100" value="50"  thumbimage="set-up_progress_slider.png"  foreimage="set-up_progress_red_11.png" thumbsize="5,8" bkimage="set-up_progress_bg.png" hor="true"/>
+	    			<Button name="btnplus" padding="9,6,0,0"  width="10" height="10" bkimage="set-up_icon_plus.png" />	    			
+	 		  </HorizontalLayout--> 				
+			</VerticalLayout>
+	    	<VerticalLayout name="color" padding="0,10,0,0" textcolor="#FFFFFFFF" bkimage="player_switch_bg.png" width="320" height="141">
+	    		<HorizontalLayout height="20" padding="20,50,0,0">
+	    			<Label padding="20,0,0,0" height="25" width="60" textcolor="#FF000000" text="亮度：" />
+	    			<Button name="btnminus" padding="0,10,0,0"  width="10" height="2" bkimage="set-up_icon_minus.png " />
+	    			<Slider name="bp_brightness" tooltip="调整亮度"  padding="15,9,0,0" width="150"  height="5" align="center" min="0" max="100" value="50"  thumbimage="set-up_progress_slider.png"  foreimage="set-up_progress_red_11.png" thumbsize="5,8" bkimage="set-up_progress_bg.png" hor="true"/>
+	    			<Button name="btnplus" padding="9,6,0,0"  width="10" height="10" bkimage="set-up_icon_plus.png" />
+	    			<Label name="bp_brightnessvalue" text="0" padding="10,4,0,0" width="35"  height="15" align="center" textcolor="#FF979797" bkcolor="#FFE6E6FA"/>
+	 				</HorizontalLayout>
+	 				<HorizontalLayout height="20" padding="15,10,0,0">
+	    			<Label padding="20,0,0,0" height="25" width="60" textcolor="#FF000000" text="对比度：" />
+	    			<Button name="btnminus" padding="0,10,0,0"  width="10" height="2" bkimage="set-up_icon_minus.png" />
+	    			<Slider name="bp_brightness" tooltip="调整对比度"  padding="15,9,0,0" width="150"  height="5" align="center" min="0" max="100" value="50"  thumbimage="set-up_progress_slider.png"  foreimage="set-up_progress_red_11.png" thumbsize="5,8" bkimage="set-up_progress_bg.png" hor="true"/>
+	    			<Button name="btnplus" padding="9,6,0,0"  width="10" height="10" bkimage="set-up_icon_plus.png" />
+	    			<Label name="bp_brightnessvalue" text="0" padding="10,4,0,0" width="35"  height="15" align="center" textcolor="#FF979797" bkcolor="#FFE6E6FA"/>
+	 				</HorizontalLayout>
+	 				<HorizontalLayout height="20" padding="20,10,0,0">
+	    			<Label padding="20,0,0,0" height="25" width="60" textcolor="#FF000000" text="对比度：" />
+	    			<Button name="btnminus" padding="0,10,0,0"  width="10" height="2" bkimage="set-up_icon_minus.png" />
+	    			<Slider name="bp_brightness" tooltip="调整对比度"  padding="15,9,0,0" width="150"  height="5" align="center" min="0" max="100" value="50"  thumbimage="set-up_progress_slider.png"  foreimage="set-up_progress_red_11.png" thumbsize="5,8" bkimage="set-up_progress_bg.png" hor="true"/>
+	    			<Button name="btnplus" padding="9,6,0,0"  width="10" height="10" bkimage="set-up_icon_plus.png" />
+	    			<Label name="bp_brightnessvalue" text="0" padding="10,4,0,0" width="35"  height="15" align="center" textcolor="#FF979797" bkcolor="#FFE6E6FA"/>
+	 				</HorizontalLayout>
+			</VerticalLayout>
+			</TabLayout>
+		</HorizontalLayout>
+		<HorizontalLayout height="22" maxheight="22">
+           <Button name="btnok"  width="64" height="22" padding="64,0,0,5" text="确定" textcolor="#FFccdbe8" hottextcolor="#FF2bdeff" disabledtextcolor="#FFccdbe8" normalimage="set_seting_bg.png" hotimage="set_select.png" pushedimage="set_seting_bg.png" />
+           <Button name="btncancel" width="64" height="22" padding="20,0,0,5" text="取消" textcolor="#FFccdbe8" hottextcolor="#FF2bdeff" disabledtextcolor="#FFccdbe8" normalimage="set_seting_bg.png" hotimage="set_select.png" pushedimage="set_seting_bg.png" />
+           <Button name="btnrecover" height="22" width="64" padding="20,0,0,5" text="应用" textcolor="#FFccdbe8" hottextcolor="#FF2bdeff" disabledtextcolor="#FFccdbe8" normalimage="set_seting_bg.png" hotimage="set_select.png" pushedimage="set_seting_bg.png" />
+ 	    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

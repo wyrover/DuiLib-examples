@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,40" size="360,220"  roundcorner="5,5" showdirty="false" roundcorner="7,7" >
+  <Font name="宋体" size="14" />
+  <Font name="宋体" size="18" /> 
+  <Font name="宋体" size="13" /> 
+  <Font name="宋休" size="15" />
+  <!--main page-->
+ 	<VerticalLayout name="MainContainer" bkcolor="#FF3D475C" >
+ 		<HorizontalLayout height="32" padding="10,1,0,0">
+ 			<Label text="登录" padding="0,0,0,0" width="50" align="left" textcolor="#FFAFAFAF" font="1" />
+ 			<HorizontalLayout>
+ 			</HorizontalLayout>
+ 			<HorizontalLayout  width="35">
+ 				<Button name="l_close" width="28" height="32" normalimage="file='btn_close_normal.png'" hotimage="file='btn_close_hover.png'" pushedimage="file='btn_close_normal.png'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <VerticalLayout>
+      <HorizontalLayout height="24" padding="35,23,0,0">
+ 		     <Label text="账号" padding="5,0,0,0" width="40" align="left" textcolor="#FFB3C2DD" font="0" />
+         <Edit name="l_username" text="" padding="5,0,0,0" inset="2,1,0,2" tooltip="请在这里输入您的用户名" width="195"  height="24" align="left" borderround="1,1" textcolor="#FF000000" bkcolor="#FFFFFFFF" font="0" />
+         <Button name="l_reguser" text="马上注册" padding="15,0,0,0" width="60" align="left"   textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF"  />
+       </HorizontalLayout>
+      <HorizontalLayout height="24" padding="35,16,0,0">
+ 		    <Label text="密码" padding="5,0,0,0" width="40" align="left"  textcolor="#FFB3C2DD" font="0" />
+        <Edit name="l_pwd" text="" padding="5,0,0,0"  inset="2,1,0,2" width="195"  height="24" align="left"  tooltip="请在这里输入您的密码" borderround="1,1" password="true" textcolor="#FF000000" bkcolor="#FFFFFFFF" font="0" />
+        <Button name="l_forgetpwd" text="找回密码" padding="15,0,0,0" width="60" align="left" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF"  />
+      </HorizontalLayout>
+      <HorizontalLayout height="24" padding="60,10,0,0">
+ 		   <Option name="l_rememberpwd" selected="true" padding="0,0,0,0" width="100"  align="left" textpadding="40,0,0,0" text="记住密码" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" normalimage="file='check_normal.png' source='4,4,24,24' dest='20,1,40,21'" selectedimage="file='check_selected.png' source='4,3,24,23' dest='20,1,40,21'"  />
+       <Option name="l_autologin" selected="true" padding="30,0,0,0" width="100"  align="left" textpadding="40,0,0,0" text="自动登录" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" normalimage="file='check_normal.png' source='4,4,24,24' dest='20,1,40,21'" selectedimage="file='check_selected.png' source='4,3,24,23' dest='20,1,40,21'" />
+      </HorizontalLayout>
+      <HorizontalLayout height="18" padding="80,6,0,0">
+        <Label name="l_errorinfo" text="" padding="0,0,0,0"  align="left" textcolor="#FFFF0000"   font="2" />
+      </HorizontalLayout>
+     </VerticalLayout>
+       <Control height="1" bkcolor="#FF2D3239" />
+     <HorizontalLayout height="34">
+     	<Control>
+      </Control>
+     	<Control width="1" bkcolor="#FF2D3239" />
+         <Button name="l_login" text="登录" width="240" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" font="3" align="center" />      
+      <Control width="1" bkcolor="#FF2D3239" />
+      <Control>
+      </Control>
+     </HorizontalLayout>
+  </VerticalLayout>
+</Window>

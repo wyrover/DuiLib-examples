@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window   size="180, 52"  alpha="230" roundcorner="3,3">
+  <VerticalLayout>
+  	 <Container>
+  	 	<Label  name="picture"  textcolor="#FFFFFFFF" align="center"/>
+  	 	<VerticalLayout>
+  	 		<HorizontalLayout>
+  	 		</HorizontalLayout>
+            <Text name="text"  height="34" inset="4,1,2,1" textcolor="#FFFFFFFF"  bkcolor="#AA232323" textpadding="2,4,0,0" align="top" multiline="true" visible="true" txtrowdis="6" readonly="true" enabled="false"/>     
+        </VerticalLayout>
+     </Container>
+     <Label  name="time"  textcolor="#FFFFFFFF" align="center" height="18" bkcolor="#FF535353"/>
+</VerticalLayout>
+</Window>

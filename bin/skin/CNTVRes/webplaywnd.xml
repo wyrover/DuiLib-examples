@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="260, 240">
+  <VerticalLayout  bkcolor="#FF232323">
+  	<WebBrowser name="webbrowser" delaycreate="false"  visible="true" bkcolor="#FFFFFFFF"/>         
+   </VerticalLayout>
+</Window>

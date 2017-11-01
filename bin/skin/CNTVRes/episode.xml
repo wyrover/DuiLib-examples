@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="688,88"  caption="0,0,0,0">
+    <Font name="宋休" size="12" bold="false" italic="false" default="true" />
+    <Font name="宋休" size="14" />
+    <Default name="HScrollBar" value="height=&quot;0&quot; button1normalimage=&quot;file='scrollbar.bmp' source='0,0,16,16' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,0,34,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,0,52,16' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,0,70,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,18,16,34' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,18,34,34' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,18,52,34' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,18,70,34' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,36,16,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,36,34,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,36,52,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,36,70,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,54,16,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,54,34,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,54,52,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,54,70,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,72,16,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,72,34,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,72,52,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,72,70,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+    <HorizontalLayout   bkcolor="#FF000000">
+        <Button name="btnprev" padding="0,20,0,0"  bkcolor="#FF000000" width="20" height="50" normalimage="file='ep_prev_normal.png' source='15,0,35,50'"  hotimage="file='ep_prev_hover.png' source='15,0,35,50'" pushimage="file='ep_prev_normal.png' source='15,0,35,50'" />
+          <TabLayout name="tablayout" bkcolor="#FF000000" >
+            <HorizontalLayout padding="0,3,0,0" name="content" bkcolor="#FF000000" hscrollbar="true">
+       	    </HorizontalLayout> 
+       	     <VerticalLayout padding="0,5,0,0" bkcolor="#FF000000">
+       	     	  <HorizontalLayout >
+       	          </HorizontalLayout> 
+                  <Button  textcolor="#FFA5A5A5" text="暂无更多剧集"  padding="0,0,0,2" align="center" font="1"/>
+                  <HorizontalLayout >
+       	         </HorizontalLayout> 
+             </VerticalLayout> 
+	         <VerticalLayout padding="0,5,0,0" bkcolor="#FF000000">
+          	 	<HorizontalLayout >
+       	        </HorizontalLayout> 
+               <Button  textcolor="#FFA5A5A5" text="正在获取节目信息......"  padding="0,0,0,2" align="center" font="1"/>
+               <HorizontalLayout >
+       	       </HorizontalLayout> 
+             </VerticalLayout>              
+              <VerticalLayout padding="0,5,0,0" bkcolor="#FF000000">
+       	     	  <HorizontalLayout >
+       	          </HorizontalLayout> 
+                  <Button  textcolor="#FFA5A5A5" text="暂无更多剧集"  padding="0,0,0,2" align="center" font="1"/>
+                  <HorizontalLayout >
+       	         </HorizontalLayout> 
+             </VerticalLayout> 
+       	</TabLayout> 	
+        <Button name="btnnext"  padding="0,20,0,0" bkcolor="#FF000000" width="20" height="50"  normalimage="file='ep_next_normal.png' source='15,0,35,50'"  hotimage="file='ep_next_hover.png' source='15,0,35,50'"  pushimage="file='ep_next_normal.png' source='15,0,35,50'" />
+    </HorizontalLayout>
+</Window>

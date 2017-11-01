@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="30,120" roundcorner="3,3"  bktrans="false">
+    <Font name="宋休" size="12" bold="false" italic="false" default="true" />
+    <VerticalLayout  name="v_root" bkcolor="#FF272727" >
+        <Slider name="v_volume"  visible="true" padding="3,5,5,0" height="110" width="24"  thumbsize="0,0" foreimage="v_volumefr.gif" bkimage="v_volumebk.gif" min="0" max="100"  value="100"  hor="false" isstretchfore="false"/>    
+    </VerticalLayout>
+</Window>

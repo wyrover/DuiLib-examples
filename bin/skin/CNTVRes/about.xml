@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="299,185" roundcorner="5,5"  caption="0,0,0,40" roundcorner="5,5">
+    <Font name="宋休" size="12" bold="false" italic="false" default="true" />
+    <Font name="宋休" size="13" bold="false" italic="false" />
+    <Font name="宋休" size="14" bold="true" italic="false" /> 
+    <VerticalLayout  bkcolor="#FF3D475C">
+        <HorizontalLayout height="26">
+        	<Label text="关于" padding="10,2,0,0" width="30" align="left" textcolor="#FFB4C1DD"  font="2" />
+          <Button name="btnclose"  tooltip="关闭"   float="true" pos="272,4,0,0" width="24" height="24" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png"/>
+        </HorizontalLayout>
+        <VerticalLayout padding="0,18,0,0">
+          <Label name="lbltitle" text="CBox 央视影音 客户端"  height="20" textcolor="#FFB4C1DD"  align="center"  font="1"/>
+          <Label name="lblversion" padding="0,5,0,0" text="中国网络电视台 CNTV 版权所有"   height="20" textcolor="#FFB4C1DD" align="center"  font="1"/>
+     </VerticalLayout>
+     <VerticalLayout padding="0,10,0,0">
+          <Label name="lbltitle" text="了解更多 请访问"  height="20" textcolor="#FFB4C1DD"  align="center"  font="1"/>
+           <HorizontalLayout height="26" >
+             <Button name="cctv" padding="65,0,0,0" text="www.cctv.com" width="90"  textcolor="#FF2CDDFF" align="center"  font="1"/>
+             <Button name="cntv" padding="5,0,0,0" text="www.cntv.cn"  width="90"  textcolor="#FF2CDDFF" align="center"  font="1"/>
+           </HorizontalLayout>
+     </VerticalLayout>
+    </VerticalLayout>
+</Window>

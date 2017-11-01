@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Font name="微软雅黑" size="12" bold="false" default="true" />
+  <Font name="微软雅黑" size="12" bold="true"/>
+   <Default name="Menu" value="itemtextpadding=&quot;10,0,0,0&quot; itemselectedimage=&quot;file='uiitem.png' source='0,59,126,89'&quot; itemselectedtextcolor=&quot;0xFFFFFFFF&quot; itemtextcolor=&quot;0xFFFFFFFF&quot;" />
+  <Menu  bkcolor="0xFF1F1F1F">
+    <MenuElement name="lm_favorites" text="我的收藏"/>
+    <MenuElement name="lm_livesub" text="直播提醒"/>
+    <MenuElement name="lm_history" text="播放记录" />
+    <MenuElement name="lm_donload" text="离线下载" />
+    <MenuElement name="lm_logout" text="退出登录" />
+  </Menu>
+</Window>

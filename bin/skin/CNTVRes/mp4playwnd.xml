@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="260, 240">
+  <VerticalLayout  bkcolor="#FF232323">
+  	 <ActiveX  name="mp4player"  clsid="{17C7B943-2717-4BD9-83ED-CDA333B7ADB6}" modulename="MP4Player.dll" delaycreate="false" visible="true"  bkcolor="#FFFF0000"/>
+   </VerticalLayout>
+</Window>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="260, 240" roundcorner="2,2">
+  <VerticalLayout  bkcolor="#FF232323" >
+          <TabLayout name="fa_playerswitch" bkcolor="#FFFFFFFF">
+               <ActiveX  name="fa_swfplayer"  clsid="{D27CDB6E-AE6D-11CF-96B8-444553540000}" delaycreate="false" visible="false"  bkcolor="#FFFFFFFF" />           
+               <WebBrowser name="fa_webbrowser" delaycreate="false"  visible="false" bkcolor="#FFFFFFFF"/>         
+          </TabLayout>     
+   </VerticalLayout>
+</Window>

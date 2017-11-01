@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="184,43" roundcorner="5,5"  caption="0,0,0,0">
+    <VerticalLayout  bkcolor="#FFFFFFFF">
+        <Button name="openfile"  tooltip="打开本地文件"  width="184" height="43" normalimage="openfilenormal.png" hotimage="openfilehot.png" pushedimage="openfilenormal"/>
+    </VerticalLayout>
+</Window>

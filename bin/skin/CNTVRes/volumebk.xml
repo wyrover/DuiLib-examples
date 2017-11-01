@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="30,125" roundcorner="3,3"  bktrans="true">
+    <VerticalLayout  name="v_root" bkimage="v_bk.png" >
+    </VerticalLayout>
+</Window>

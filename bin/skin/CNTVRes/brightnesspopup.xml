@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window  roundcorner="3,3" size="98, 150" alpha="200">
+  <HorizontalLayout bkcolor="#FF101010">
+  	<VerticalLayout>
+  		<Label  text="亮度" padding="0,4,0,0" width="50" height="20"  align="center" textcolor="#FF979797" />
+  		<Slider  name="bp_brightness" tooltip="调整亮度"  padding="22,4,0,0" width="5"  height="100" align="center" min="0" max="100" value="50"  thumbimage="bp_slderbtn.png"  foreimage="bp_slderfront .png" fgimage2="bp_slderfront .png" thumbsize="5,8" bkimage="bp_slderbk.png" hor="false"/>
+        <Label   name="bp_brightnessvalue" text="50"  padding="0,2,0,0" width="50"  height="20" align="center" textcolor="#FF979797"/>
+  	</VerticalLayout>
+  	<VerticalLayout>
+  		<Label  text="对比度" padding="0,4,0,0" width="50" height="20"  align="center"  textcolor="#FF979797" />
+  		<Slider  name="bp_contrast" tooltip="调整对比度"  padding="22,4,0,0" width="5"  height="100" align="center" min="0" max="100" value="50" thumbimage="bp_slderbtn.png"  foreimage="bp_slderfront .png" fgimage2="bp_slderfront .png" thumbsize="5,8" bkimage="bp_slderbk.png" hor="false"/>
+        <Label  name="bp_contrastvalue" text="50"  padding="0,2,0,0" width="50"  height="20" align="center" textcolor="#FF979797"/>
+  	</VerticalLayout>
+</HorizontalLayout>
+</Window>

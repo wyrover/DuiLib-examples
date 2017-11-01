@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="260, 240">
+  <VerticalLayout  bkcolor="#FF232323">
+  	 <ActiveX  name="swfplayer"  clsid="{D27CDB6E-AE6D-11CF-96B8-444553540000}" delaycreate="false" visible="true"  bkcolor="#FFFFFFFF" />           
+   </VerticalLayout>
+</Window>

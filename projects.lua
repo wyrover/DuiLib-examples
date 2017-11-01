@@ -262,8 +262,8 @@ workspace(path.getname(os.realpath(".")))
         create_duilib_project("transwnd2", "src")
         create_duilib_project("360SafeDemo", "src")
         create_duilib_project("WeChatDemo", "src")
-        
-        
-        
-
+        create_duilib_project("CNTVDemo", "src")
+        create_duilib_project("TestApp1", "src")
+        create_duilib_project("ListDemo", "src")
+        create_duilib_project("FlashDemo", "src")
         

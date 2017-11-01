@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,30"  caption="0,0,0,0">
+    <Font name="宋休" size="12" bold="false" italic="false" default="true" />
+    <Font name="宋休" size="14" />
+   <Default name="Date" value="font=&quot;7&quot; padding=&quot;0,1,0,1&quot; textcolor=&quot;#FFB0B0B0&quot; selectedtextcolor=&quot;#FF19C2FF&quot; hottextcolor=&quot;#FFE0E0E0&quot; selectedimage=&quot;egp_date_selected.png&quot; hotimage=&quot;egp_date_selected.png&quot;" />     
+    <HorizontalLayout   bkcolor="#FF000000" bkimage="epg_timeline_date_bk.png">
+        <HorizontalLayout name="datecontainer" > 
+         </HorizontalLayout>
+		 <Button name="foldepg" tooltip="隐藏直播节目单" width="50" height="30" normalimage="epg_timeline_fold_normal.png" hotimage="epg_timeline_fold_hover.png"  pushedimage="epg_timeline_fold_normal.png"/>
+    </HorizontalLayout> 
+</Window>

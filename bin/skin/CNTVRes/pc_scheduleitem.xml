@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ScheduleItem height="24" >
+     <HorizontalLayout name="root" mousechild="true">
+     	<HorizontalLayout>
+     		<HorizontalLayout>
+             <Button name="title" text="节目名称"  padding="8, 1, 0, 0"  textcolor="#FFA5A5A5" disabledtextcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF"  font="0" endellipsis="true" align="left"/>
+          </HorizontalLayout>
+          <HorizontalLayout  width="65">
+            <Label name="playtime" text="11/9 12:00" padding="0, 1, 0, 0" textcolor="#FFFF7E24" disabledtextcolor="#FFA7A6AA" font="0" visible="true"/>
+          </HorizontalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout  width="20">
+            <!--Button name="play"  tooltip="播放" padding="5, 9, 0, 0" height="11" width="10" normalimage="plt_playing.png" hotimage="plt_playing.png" pushimage="plt_playing.png" /-->
+        	<Button name="delete"  padding="5, 8, 0, 0" tooltip="删除"  height="8" width="9" normalimage="pc_delete_normal.png" hotimage="pc_delete_hover.png" pushimage="pc_delete_normal.png" /> 
+         </HorizontalLayout>
+     </HorizontalLayout>
+  </ScheduleItem>
+</Window>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="50,120" roundcorner="3,3"  caption="0,0,0,0" alpha="200">
+    <Font name="宋体" size="14" bold="false" italic="false" default="true" />
+    <VerticalLayout  name="v_root"  bkcolor="#FF101010" >
+        <Option name="sr_original" text="默认" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF" pushedtextcolor="#FFA0A0A0" padding="3,4,0,0" height="25" width="46" borderround="3,3" selectedtextcolor="#FF2BDEFF" group="screenratio"  selected="true"/>
+		<Option name="sr_standard" text="4:3" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF" pushedtextcolor="#FFA0A0A0" padding="3,4,0,0"  height="25" width="46" borderround="3,3" selectedtextcolor="#FF2BDEFF" group="screenratio"/>
+		<Option name="sr_wide" text="16:9" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF" pushedtextcolor="#FFA0A0A0" padding="3,4,0,0"  height="25" width="46" borderround="3,3" selectedtextcolor="#FF2BDEFF" group="screenratio"/>
+		<Option name="sr_tile" text="满屏" bkcolor="#FF101010" bkcolor2="#FF202020" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF" pushedtextcolor="#FFA0A0A0" padding="3,4,0,0"  height="25" width="46" borderround="3,3" selectedtextcolor="#FF2BDEFF" group="screenratio" />	
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="280, 380"   caption="0,0,0,0">
+	<Font name="宋体" size="12"/>
+	<Font name="宋体" size="13"/>
+	<Font name="宋体" size="13" underline="true"/>
+    <Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />	
+    <VerticalLayout bkcolor="#FF232323" bordercolor="#FF222222" bordersize="2">
+        <HorizontalLayout name="header" height="25" bkimage="pc_headerbk.png">
+        	 <Button name="username" text="未登录"  textpadding="8,0,0,0" textcolor="#FF303030"   align="left" endellipsis="true"/>
+             <HorizontalLayout  width="25">
+        	   <Button name="close" width="20" height="20" padding="2, 2, 0, 0"  visible="true" normalimage="file='pc_close_normal.png' source='10,10,30,30'" hotimage="file='pc_close_hover.png' source='10,10,30,30'" pushedimage="file='pc_close_normal.png' source='10,10,30,30'"/>
+             </HorizontalLayout>
+       	</HorizontalLayout>
+    	<HorizontalLayout name="category" height="30" bkcolor="#FF2A2A2A">
+    		<Option name="historybtn" text="播放记录" userdata="播放记录"  textpadding="2,0,0,0" textcolor="#FFA5A5A5" selectedtextcolor="#FF2BDEFF" hottextcolor="#FFF5F5F5"   align="center" endellipsis="true" bkcolor="#88000000" selectedimage="pc_category_selected.png" selected="true" group="category"/>
+        	<Option name="favoritesbtn"  text="收藏" userdata="收藏" textpadding="2,0,0,0" textcolor="#FFA5A5A5" selectedtextcolor="#FF2BDEFF" hottextcolor="#FFF5F5F5"  align="center" endellipsis="true" bkcolor="#88000000"  selectedimage="pc_category_selected.png" group="category"/>
+        	<Option name="schedulebtn"  text="预定" userdata="预定" textpadding="2,0,0,0" textcolor="#FFA5A5A5" selectedtextcolor="#FF2BDEFF" hottextcolor="#FFF5F5F5" align="center" endellipsis="true" bkcolor="#88000000"  selectedimage="pc_category_selected.png" group="category"/>
+    	</HorizontalLayout>
+    	<TabLayout name="content_tabs" bkcolor="#FF12171B">
+    		<VerticalLayout>
+    			<List name="history" vscrollbar="true" header="false" itemselectedimage="pc_itemSelected.png" itemhotimage="pc_itemhot.png"/>
+    		   <HorizontalLayout name="historybottom" height="30" bkcolor="#FF1A212B">
+    		   		<HorizontalLayout>
+    		   		</HorizontalLayout>
+    		   	<HorizontalLayout width="60">    		   	   
+    		   	   <Button name="clearhistory" align="left" normalimage="pl_btn_clear_normal.png" hotimage="pl_btn_clear_hover.png" pushedimage="pl_btn_clear_hover.png" />
+    		   	 </HorizontalLayout>
+    	        </HorizontalLayout>
+    		</VerticalLayout>	
+    		<VerticalLayout>
+    			<List name="favorites" vscrollbar="true" header="false" itemselectedimage="pc_itemSelected.png" itemhotimage="pc_itemhot.png"/>
+    		    <HorizontalLayout name="favoritesbottom" height="30" bkcolor="#FF1A212B">  
+    		    	<HorizontalLayout>
+    		   		</HorizontalLayout> 	
+    		    	<HorizontalLayout width="60">    		   	   
+					<Button name="clearfavorites" align="left" normalimage="pl_btn_clear_normal.png" hotimage="pl_btn_clear_hover.png" pushedimage="pl_btn_clear_hover.png"/>
+    		   	 </HorizontalLayout>
+    	        </HorizontalLayout>
+    		</VerticalLayout>	
+    		<VerticalLayout>
+    			<List name="schedule" vscrollbar="true" header="false" itemselectedimage="pc_itemSelected.png" itemhotimage="pc_itemhot.png"/>
+    		     <HorizontalLayout name="schedulebottom" height="30" bkcolor="#FF1A212B">
+    		   		<HorizontalLayout>
+    		   		</HorizontalLayout>    		     	
+    		     <HorizontalLayout width="60">    		   	   
+    		   	   <Button name="clearschedule" align="left" normalimage="pl_btn_clear_normal.png" hotimage="pl_btn_clear_hover.png" pushedimage="pl_btn_clear_hover.png"/>
+    		   	 </HorizontalLayout>
+    		    </HorizontalLayout>
+    		</VerticalLayout>	
+    	</TabLayout> 
+    </VerticalLayout>
+</Window>

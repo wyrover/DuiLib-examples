@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="984, 644" mininfo="984, 644" showdirty="false" sizebox="4,4,6,6" caption="0,0,0,50" roundcorner="3,3">
+  <Font name="微软雅黑" size="10" />
+  <Font name="微软雅黑" size="12" />
+  <Font name="微软雅黑" size="13" />
+  <Font name="微软雅黑" size="14" />
+  <Font name="微软雅黑" size="15"  bold="true"/>
+  <Font name="微软雅黑" size="16" />
+  <Font name="宋体" size="13" bold="true" />
+  <Font name="宋体" size="12" bold="true" />
+  <Font name="宋体" size="12" />
+  <Font name="宋体" size="11" />
+  <Font name="宋体" size="14" /> 
+  <Font name="宋体" size="15" />
+  <Font name="宋体" size="15" bold="true"/>
+  <VerticalLayout name="MainFrame" bkcolor="#FF000000" bordercolor="#FF222222" bordersize="1">
+    <HorizontalLayout name="mf_titlebar" height="47" bkimage="mf_titlebar_bk.png">
+      <HorizontalLayout width="2">
+         <Button  width="2"  bkimage="mf_topbarleft.png" mouse="false"/>
+      </HorizontalLayout>
+      <HorizontalLayout padding="0,0,0,0">
+      <HorizontalLayout width="200">
+        <Button name="mf_logo" width="170" height="30" mouse="false" padding="6,8,0,0"  normalimage="mf_logo.png" />
+      </HorizontalLayout>
+      <HorizontalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout  width="500" >
+      	 <HorizontalLayout  width="382" padding="0,1,0,0" >
+      	  <Edit name="mf_searchword" textpadding="36,0,60,0"  font="11" height="47" width="382"  align="left" bkimage="mf_search_bk.png" textcolor="#FFB3C2D9" nativebkcolor="#FF414D63"  text="请输入关键词" />
+          <Button name="mf_search"  padding="-60,10,0,0"  width="30" height="30"  normalimage="mf_search_normal.png" hotimage="mf_search_hover.png" pushedimage="mf_search_normal.png"/>		  
+         </HorizontalLayout>
+		 <HorizontalLayout  width="115" >
+          	  <Button name="mf_history" text="播放记录" textpadding="35,3,0,0" width="115" height="46" normalimage="file='mf_history.png' source='0,0,115,46'" hotimage="file='mf_history.png' source='115,0,230,46'" pushedimage="file='mf_history.png' source='230,0,345,46'"  textcolor="#FFB3C2D8" hottextcolor="#FFDADEE6" pushedtextcolor="#FF20304C" font="11"/>
+         </HorizontalLayout>	   
+      </HorizontalLayout>
+      <HorizontalLayout>
+      </HorizontalLayout>
+
+      <HorizontalLayout width="130" padding="0,10,0,0">		
+        <Button name="mf_menu"  padding="10,0,0,0" width="23" height="23" normalimage="mf_menu_normal.png" hotimage="mf_menu_hover.png" pushedimage="mf_menu_push.png" tooltip="菜单" />
+        <Button name="mf_mini"  padding="10,0,0,0" width="23" height="23" normalimage="mf_mini_normal.png" hotimage="mf_mini_hover.png" pushedimage="mf_mini_push.png" tooltip="最小化"/>
+        <Button name="mf_max"  padding="5,0,0,0" width="23" height="23" normalimage="mf_max_normal.png" hotimage="mf_max_hover.png" pushedimage="mf_max_push.png" tooltip="最大化"/>
+        <Button name="mf_restore"  padding="5,0,0,0" visible="false" width="23" height="23" normalimage="mf_restore_normal.png" hotimage="mf_restore_hover.png" pushedimage="mf_restore_hover.png" tooltip="还原" />
+        <Button name="mf_close"  padding="5,0,0,0" width="23" height="23" normalimage="mf_close_normal.png" hotimage="mf_close_hover.png" pushedimage="mf_close_push.png" tooltip="关闭" />
+      </HorizontalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout width="2">
+         <Button  width="2"  bkimage="mf_topbarright.png" mouse="false"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    
+    <VerticalLayout >
+      <Container name="mf_switch">
+          <HorizontalLayout> 
+            <HorizontalLayout width="1">
+             <Button  width="1"  bkimage="left_boader.png" mouse="false" />
+            </HorizontalLayout>
+           <HorizontalLayout width="1">
+             <Button  width="1"  bkimage="right_boader.png" mouse="false"/>
+           </HorizontalLayout>
+         </HorizontalLayout> 
+      </Container>
+      <HorizontalLayout height="1">
+           <Button  height="1" bkimage="bottom_boader.png" mouse="false"/>
+       </HorizontalLayout>
+    </VerticalLayout>
+    
+     <HorizontalLayout height="55" bkimage="mf_bottom_bk.png">
+         <HorizontalLayout width="2">
+           <Button  width="2"  bkimage="mf_topbarleft.png" mouse="false"/>
+          </HorizontalLayout>
+           <HorizontalLayout width="210">
+           </HorizontalLayout>
+           <HorizontalLayout>
+           </HorizontalLayout>
+          <HorizontalLayout  width="400" >
+            <Option name="mf_showhomepage" padding="0,0,0,0" width="200" height="54"   selectedimage="file='mf_options.png' source='0,54,200,108'"  hotimage="file='mf_options.png' source='400,0,600,54'" pushedimage="file='mf_options.png' source='400,54,600,108'" normalimage="file='mf_options.png' source='0,0,200,54'" tooltip=""  group="main"/>
+            <Option name="mf_showplaypage" padding="0,0,0,0" width="200"  height="54"   selectedimage="file='mf_options.png' source='200,0,400,54'"  hotimage="file='mf_options.png' source='600,54,800,108'" pushedimage="file='mf_options.png' source='600,0,800,54'" normalimage="file='mf_options.png' source='200,54,400,108'" tooltip="" 	 group="main"/>
+           </HorizontalLayout>
+           <HorizontalLayout>
+          </HorizontalLayout>
+     	 <HorizontalLayout width="210">
+      	    <Button name="mf_personal" textpadding="45,0,10,0" width="115" height="54"  text="用户中心" textcolor="#FFA5A5A5" hottextcolor="#FFDADEE6" font="10" align="center" endellipsis="true" normalimage="file='mf_personal.png' source='0,0,115,54'" hotimage="file='mf_personal.png' source='115,0,230,54'" pushedimage="file='mf_personal.png' source='230,0,345,54'"/>
+            <Button name="mf_login"  textpadding="30,0,0,0" width="86" height="54"   text="登录" textcolor="#FFA5A5A5" hottextcolor="#FFDADEE6" font="10"  align="center" normalimage="file='mf_login.png' source='0,0,85,54'" hotimage="file='mf_login.png' source='85,0,171,54'" pushedimage="file='mf_login.png' source='172,0,256,54'" />
+          </HorizontalLayout>
+         <HorizontalLayout width="2">
+         <Button  width="2"  bkimage="mf_topbarright.png" mouse="false"/>
+      </HorizontalLayout>
+      </HorizontalLayout>
+  </VerticalLayout>
+</Window>

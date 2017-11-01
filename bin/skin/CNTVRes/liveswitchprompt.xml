@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window  roundcorner="3,3" size="590, 22"  alpha="200">
+	<Font name="宋体" size="12"/>
+   <Font name="宋体" size="13" underline="true"/>
+   <HorizontalLayout  height="25" bkcolor="#FF000000">
+   	   <HorizontalLayout   name="lsp_normal" visible="true">
+        <Label   text="你现在使用的是高速版直播，目前仍在测试阶段，如遇问题欢迎大家" width="360" padding="8,0,0,0"   textcolor="#FFB7B7B7" font="0" />
+        <Button name="lsp_feedback"  text="反馈" padding="0,0,0,0"  width="28" textcolor="#FFB7B7B7" hottextcolor="#FFF0F0F0"  pushedtextcolor="#FFA0A0A0" font="1"/>
+        <!--Label   text="，或者切换到" width="74" padding="0,0,0,0"  textcolor="#FFB7B7B7" font="0" />
+        <Button name="lsp_standard" text="标准版" width="36" padding="0,0,0,0"  textcolor="#FFB7B7B7" hottextcolor="#FFF0F0F0"  pushedtextcolor="#FFA0A0A0" font="1" />
+        <Label   text="。" width="6" padding="0,0,0,0"  textcolor="#FFB7B7B7" font="0" /-->
+        <Button name="lsp_noprompt" text="不再提示" width="50" padding="6,0,0,0"  textcolor="#FFA0A0A0" hottextcolor="#FFF0F0F0"  pushedtextcolor="#FFA0A0A0" font="0" />
+       </HorizontalLayout>
+       <Label  name="lsp_switchstandard" text="正在切换到标准模式，请稍候...."  padding="8,0,0,0"  textcolor="#FFB7B7B7" font="0" visible="false"/>
+       <Label  name="lsp_switchhighspeed" text="正在切换到高速模式，请稍候...."  padding="8,0,0,0"  textcolor="#FFB7B7B7" font="0" visible="false"/>
+       <Label  name="lsp_occupy" text="您开启了多个播放窗口，请关闭其余播放窗口后再重新播放"  padding="8,0,0,0"  textcolor="#FFB7B7B7" font="0" visible="false"/>
+   </HorizontalLayout>
+ 
+</Window>

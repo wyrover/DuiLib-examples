@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window  roundcorner="3,3" size="319, 17"  alpha="100">
+  <VerticalLayout bkcolor="#FF090B0F">
+		<Label name="pt_title" padding="0,0,0,0" textcolor="#00B3C2DB"/>
+</VerticalLayout>
+</Window>

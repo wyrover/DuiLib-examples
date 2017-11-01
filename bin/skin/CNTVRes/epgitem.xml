@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window bkimage="epgwnd_bk.png">
+  <EPGItem height="36" bkimage="epgwnd_bk.png">
+	<VerticalLayout bkimage="epgwnd_bk.png">
+		<HorizontalLayout height="32" name="epg_item" mousechild="true">
+			<HorizontalLayout>
+				<HorizontalLayout width="20">
+					<Option name="epg_noplay1" width="20" height="32" visible="true" group="epg_play"/>
+					<Button name="epg_play1" width="20" height="32" bkimage="epg_play.png" visible="false"/>
+				</HorizontalLayout>
+				<Button name="epg_playtime1" width="45" height="32" textcolor="#FFCCCCCC" hottextcolor="#FF2BDEFF"  visible="true" align="left"  font="8"/>
+				<Button name="epg_program1" height="32" text="播放列表"  textcolor="#FFCCCCCC" hottextcolor="#FF2BDEFF" endellipsis="true" align="left"  font="8"/>        
+				<HorizontalLayout  width="60" padding="0, 0, 0, 0">
+					<Option name="epg_operation1" align="right" width="60" height="32" text="回看" visible="true" textcolor="#FFCCCCCC" hottextcolor="#FF2BDEFF" font="8" group="epg"/>
+					<Button name="epg_schedule1" align="right" width="60" height="32" text="预约" visible="false" textcolor="#FFCCCCCC" hottextcolor="#FF2BDEFF" font="8" />
+				</HorizontalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout width="45"></HorizontalLayout>			    
+			<HorizontalLayout>
+				<HorizontalLayout width="20">
+					<Option name="epg_noplay2" width="20" height="32" visible="true" group="epg_play"/>
+					<Button name="epg_play2" width="20" height="32" bkimage="epg_play.png" visible="false"/>
+				</HorizontalLayout>				
+				<Button name="epg_playtime2" width="45" height="32" textcolor="#FFCCCCCC" hottextcolor="#FF2BDEFF"  visible="true" align="left"  font="8"/>
+				<Button name="epg_program2" height="32" text="播放列表" textcolor="#FFCCCCCC" hottextcolor="#FF2BDEFF" endellipsis="true" align="left"  font="8"/>
+				<HorizontalLayout  width="60" padding="0, 0, 40, 0">
+					<Option name="epg_operation2" align="right" width="60" height="32" text="回看" visible="true" textcolor="#FFCCCCCC" hottextcolor="#FF2BDEFF" font="8" group="epg"/>
+					<Button name="epg_schedule2" align="right" width="60" height="32" text="预约" visible="false" textcolor="#FFCCCCCC" hottextcolor="#FF2BDEFF" font="8" />
+				</HorizontalLayout>           
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout height="1"> 
+			<Button height="1" visible="true" padding="20, 0, 0, 0" minwidth="1" bkcolor="#FF262626"/>
+			<HorizontalLayout width="45"></HorizontalLayout>
+			<Button height="1" visible="true" padding="20, 0, 0, 0" minwidth="1" bkcolor="#FF262626"/>
+		</HorizontalLayout> 
+	</VerticalLayout>	
+  </EPGItem>
+</Window>

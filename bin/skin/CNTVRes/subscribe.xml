@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="246,163">
+    <Font name="宋休" size="12" bold="false" italic="false" default="true" />
+    <Font name="宋休" size="14" bold="false" italic="false" />
+    <Font name="宋休" size="13" bold="false" italic="false" />
+    <VerticalLayout width="246" height="163" bkimage="subscribebg.png" bkcolor="#FFFFFFFF">
+        <HorizontalLayout>
+            <Button name="btnclose" tooltip="关闭" float="true" pos="217,3,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png" />
+        </HorizontalLayout>
+        <Label name="lblTip" text="提示:节目请以实际时间为准" float="true" pos="11,34,0,0" width="236" height="14" focusbordercolor="#00474646" textcolor="#FF979696" disabledtextcolor="#00A7A6AA" />
+        <Label name="lblchannel" text="电影频道 即将播出" float="true" pos="11,59,0,0" width="225" height="17" textcolor="#00D0D0D0" disabledtextcolor="#00A7A6AA" font="1" />
+        <Label name="lblname" text="电影频道 (天下无双)" float="true" pos="15,88,0,0" width="219" height="16" textcolor="#00D0D0D0" disabledtextcolor="#00A7A6AA" font="1" align="center" />
+        <Label name="lbltimetitle" text="播出时间:" float="true" pos="11,114,0,0" width="215" height="20" textcolor="#00767676" disabledtextcolor="#00A7A6AA" font="2" />
+        <Label name="lbltime" text="20:45 - 22:45" float="true" pos="74,114,0,0" width="215" height="20" textcolor="#00FE9439" disabledtextcolor="#00A7A6AA" />
+        <Button name="btnpre" float="true" pos="15,140,0,0" width="11" height="16" textcolor="#FF000000" disabledtextcolor="#00A7A6AA" align="center" normalimage="file=&apos;left.png&apos; source=&apos;0,0,10,15&apos;" hotimage="file=&apos;left.png&apos; source=&apos;11,0,22,15&apos;" pushedimage="file=&apos;left.png&apos; source=&apos;22,0,33,15&apos;" disabledimage="file=&apos;left.png&apos; source=&apos;33,0,43,15&apos;" />
+        <Label name="lblcount" text="12/24" float="true" pos="45,140,0,0" width="35" height="16" textcolor="#FFA0A0A0" disabledtextcolor="#00A7A6AA" align="center" />
+        <Button name="btnnext" float="true" pos="29,140,0,0" width="11" height="16" textcolor="#FF000000" disabledtextcolor="#00A7A6AA" align="center" normalimage="file=&apos;right.png&apos; source=&apos;0,0,10,15&apos;" hotimage="file=&apos;right.png&apos; source=&apos;11,0,22,15&apos;" pushedimage="file=&apos;right.png&apos; source=&apos;22,0,33,15&apos;" disabledimage="file=&apos;right.png&apos; source=&apos;33,0,43,15&apos;" />
+        <Button name="btnplay" text="开始观看" float="true" pos="129,140,0,0" width="51" height="18" textcolor="#FFA0A0A0" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button.png" hotimage="button.png" pushedimage="button.png" hottextcolor="#FFE5E5E5" />
+        <Button name="btncancel" text="取消" float="true" pos="187,140,0,0" width="49" height="18" textcolor="#FFA0A0A0" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button.png" hotimage="button.png" pushedimage="button.png" hottextcolor="#FFE5E5E5" />
+    </VerticalLayout>
+</Window>

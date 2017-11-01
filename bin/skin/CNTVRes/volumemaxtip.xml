@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="120,30" bktrans="false" >
+  <VerticalLayout  bkcolor="#FF000000">
+  	 <Label text="按键盘↑继续提高音量" textcolor="#FF676767" />
+     <Label text="               100%" textcolor="#FF676767" />
+  </VerticalLayout>
+</Window>

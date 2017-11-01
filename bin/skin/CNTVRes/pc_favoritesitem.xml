@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <FavoritesItem height="24" >
+     <HorizontalLayout name="root" mousechild="true">
+     	<HorizontalLayout>
+     		<HorizontalLayout>
+             <Button name="title" text="节目名称"  padding="8, 1, 0, 0"  textcolor="#FFA5A5A5" disabledtextcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF"  font="0" endellipsis="true" align="left"/>
+          </HorizontalLayout>
+          <HorizontalLayout  width="40">
+            <Label name="playtime" text="00:00" padding="0, 1, 0, 0" width="45"  textcolor="#FFFF7E24" disabledtextcolor="#FFA7A6AA" font="6" visible="false"/>
+          </HorizontalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout  width="37">
+             <Button name="play"  padding="0, 5, 0, 0" tooltip="播放" height="20" width="20" normalimage="pc_play_normal.png" hotimage="pc_play_hover.png" pushimage="pc_play_normal.png" />
+        	 <Button name="delete"  padding="2, 8, 0, 0" tooltip="删除"  height="8" width="9" normalimage="pc_delete_normal.png" hotimage="pc_delete_hover.png" pushimage="pc_delete_normal.png" />  
+         </HorizontalLayout>
+     </HorizontalLayout>
+  </FavoritesItem>
+</Window>

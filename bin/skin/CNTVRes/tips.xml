@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="100,80" bktrans="true">
+    <VerticalLayout>
+    	<TipsAnchor name="topanchor" height="6" linecolor="#FFFFFFFF" fillcolor="#FFFFFFFF" dir="1">
+      </TipsAnchor>  
+    	 <HorizontalLayout>
+    	 	 <TipsAnchor name="leftanchor" width="6" linecolor="#FFFFFFFF" fillcolor="#FFFFFFFF" dir="0" >
+      	 </TipsAnchor>    
+         <HorizontalLayout  borderround="5,5" bkcolor="#FFFFFFFF" bkimage="pt_bk.png">
+         	 <Text name="content" padding="8,6,8,6" textcolor="#FFFFFFFF" multiline="true" readonly="true" >
+         	 	</Text>
+      	 </HorizontalLayout>    
+      	 <TipsAnchor name="rightanchor"  width="6" linecolor="#FFFFFFFF" fillcolor="#FFFFFFFF" dir="2" >
+      	 </TipsAnchor>   
+      </HorizontalLayout>   
+        <TipsAnchor name="bottomanchor" height="6" linecolor="#FFFFFFFF" fillcolor="#FFFFFFFF" dir="3" >
+      </TipsAnchor>    
+    </VerticalLayout>
+</Window>

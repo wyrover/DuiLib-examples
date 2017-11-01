@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="360,212" roundcorner="2,2" caption="0,0,0, 0">
+  <Font name="宋休" size="14" bold="true" />
+  <Font name="宋休" size="12" bold="false" default="true"/>
+  <VerticalLayout  bkcolor="#FFFFFFFF">
+  	  <HorizontalLayout name="header" height="32" bkimage="lw_header.png">
+        <Label name="title" text="详情介绍"  textpadding="8,0,0,0" textcolor="#FF19C2FF"   align="left" endellipsis="true" font="0"/>
+        <HorizontalLayout  width="32">
+        	<Button name="close" width="28" height="32" padding="2,0,0,0"  visible="true" normalimage="btn_close_normal.png" hotimage="btn_close_hover.png" pushedimage="btn_close_normal.png"/>
+        </HorizontalLayout>
+       	</HorizontalLayout>
+      <TabLayout name="tabs" bkcolor="#FF000000" selectedid="1">
+      <WebBrowser name="webbrowser"  delaycreate="false" />
+      <Container>     
+          <Flash name="loadingflash"  mouse="false"  width="230" height="100" visible="true" file="loadingold.swf" delaycreate="true"/>
+       </Container>  
+    </TabLayout>
+  </VerticalLayout>
+</Window>

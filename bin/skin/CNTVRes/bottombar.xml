@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="780, 36" alpha="220">
+	  <Font name="宋体" size="11" />
+	  <Font name="宋体" size="12" /> 
+	  <Font name="宋体" size="13" />
+	  <Font name="宋体" size="14" />
+  <VerticalLayout>
+  	
+	<HorizontalLayout  height="36"  bkimage="bc_bk.png">
+		<HorizontalLayout width="155" padding="0,3,0,0">
+		 <Button name="pc_previous" tooltip="上一个" enabled="false" visible="true" padding="8,0,0,0" height="30" width="30" normalimage="bc_prev_normal.png" hotimage="bc_prev_hover.png"  pushedimage="bc_prev_push.png" disabledimage="bc_prev_disable.png"/>	
+		 <Button name="pc_pause" tooltip="暂停" enabled="false" visible="false" padding="12,0,0,0"  height="30" width="30" normalimage="bc_pause_normal.png" hotimage="bc_pause_hover.png" pushedimage="bc_pause_push.png" disabledimage="bc_pause_disable.png"/>
+		 <Button name="pc_play" tooltip="播放" enabled="false" visible="true" padding="12,0,0,0" height="30" width="30" normalimage="bc_play_normal.png" hotimage="bc_play_hover.png" pushedimage="bc_play_push.png" disabledimage="bc_play_disable.png"/>	
+		  <Button name="pc_stop" tooltip="停止" enabled="false" visible="true" padding="12,0,0,0" height="30" width="30" normalimage="pc_stop_normal.png" hotimage="pc_stop_hover.png" pushedimage="pc_stop_push.png"  disabledimage="pc_stop_disable.png"/>
+		 <Button name="pc_next" tooltip="下一个" enabled="false" visible="true" padding="10,0,0,0" height="30" width="30" normalimage="bc_next_normal.png" hotimage="bc_next_hover.png" pushedimage="bc_next_push.png" disabledimage="bc_next_disable.png"/>
+		</HorizontalLayout>
+		<HorizontalLayout  name="pc_timescontainer" width="110" > 
+	      <Label name="pc_times" padding="10,0,0,0"  text="00:00/00:00" visible="true" align="left"  textcolor="#FFFFFFFF" alpha="0x00" font="2"/>	
+        </HorizontalLayout>
+        <HorizontalLayout name="pc_tipscon" width="180">
+          <Label name="pc_tips" padding="0,0,0,0" text="" align="left"  textcolor="#FFB7B7B7" alpha="0x00" font="3"/>	 
+	    </HorizontalLayout>
+	     <HorizontalLayout> 
+	    </HorizontalLayout>       
+	     <HorizontalLayout name="pc_rightlayout" width="115" padding="3,0,0,0">      
+	      	<Button name="pc_resolution"  text="流畅"  padding="6,0,0,0" align="center" visible="true" width="45" textcolor="#FFA5A5A5" hottextcolor="#FF2BDEFF" font="3"/>     	
+	        <Button name="pc_litewindow"  tooltip="迷你窗口" padding="3,3,0,0" visible="true"   height="30" width="30"  normalimage="bc_litewnd_normal.png" hotimage="bc_litewnd_hover.png" pushedimage="bc_litewnd_push.png"/>
+	        <Button name="pc_episode" tooltip="显示节目信息" padding="3,3,0,0"  height="30" width="30" enabled="false" normalimage="bc_playlist_normal.png" hotimage="bc_playlist_hover.png" pushedimage="bc_playlist_push.png" disableimage="bc_playlist_disable.png"/> 
+	    </HorizontalLayout> 
+	    <HorizontalLayout width="75"> 
+	         <Button name="pc_soundhigh" tooltip="声音" padding="3,3,0,0" visible="false" height="30" width="30" normalimage="bc_soundplus_normal.png" hotimage="bc_soundplus_hover.png" pushedimage="bc_soundplus_push.png" />
+		     <Button name="pc_soundlow" tooltip="声音" padding="3,3,0,0" height="30" width="30" normalimage="bc_sound_normal.png" hotimage="bc_sound_hover.png" pushedimage="bc_sound_push.png" />
+		     <Button name="pc_mute" tooltip="静音" padding="3,3,0,0" visible="false" height="30" width="30" normalimage="bc_mute_normal.png" hotimage="bc_mute_hover.png" pushedimage="bc_mute_push.png"/>		
+	         <Button name="pc_fullscreen" tooltip="全屏" padding="5,3,0,0" height="30" width="40" normalimage="bc_fullscreen_normal.png" hotimage="bc_fullscreen_hover.png" pushedimage="bc_fullscreen_pushpng"/>
+		     <Button name="pc_exitfullscreen" tooltip="退出全屏" padding="0,3,0,0" height="30" width="40" normalimage="bc_exitfull_normal.png" hotimage="bc_exitfull_hover.png" pushedimage="pc_exitfull_push.png" visible="false"/>
+	      </HorizontalLayout> 
+	</HorizontalLayout>
+  </VerticalLayout>
+</Window>

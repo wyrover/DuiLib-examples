@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="980, 32" caption="0,0,0,0" alpha="200">
+	 <Font name="微软雅黑" size="13" />
+	 <Font name="宋体" size="15" />
+	 <VerticalLayout bkimage="pt_bk.png">
+	<HorizontalLayout visible="true" height="32" >
+	   	<HorizontalLayout name="pt_nwc" visible="false">
+		   <Button  name="pt_normalwindow" tooltip="标准窗口" padding="4,1,0,0"  align="left" visible="true" width="30"  height="30"  normalimage="bc_normalwnd_normal.png" hotimage="bc_normalwnd_hover.png" pushedimage="bc_normalwnd_push.png"/>	 
+		</HorizontalLayout>
+		<HorizontalLayout>
+		   <Label  name="pt_title" text="中国网络电视台" padding="8,4,0,0"  align="left" visible="true" minwidth="100"  height="24" textcolor="#FFB7B7B7" endellipsis="true" font="0"/>	 
+		</HorizontalLayout>
+		<HorizontalLayout name="pt_screenratio"  visible="false" >
+			<HorizontalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout width="160"> 
+			 <Option name="pt_original" tooltip="原始比例" padding="1,2,0,0" height="23" width="35" normalimage="pt_original_normal.png" hotimage="pt_original_hover.png" pushedimage="pt_original_normal.png" selectedimage="pt_original_hover.png" group="screenratio"  selected="true"/>
+			 <Option name="pt_standard" tooltip="标准" padding="5,2,0,0" height="23" width="35" normalimage="pt_standard_normal.png" hotimage="pt_standard_hover.png" pushedimage="pt_standard_normal.png" selectedimage="pt_standard_hover.png" group="screenratio"/>
+			 <Option name="pt_wide" tooltip="宽屏" padding="5,2,0,0" height="23" width="35" normalimage="pt_wide_normal.png" hotimage="pt_wide_hover.png" pushedimage="pt_wide_normal.png" selectedimage="pt_wide_hover.png" group="screenratio"/>
+			 <Option name="pt_tile" tooltip="平铺" padding="5,2,0,0" height="23" width="35" normalimage="pt_tile_normal.png" hotimage="pt_tile_hover.png" pushedimage="pt_tile_normal.png" selectedimage="pt_tile_hover.png" group="screenratio" />
+			</HorizontalLayout> 
+			<HorizontalLayout>
+			</HorizontalLayout> 
+		</HorizontalLayout> 
+	    <HorizontalLayout>
+	   	  <HorizontalLayout>
+	   	  </HorizontalLayout>
+		  <HorizontalLayout name="pt_textadv" width="150" visible="false">
+		    <Button name="pt_adv" text="" padding="0,0,2,0" align="right" textcolor="#FFA5A5A5" hottextcolor="#FFFFFFFF"/>
+		  </HorizontalLayout> 
+		  <HorizontalLayout name="pt_adjustablecon" width="200">
+		   <HorizontalLayout>
+	       </HorizontalLayout>
+			<HorizontalLayout name="pt_detailcon" width="68" visible="true">
+              <Button name="detail"  tooltip="详情介绍" padding="2,4,0,0" width="32" height="24" normalimage="rb_detail_normal.png" hotimage="rb_detail_hover.png" pushedimage="rb_detail_normal.png"  />
+              <Button name="share"  tooltip="分享" padding="2,4,0,0"  width="32" height="24" normalimage="rb_share_normal.png" hotimage="rb_share_hover.png" pushedimage="rb_share_normal.png" />
+            </HorizontalLayout>
+
+			<HorizontalLayout name="pt_dockcon" width="30" visible="false">
+			   <Button name="pt_dock" tooltip="停靠窗口" padding="6,7,0,0" height="18" width="18" enabled="true" normalimage="pt_dock_normal.png" hotimage="pt_dock_hover.png" pushedimage="pt_dock_push.png"/>		 	   
+			</HorizontalLayout>
+			<HorizontalLayout name="pt_linkcon" width="34">
+			  <Button name="pt_shutcut" tooltip="发送到桌面" padding="2,4,0,0" height="24" width="32" enabled="false" normalimage="pt_shutcut_normal.png" hotimage="pt_shutcut_hover.png" pushedimage="pt_shutcut_push.png"/>		 	   
+			</HorizontalLayout>
+			<HorizontalLayout name="pt_favoritescon" width="34">		   
+				<Button name="pt_favorites" tooltip="收藏" padding="2,4,0,0" height="24" width="32" enabled="false" normalimage="pt_favorites_normal.png" hotimage="pt_favorites_hover.png" pushedimage="pt_favorites_push.png"/>		 
+				<Button name="pt_unfavorites" tooltip="已收藏" padding="2,4,0,0" height="24" width="32" visible="false" normalimage="pt_unfavorites_normal.png" hotimage="pt_unfavorites_normal.png" pushedimage="pt_unfavorites_normal.png"/>	
+			</HorizontalLayout>
+			<HorizontalLayout width="32">
+				<Button name="pt_settop" tooltip="置顶" padding="0,4,0,0" height="24" width="32" normalimage="pt_settop_normal.png" hotimage="pt_settop_hover.png" pushedimage="pt_settop_hover.png"/>
+				<Button name="pt_canceltop" tooltip="取消置顶" padding="0,4,0,0" visible="false" height="24" width="32" normalimage="pt_canceltop_normal.png" hotimage="pt_canceltop_hover.png" pushedimage="pt_canceltop_push.png"/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+	  <HorizontalLayout name="pt_litebuttons" visible="false" width="52" > 
+	      <Button name="pt_miniwindow" tooltip="最小化" padding="0,3,0,0" width="24" height="24" normalimage="pt_mini_normal.png" hotimage="pt_mini_hover.png" pushedimage="pt_mini_push.png" />
+          <Button name="pt_closewindow"  tooltip="关闭"  padding="0,3,0,0" width="24" height="24" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png"/>
+	  </HorizontalLayout>  
+	  <HorizontalLayout name="pt_clockcon" visible="false" width="52" >
+		     <Label  name="pt_clock" padding="2,4,0,0"  align="left" visible="true" height="24" textcolor="#FFB7B7B7" endellipsis="true" font="1"/>
+	  </HorizontalLayout> 
+	  	  </HorizontalLayout>
+	 </HorizontalLayout>	
+	</VerticalLayout>
+</Window>

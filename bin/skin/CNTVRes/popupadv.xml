@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,280" roundcorner="0,0">
+	<Container name="pa_content">
+		  <HorizontalLayout name="header" height="30" bkimage="lw_header.png">
+        <Label padding="5,6,0,0" width="112" height="17" bkimage="adv_logo.png"/>
+        <Control />
+        <HorizontalLayout  width="30">
+        	<Button name="close" width="28" height="32" padding="2,0,0,0"  visible="true" normalimage="btn_close_normal.png" hotimage="btn_close_hover.png" pushedimage="btn_close_normal.png"/>
+        </HorizontalLayout>
+       </HorizontalLayout>
+	  <Advertisement name="p_adv" float="true" pos="0,30,300,280">		
+    </Advertisement>
+  </Container>
+</Window>

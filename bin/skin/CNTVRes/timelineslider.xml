@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="59,78" bktrans="true" >
+  <VerticalLayout >
+  	 <Control bkimage="epg_timeline_slider_a.png" float="true" pos="18,0,40,56"/>
+  	 <Control bkimage="epg_timeline_slider_b.png" float="true"pos="0,56,59,78" />
+  	 <Label name="time" text="20:00:00" float="true"pos="0,58,59,78" align="center"/>
+  </VerticalLayout>
+</Window>

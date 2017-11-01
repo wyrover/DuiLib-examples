@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,26"  size="300,167" roundcorner="5,5" showdirty="false" >
+  <Font name="微软雅黑" size="10" />
+  <Font name="微软雅黑" size="12" />
+  <Font name="微软雅黑" size="14" />
+  <Font name="宋体" size="13" bold="true" />
+  <Font name="宋体" size="12" bold="true" />
+  <Font name="宋体" size="12" />
+  <Font name="宋体" size="14" />
+  <Font name="微软雅黑" size="8" />
+  <Default name="Edit" value="enabled=&quot;false&quot; bordercolor=&quot;#FF000000&quot; bordersize=&quot;1&quot; font=&quot;8&quot; textcolor=&quot;#FF666666&quot;" />
+  <Default name="Label" value="align=&quot;left&quot;" />
+  <Default name="SkinOption" value="group=&quot;skin_group&quot; maxwidth=&quot;82&quot; align=&quot;left&quot; textpadding=&quot;46,0,0,0&quot; normalimage=&quot;file='uiitem.png' source='0,0,13,13' dest='22,3,35,16'&quot; selectedimage=&quot;file='uiitem.png' source='13,0,26,13' dest='22,3,35,16'&quot; disabledimage=&quot;file='uiitem.png' source='26,0,39,13' dest='22,3,35,16'&quot;" />
+  <VerticalLayout name="MainContainer" bkcolor="#FF3D475C">
+          <HorizontalLayout  height="30">
+            <Label text="定时关机" padding="10,3,0,0" width="60" height="24" textcolor="#00B3C2DB" disabledtextcolor="#FFA7A6AA" font="6" />
+            <Button name="btnclose" padding="200,3,0,0" width="24" height="24" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png"/>
+           </HorizontalLayout>
+          <HorizontalLayout name="containers">
+              <VerticalLayout name="normal">
+                <VerticalLayout height="25" padding="0,15,0,0">
+                  <Option name="shutdown" align="left" textpadding="40,0,0,0" textcolor="#00B3C2DB" text="开启定时关机" normalimage="file='uiitem.png' source='39,0,52,13' dest='20,5,33,18'" selectedimage="file='uiitem.png' source='52,0,65,13' dest='20,5,33,18'" disabledimage="file='uiitem.png' source='65,0,78,13' dest='20,5,33,18'"/>
+                </VerticalLayout>       
+                <HorizontalLayout height="28" padding="0,0,0,0">
+                  <Label padding="18,0,0,0" height="35" width="60" text="设定时间：" textcolor="#00B3C2DB"/>
+                 	<DateTimeEx name="daytime1" width="85" height="19" textcolor="#00CCDBE8" disabledtextcolor="#FFA7A6AA" align="left" bkcolor="#FF273041" padding="5,8,0,0" dtformat="date" bkimage="input.jpg"/>
+                 	<DateTimeEx name="daytime2" width="85" height="19" textcolor="#00CCDBE8" disabledtextcolor="#FFA7A6AA" align="left" bkcolor="#FF273041" padding="20,8,0,0" dtformat="time" bkimage="input.jpg"/>                	
+                </HorizontalLayout>
+              </VerticalLayout>
+          </HorizontalLayout>
+          <HorizontalLayout padding="20,5,0,0"  width="200" height="28" >
+          <Label name="error"  width="180" height="18" text="关机时间不能小于当前时间!" textcolor="#FF2BDEFF"   visible="false"/>
+          </HorizontalLayout>
+        <Control height="1" bkcolor="#FF2D3239" />
+        <HorizontalLayout  height="34" >
+         <Button name="btnok"  textcolor="#00CCDBE8" hottextcolor="#FF2bdeff" disabledtextcolor="#FFA7A6AA" text="确定" font="6" />
+          <Control width="1" bkcolor="#FF2D3239" />
+         <Button name="btncancel"   textcolor="#00CCDBE8" hottextcolor="#FF2bdeff" disabledtextcolor="#FFA7A6AA" text="取消" font="6"/>       
+        </HorizontalLayout>
+   </VerticalLayout>
+</Window>

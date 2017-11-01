@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<ListHeader name="plt_header" height="31" bkcolor="#FF101010" bkcolor2="#FF202020">
+		<HorizontalLayout>
+       <Button name="plt_headername" text="播放列表" padding="12,1,0,0" textpadding="2,0,0,3" textcolor="#FFA5A5A5" hottextcolor="#FFE5E5E5" disabledtextcolor="#FFA7A6AA" font="6"  align="left" keyboard="false"/>
+       <Button name="plt_clearnode" tooltip="清空列表" width="21" height="21" padding="0,4,0,0"   normalimage="file='pl_clear.png' source='0,0,21,21'" hotimage="file='pl_clear.png' source='21,0,42,21'" visible="false" keyboard="false"/>
+       </HorizontalLayout>
+    </ListHeader>
+</Window>

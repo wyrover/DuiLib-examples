@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="308,200" caption="0,0,0,40"  roundcorner="5,5" showdirty="false" >
+  <Font name="宋体" size="12" />
+  <Font name="宋体" size="13" />
+  <Font name="宋体" size="15" />
+  <Font name="宋体" size="13" underline="true"/>
+   <VerticalLayout  bkcolor="#FF3D475C">
+	  <HorizontalLayout height="33"> 
+	     	<Label name="title" text="版本检测" padding="6,-2,0,0"  font="2"  textcolor="#FFA0A0A0"/>
+        <Button name="close"  tooltip="关闭"  padding="2,4,0,0" width="24" height="24" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png"/>
+	  </HorizontalLayout>
+	  <HorizontalLayout>
+	  	 <TabLayout name="tablayout" selectedid="0">
+	   	<VerticalLayout>
+	   		<HorizontalLayout padding="15,13,0,0" height="50" >
+	   		<VerticalLayout width="200">
+	   		 <Label  padding="0,0,0,0" text="有新版本啦!"  align="left" textcolor="#FF2BDEFF" font="0"/>
+	   		 <HorizontalLayout>        
+              <HorizontalLayout  height="25" padding="0,5,0,0" >
+                 <Label  padding="0,0,0,0" text="当前版本"  width="52" align="left" textcolor="#FFE0E0E0" font="0"/>
+                 <Label name="curversion"  padding="0,0,0,0"  width="50" text="3.0.0.1" align="left" textcolor="#FFE0E0E0" font="0"/>
+              </HorizontalLayout>
+              <HorizontalLayout  height="25" padding="0,5,0,0">
+                 <Label  padding="1,0,0,0" text="最新版本"  width="52" align="left" textcolor="#FFE0E0E0" font="0"/>
+                 <Label name="newversion"  padding="0,0,0,0"  width="50" text="3.0.0.2" align="left" textcolor="#FFE0E0E0" font="0"/>
+              </HorizontalLayout>
+             </HorizontalLayout> 
+             	</VerticalLayout>   
+             <Button name="update"  text="点击升级!"  padding="2,4,0,0" width="76" height="36"  bordercolor="#FF16222E" bordersize="1" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF"  bkimage="btn_bk.png" font="2" />
+              </HorizontalLayout>
+              <HorizontalLayout height="12" padding="15,0,0,0" > 
+              	 <Label name="content" width="260" textcolor="#FFE0E0E0" font="0"/>
+              </HorizontalLayout>  
+              <HorizontalLayout > 
+              	 <Label padding="23,6,0,10" width="260" height="69" bkimage="u_post.gif"/>
+              	 <!--RichEdit name="content" text=""  visable=" false" padding="15,6,0,10"   bkcolor="#FFA0A0A0" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" align="top" multiline="true" visible="true" txtrowdis="6" readonly="true" enabled="false"/-->
+	          </HorizontalLayout> 
+         </VerticalLayout>
+       
+             <HorizontalLayout  height="130" padding="0,0,0,0">
+                 <Label  padding="0,0,0,0" text="已经是最新版本"   align="center" textcolor="#FFE0E0E0" font="2"/>
+             </HorizontalLayout>
+              <HorizontalLayout height="130"> 
+              	<Label  padding="0,0,0,0" text="获取版本信息失败!"   align="center" textcolor="#FFE0E0E0" font="2"/>
+	          </HorizontalLayout> 
+	            <HorizontalLayout height="130"> 
+              	<Label  padding="0,0,0,0" text="正在获取版本信息..."   align="center" textcolor="#FFE0E0E0" font="2"/>
+	          </HorizontalLayout> 
+     
+         </TabLayout>
+	  </HorizontalLayout> 
+  </VerticalLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="62,20" roundcorner="0,0" bktrans="true">
+     <Container>	 
+         <Button name="btnclose"  tooltip="关闭" padding="0,0,0,0"  width="62" height="20" normalimage="adv_close_normal.png" hotimage="adv_close_hover.png" pushedimage="adv_close_normal.png"/>
+     </Container>       
+</Window>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <VerticalLayout  bkcolor="#FF232323" >
+          <TabLayout name="ap_playerswitch" bkcolor="#FF000000" >   
+            <Container bkcolor="#FF000000">
+               <ActiveX  name="ap_videoplayer"  clsid="{17C7B943-2717-4BD9-83ED-CDA333B7ADB6}" modulename="MP4Player.dll" delaycreate="false" visible="true"  bkcolor="#FF000000"/>
+            </Container>
+          </TabLayout>
+            <FloatContainer  name="ap_countdowncontainer" float="true" pos="100,5,100,5"  minwidth="18" minheight="18" alpha="200" bkcolor="#FF000000" visible="false">
+          	   <Label  name="ap_countdowntext" text="" padding="0,0,0,0"   align="center" visible="true"  textcolor="#FFE7E7E7" endellipsis="true" font="3"/>	 
+           </FloatContainer>
+          <!--FloatContainer name="ap_linkcontainer" float="true" pos="100,5,100,25" minwidth="55" minheight="20" alpha="200" bkcolor="#FF000000" visible="false">
+          	 <Button  name="ap_link" text="了解详情" padding="0,0,0,0"   align="center" visible="true"  textcolor="#FFB7B7B7" hottextcolor="#FFF5F5F5" font="3"/>	 
+          </FloatContainer-->
+   </VerticalLayout>
+</Window>

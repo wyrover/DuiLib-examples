@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,500"  caption="0,0,0,0">
+    <Font name="宋休" size="12" bold="false" italic="false" default="true" />
+    <Font name="宋休" size="14" />
+    <VerticalLayout   bkcolor="#FF000000">  
+    	 <Container name="content" padding="0,0,0,0"> 
+       </Container>     	   
+       <HorizontalLayout name="flip" height="24"> 
+       	 <Control>
+         </Control>
+       	 <HorizontalLayout width="50"> 
+      	    <Button name="btnprev" padding="0,0,0,0"   width="20" height="24" normalimage="file='ep_prev_normal.png' source='15,13,35,37'"  hotimage="file='ep_prev_hover.png' source='15,13,35,37'" pushimage="file='ep_prev_normal.png' source='15,13,35,37'" />	
+            <Button name="btnnext"  padding="10,0,0,0"  width="20" height="24"  normalimage="file='ep_next_normal.png' source='15,13,35,37'"  hotimage="file='ep_next_hover.png' source='15,13,35,37'"  pushimage="file='ep_next_normal.png' source='15,13,35,37'" />
+         </HorizontalLayout>
+         <Control>
+       	</Control>
+       </HorizontalLayout> 
+    </VerticalLayout>
+</Window>

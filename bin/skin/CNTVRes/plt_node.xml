@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<TreeListNode height="24">
+		<HorizontalLayout name="plt_node" enabled="true" mousechild="true">
+			<HorizontalLayout name="plt_state" mouse="false"  width="18" padding="2, 4, 0, 0">	
+				<Button name="plt_expandnode" tooltip="展开"  height="16" width="16" normalimage="pl_expandnode.png" visible="false" />
+				<Button name="plt_foldnode" tooltip="折叠"  height="16" width="16" normalimage="pl_foldnode.png" visible="false" />
+				<Button name="plt_nodeplaying" height="16" width="16" normalimage="pl_playing.png" visible="false"/>
+			</HorizontalLayout>
+			<Text name="plt_nodename" mouse="true" padding="0, 6, 0, 0" text="获取中" font="8" textcolor="#FFFFFFFF" maxwidth="180"/>
+			<HorizontalLayout mouse="false">
+				<Button name="pl_hot" mouse="false" height="24" width="24" normalimage="pl_hot.png" align="left" visible="false"/>
+				<Button name="pl_new" mouse="false" height="24" width="24" normalimage="pl_new.png" align="left" visible="false"/>
+			</HorizontalLayout>			
+			<HorizontalLayout mouse="false">
+			</HorizontalLayout>
+			<Button name="pl_btn_epg" mouse="true" tooltip="节目单" padding="0, 6, 0, 0" height="12" width="12" normalimage="pl_btn_epg_normal.png" hotimage="pl_btn_epg_hover.png" pushimage="pl_btn_epg_nomal.png" visible="false" align="right"/>						
+		</HorizontalLayout>
+  </TreeListNode>
+</Window>

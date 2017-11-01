@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,270" caption="0,0,0,40" roundcorner="5,5">
+    <Font name="宋休" size="12" bold="false" italic="false" default="true" />
+    <Font name="宋休" size="13" bold="false" italic="false" />
+    <Font name="宋休" size="14" bold="false" italic="false" />
+    <Font name="宋休" size="15" bold="false" italic="false" />
+    <Default name="Edit" value="enabled=&quot;true&quot; width=&quot;80&quot; height=&quot;25&quot; padding=&quot;0,3,0,0&quot; font=&quot;8&quot; bkcolor=&quot;0xFF273041&quot; textcolor=&quot;#FF666666&quot; nativebkcolor=&quot;#0xFF273041&quot;"/>
+    <VerticalLayout bkcolor="#FF3D475C">
+        <HorizontalLayout height="35">
+            <HorizontalLayout>
+                <Option name="normalset" text="常规设置" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" font="3" align="center"  normalimage="set_normal.png" selectedimage="set_select.png" group="settting" selected="true" />
+                <Control width="1" bkcolor="#FF2D3239" />
+                <Option name="hotkeyset" text="热键设置" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" font="3" align="center" normalimage="set_normal.png" selectedimage="set_select.png" group="settting" />
+                <Control width="1" bkcolor="#FF2D3239" />
+            </HorizontalLayout>
+            <HorizontalLayout width="35" height="35">
+            <Button name="btnclose"  padding="6,6,0,0" tooltip="关闭" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png" />
+             </HorizontalLayout>
+        </HorizontalLayout>
+        <Control height="1" bkcolor="#FF2D3239" />
+        <TabLayout name="switch">
+            <VerticalLayout name="normal">
+                <HorizontalLayout padding="55,10,0,0" >
+                  <Label text="开机自动启动CBox客户端"   width="120"  height="30" textcolor="#FFC7C6C9"/>                
+                  <Option name="autorun" padding="40,0,0,0" width="75"  height="30" normalimage="set_btn_normal.png" selectedimage="set_btn_sel.png" />
+                </HorizontalLayout>
+                <HorizontalLayout padding="55,0,0,0">
+                  <Label text="保存关闭的尺寸变化"   width="120"  height="30" textcolor="#FFC7C6C9" />
+                  <Option name="lastsize"   padding="40,0,0,0" width="75"  height="30" normalimage="set_btn_normal.png" selectedimage="set_btn_sel.png" />      
+                </HorizontalLayout>
+                <HorizontalLayout padding="55,0,0,0">
+                  <Label text="最小化后缩小至托盘"   width="120"  height="30" textcolor="#FFC7C6C9" />
+                  <Option name="tray_min"   padding="40,0,0,0" width="75"  height="30" normalimage="set_btn_normal.png" selectedimage="set_btn_sel.png"  />            
+                </HorizontalLayout>
+                <HorizontalLayout padding="55,0,0,0">
+                  <Label text="关闭后缩小至托盘"   width="120"  height="30" textcolor="#FFC7C6C9" />
+                  <Option name="tray_close" padding="40,0,0,0" width="75"  height="30" normalimage="set_btn_normal.png" selectedimage="set_btn_sel.png"  />
+                </HorizontalLayout>
+				<HorizontalLayout padding="55,0,0,0">
+                  <Label text="以播放器模式启动"   width="120"  height="30" textcolor="#FFC7C6C9" />
+                  <Option name="playerfirst" padding="40,0,0,0" width="75"  height="30" normalimage="set_btn_normal.png" selectedimage="set_btn_sel.png"  />
+                </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout name="hotkey">
+                  <HorizontalLayout  padding="0,10,0,0" >
+                  <Label text="播放/暂停" padding="30,0,0,0"  width="60" height="24" textcolor="#FFC7C6C9" />                  
+                  <Edit name="hot_play" height="24" />
+                  <Label text="停止"   padding="30,0,0,0" width="60" height="24" textcolor="#FFC7C6C9" />
+                  <Edit name="hot_stop"  height="24"/>     
+                </HorizontalLayout>
+                <HorizontalLayout>
+                  <Label text="上一个"  padding="30,0,0,0" width="60" height="24" textcolor="#FFC7C6C9" />
+                  <Edit name="hot_previous" height="24"/>  
+                  <Label text="下一个"   padding="30,0,0,0" width="60" height="24" textcolor="#FFC7C6C9" />
+                  <Edit name="hot_next"  height="24"/>                     
+                </HorizontalLayout>
+                <HorizontalLayout>
+                  <Label text="加音量"   padding="30,0,0,0" width="60" height="24" textcolor="#FFC7C6C9" />
+                  <Edit name="hot_soundup" height="24" />  
+                 <Label text="减音量"   padding="30,0,0,0" width="60" height="24" textcolor="#FFC7C6C9"/>
+                  <Edit name="hot_sounddown" height="24" />                  
+                </HorizontalLayout>
+                <HorizontalLayout>
+                  <Label text="全屏播放"  padding="30,0,0,0"  width="60" height="24" textcolor="#FFC7C6C9"/>                 
+                  <Edit name="hot_screen" height="24"  />
+                </HorizontalLayout>
+                <HorizontalLayout>
+                  <Label text="老板键"  padding="30,0,0,0"  width="60" height="24" textcolor="#FFC7C6C9" />                   
+                  <Edit name="hot_bosskey" height="24" />
+                </HorizontalLayout>
+            </VerticalLayout>
+        </TabLayout>
+        <Control height="1" bkcolor="#FF2D3239" />
+        <HorizontalLayout height="34">
+        	<Button name="btndefault" text="默认" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" font="3" align="center" />
+            <Control width="1" bkcolor="#FF2D3239" />
+            <Button name="btnok" text="确定" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" font="3" align="center" />
+            <Control width="1" bkcolor="#FF2D3239" />
+            <Button name="btncancel" text="取消" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" font="3" align="center" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

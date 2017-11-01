@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,165" caption="0,0,0,40" roundcorner="7,7">
+    <Font name="宋休" size="12" bold="false" italic="false" default="true" />
+    <Font name="宋休" size="13" bold="false" italic="false" />
+    <Font name="宋休" size="14" bold="false" italic="false" />  
+    <Font name="宋休" size="15" bold="false" italic="false" />
+    <VerticalLayout bkcolor="#FF3D405C">  
+        <HorizontalLayout height="26">
+            <Label name="lblcaption" text="关于" width="72" height="20" padding="10,8,0,0" textcolor="#FFB4C1DD" disabledtextcolor="#FFA7A6AA" font="3" />
+            <Button name="btnclose" tooltip="关闭" float="true" pos="273,3,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png" />
+        </HorizontalLayout>
+        <VerticalLayout >
+           <Label name="lbltext" text="" padding="0,18,0,0" width="299" height="67" textcolor="#FFB4C1DD" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+        </VerticalLayout> 
+
+        <HorizontalLayout height="1" bkcolor="#FF2D3239">
+        </HorizontalLayout>
+        <HorizontalLayout height="34">
+        	 	<Control>
+            </Control>
+        	  <Control width="1" bkcolor="#FF2D3239"/>
+            <Button name="btnok" text="确定" width="200" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" font="3" align="center" />
+            <Control width="1" bkcolor="#FF2D3239"/>
+            <!--Button name="btncancel" text="取消" textcolor="#FFB3C2DD" hottextcolor="#FF2BDEFF" align="center" /-->
+            <Control>
+            </Control>
+        </HorizontalLayout>       
+    </VerticalLayout>
+</Window>

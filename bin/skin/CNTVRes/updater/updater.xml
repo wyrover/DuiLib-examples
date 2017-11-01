@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="300,120" caption="0,0,0,26"  roundcorner="3,3" showdirty="false" >
+  <Font name="宋体" size="10" />
+  <Font name="宋体" size="13" />
+  <Font name="宋体" size="14" />
+  <Font name="宋体" size="13" bold="true" />
+  <VerticalLayout bkcolor="#FF232323" bordercolor="#FF222222" bordersize="2">
+	  <HorizontalLayout bkimage="u_caption_bk.png" height="30"> 
+	    <HorizontalLayout> 
+	    	<Label name="logo" padding="6,3,0,0" width="60" height="22" bkimage="logo.png"/>
+	    	<Label name="title " padding="6,0,0,0"   text="程序更新" font="2"  textcolor="#FFA0A0A0"/>
+	    </HorizontalLayout> 
+	    <HorizontalLayout width="40"> 
+	      <Button name="mini" tooltip="最小化" padding="0,12,0,0" width="10" maxheight="4" normalimage="file='u_mini.png' source='0,0,10,4'" hotimage="file='u_mini.png' source='10,0,20,4'" pushedimage="file='u_mini.png' source='20,0,30,4'" />
+          <Button name="close"  tooltip="关闭"  padding="10,8,0,0" width="11" maxheight="11" normalimage="file='u_close.png' source='0,0,11,11'" hotimage="file='u_close.png' source='11,0,22,11'" pushedimage="file='u_close.png' source='22,0,33,11'"/>
+	    </HorizontalLayout>
+	  </HorizontalLayout>
+	  <HorizontalLayout>
+	  	<VerticalLayout>        
+             <HorizontalLayout  padding="0,0,0,0">
+                 <Label name="lblprompt"  padding="10,3,0,0" text="正在下载 ... ..." align="left" textcolor="#FFE0E0E0" font="1"/>
+             </HorizontalLayout>
+             <HorizontalLayout  height="40" padding="0,0,0,0">
+                <Progress name="pgsdownload"  padding="12,3,0,0" value="0"   textpadding="0,3,0,0" align="center" height="18" textcolor="#FFE0E0E0" font="1" foreimage="u_progressfront.png"  bkimage="u_progressbk.png" />
+             </HorizontalLayout>
+              <HorizontalLayout height="10"> 
+	          </HorizontalLayout> 
+         </VerticalLayout>
+	  </HorizontalLayout> 
+  </VerticalLayout>

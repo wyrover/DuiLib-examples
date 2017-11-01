@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="70, 19" caption="0,0,0,0" alpha="200" roundcorner="3,3">
+    <VerticalLayout>
+        <Button name="epg_fold" tooltip="隐藏直播节目单"   visible="false" width="94" height="13"  align="center" normalimage="epg_hidetimeline_normal.png" hotimage="epg_hidetimeline_hover.png" pushimage="epg_hidetimeline_normal.png"/>
+        <Button name="epg_show" tooltip="显示直播节目单"    width="70" height="19" align="center" normalimage="epg_showtimeline_normal.png"  hotimage="epg_showtimeline_hover.png"  pushimage="epg_showtimeline_normal.png"/>
+    </VerticalLayout>
+</Window>

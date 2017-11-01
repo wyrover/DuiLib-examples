@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	<VerticalLayout>
+		<HorizontalLayout name="category" height="32" bkcolor="#FF2A2A2A">
+			<Option name="OnlineBtn" font="12" userdata="视库" normalimage="pl_vl.png" hotimage="pl_vl_hot.png" selectedimage="pl_vl_sel.png" selected="true" group="category" />
+			<Option name="OnPlayBtn" font="12" userdata="正在观看" normalimage="pl_pl.png" hotimage="pl_pl_hot.png" selectedimage="pl_pl_sel.png" selected="false" group="category"/>
+		</HorizontalLayout>
+		<HorizontalLayout>
+			<!--VerticalLayout width="10">
+				<Button name="pl_foldlist" tooltip="隐藏节目列表" float="true" pos="1,210,0,0" width="10" height="100"  disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='pl_foldlist.png' source='0,0,10,118'" hotimage="file='pl_foldlist.png' source='10,0,20,118'" />
+				<Button name="pl_showlist" tooltip="显示节目列表" visible="false" float="true" pos="1,210,0,0" width="10" height="100" align="center" normalimage=	"file='pl_showlist.png' source='10,0,20,118'"  hotimage="file='pl_showlist.png' source='0,0,10,118'" />		
+			</VerticalLayout-->
+			<VerticalLayout bordersize="0" bordercolor="#FF000000">				
+				<TabLayout name="content_tabs" bkcolor="#FF000000">
+					<VerticalLayout bkcolor="#FF2C2E34">
+						<HorizontalLayout bordersize="1" bordercolor="#FF000000" name="pl_online_header" height="28" bkcolor="#FF262626">
+							<HorizontalLayout>
+							</HorizontalLayout>
+							<HorizontalLayout width="60">
+								<Button name="pl_refreshlist" align="left" normalimage="pl_btn_refresh_normal.png" hotimage="pl_btn_refresh_hover.png" pushedimage="pl_btn_refresh_hover.png"/>
+							</HorizontalLayout>
+						</HorizontalLayout>
+						<VerticalLayout name="pl_body_online"></VerticalLayout>
+					</VerticalLayout>
+					<VerticalLayout bkcolor="#FF2C2E34">
+						<HorizontalLayout bordersize="1" bordercolor="#FF000000" name="pl_onplay_header" height="28" bkcolor="#FF262626">
+							<HorizontalLayout>
+							</HorizontalLayout>
+							<HorizontalLayout width="120">								
+								<Button name="pl_btn_del" align="left" normalimage="pl_btn_del_normal.png" hotimage="pl_btn_del_hover.png" pushedimage="pl_btn_del_hover.png"/>								
+								<Button name="pl_btn_clear" align="left"  normalimage="pl_btn_clear_normal.png" hotimage="pl_btn_clear_hover.png" pushedimage="pl_btn_clear_hover.png"/>
+							</HorizontalLayout>
+						</HorizontalLayout>
+						<VerticalLayout name="pl_body_onplay"></VerticalLayout>
+					</VerticalLayout>
+					<!--VerticalLayout bkcolor="#FF2C2E34">
+						<HorizontalLayout bordersize="1" bordercolor="#FF000000" name="pl_histroy_header" height="28" bkcolor="#FF262626">
+							<HorizontalLayout>
+							</HorizontalLayout>
+							<HorizontalLayout width="80">
+								<Label width="28" height="28" bkimage="pc_clear.png"/>
+								<Button name="pl_clearhistory" text="清空记录" textcolor="#FFA5A5A5" hottextcolor="#FF19C2FF" align="left"/>
+							</HorizontalLayout>
+						</HorizontalLayout>	
+						<List name="history" vscrollbar="true" header="false" itemselectedimage="pc_itemSelected.png" itemhotimage="pc_itemhot.png"/>
+					</VerticalLayout-->
+				</TabLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<!--HorizontalLayout bordersize="1" bordercolor="#FF000000" name="playlistbottom" height="38" bkcolor="#FF262626">
+			<HorizontalLayout>
+			</HorizontalLayout>			
+		</HorizontalLayout-->	
+	</VerticalLayout>
+</Window>

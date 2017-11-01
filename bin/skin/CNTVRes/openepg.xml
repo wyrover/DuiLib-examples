@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="18, 70">	
+	<HorizontalLayout bkimage="epg_bk.png">
+		<HorizontalLayout  width="30" >
+			<Button name="epg_open" float="true" width="18" height="70" normalimage="epg_open_normal.png" hotimage="epg_open_hot.png"/>
+		</HorizontalLayout>
+	</HorizontalLayout>
+</Window>

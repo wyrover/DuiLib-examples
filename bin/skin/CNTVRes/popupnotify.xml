@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="285,186" roundcorner="5,5">
+	<Container bkimage="notify_pop_bk.png">
+	<Container name="pa_content" pos="0,30,285,186"/>
+        <Button name="pa_close1" float="true" pos="255,2,283,33" width="24" height="24" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png" />
+	</Container>
+</Window>

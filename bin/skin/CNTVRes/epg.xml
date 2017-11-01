@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bkimage="epgwnd_bk.png" roundcorner="6,6">
+   <Font name="微软雅黑" size="10" />
+   <Font name="微软雅黑" size="12" />
+   <Font name="微软雅黑" size="13" />
+   <Font name="微软雅黑" size="14" /> 
+   <Font name="微软雅黑" size="15" />
+   <Font name="微软雅黑" size="16" />
+   <Font name="宋体" size="11" />
+   <Font name="宋体" size="12" /> 
+   <Font name="宋体" size="13" />
+   <Font name="宋体" size="14" />	
+   <Font name="微软雅黑" size="30" />   
+   <Default name="Date" value="font=&quot;7&quot; padding=&quot;0,1,0,1&quot; textcolor=&quot;#FFB0B0B0&quot; selectedtextcolor=&quot;#FF2BDEFF&quot; hottextcolor=&quot;#FF2BDEFF&quot; selectedimage=&quot;epg_date_bk.png&quot; hotimage=&quot;epg_date_bk.png&quot;" /> 
+   <Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+   <Default name="HScrollBar" value="height=&quot;0&quot; button1normalimage=&quot;file='scrollbar.bmp' source='0,0,16,16' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,0,34,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,0,52,16' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,0,70,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,18,16,34' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,18,34,34' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,18,52,34' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,18,70,34' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,36,16,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,36,34,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,36,52,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,36,70,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,54,16,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,54,34,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,54,52,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,54,70,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,72,16,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,72,34,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,72,52,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,72,70,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+   <VerticalLayout bkimage="epgwnd_bk.png">
+		<HorizontalLayout  height="26">
+			<HorizontalLayout></HorizontalLayout>
+			<Button name="close" padding="5,0,0,0" width="26" height="26" normalimage="epg_close_normal.png" hotimage="epg_close_hover.png" pushedimage="epg_close_push.png" tooltip="关闭" />
+		</HorizontalLayout>				
+		<HorizontalLayout>
+			<HorizontalLayout  width="30"></HorizontalLayout>		
+			<HorizontalLayout>
+				<VerticalLayout>
+					
+					<HorizontalLayout height="31">
+						<HorizontalLayout width="250">
+							<Label name="epg_channel" text="频道名" padding="6, 0, 0, 0" align="left" height="31" textcolor="#FFFFFFFF"  font="10"/>
+						</HorizontalLayout>
+						<HorizontalLayout name="epg_date" height="31" bkcolor="#FF3D485C" bordercolor="#FF262626" bordersize="1"></HorizontalLayout>
+					</HorizontalLayout>
+					<HorizontalLayout height="20" ></HorizontalLayout>
+					<TabLayout name="epg_tabs" >
+					  <TabLayout name="epg_listtabs" >
+					  </TabLayout>
+					  <HorizontalLayout   hscrollbar="false">
+						  <Label text="此频道暂不提供节目单服务"  align="center"  textcolor="#FFE0E0E0" font="9"/>
+					   </HorizontalLayout>	
+						<HorizontalLayout   hscrollbar="false">
+						  <Label text="正在获取节目单信息 ... ..." align="center" textcolor="#FFE0E0E0"  font="9"/>
+					   </HorizontalLayout>	
+						<HorizontalLayout   hscrollbar="false">
+						  <Label text="获取节目单信息失败." align="center" textcolor="#FFE0E0E0"  font="9"/>
+					   </HorizontalLayout>	
+					</TabLayout>	
+				</VerticalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout  width="30"></HorizontalLayout>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

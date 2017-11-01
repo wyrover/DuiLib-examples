@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="110,22" bkimage="adver_time.png">
+	<Font name="宋体" size="12" />
+  <Font name="宋体" size="14" bold="true" /> 
+  <HorizontalLayout bkcolor="FF272929">
+  		<Button name="adv_sound" tooltip="声音" padding="0,0,0,0" visible="true" height="22" width="22" normalimage="adver_lound_normal.png" hotimage="adver_lound_hover.png" pushedimage="adver_lound_normal.png" />
+		  <Button name="adv_sound_close" tooltip="声音" padding="0,0,0,0" visible="false" height="22" width="22" normalimage="adver_nolound_normal.png" hotimage="adver_nolound_hover.png" pushedimage="adver_nolound_normal.png" />
+      <Label  name="prefix_text" text="广告剩余" padding="4,0,0,0" width="50" height="22" align="center" textcolor="#FF919191" font="0"/>	 
+      <Label  name="ap_countdowntext" text="20" padding="0,0,0,0" width="16" height="22" align="center" textcolor="#FFFFFFFF"  font="1"/>	 
+      <Label  name="suffix_text" text="秒" padding="0,0,0,0" width="16" height="22" align="center" textcolor="#FF919191" font="0"/>	 
+   </HorizontalLayout>
+</Window>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,300" roundcorner="5,5">
+	<Container bkimage="popheadline.gif">
+	<Container name="hl_content" float="true" pos="0,36,400,300">  
+		<WebBrowser padding="0,0,0,0" name="hl_webbrowser" delaycreate="false"/>
+	</Container>
+        <Button name="hl_close" float="true" pos="370,5,400,36" width="24" height="24" normalimage="pt_close_normal.png" hotimage="pt_close_hover.png" pushedimage="pt_close_push.png" />
+	</Container>
+</Window>
