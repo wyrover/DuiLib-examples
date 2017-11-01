@@ -1,9 +1,9 @@
 #pragma once
 
 class CListTab :
-	public CContainerUI
+    public CContainerUI
 {
 public:
-	CListTab(CPaintManagerUI* ppm = NULL);
-	~CListTab(void);
+    CListTab(CPaintManagerUI* ppm = NULL);
+    ~CListTab(void);
 };

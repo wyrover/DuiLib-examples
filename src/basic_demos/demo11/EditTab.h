@@ -1,10 +1,10 @@
 #pragma once
 
 class CEditTab :
-	public CContainerUI
+    public CContainerUI
 {
 public:
-	~CEditTab(void);
+    ~CEditTab(void);
 
-	CEditTab (CPaintManagerUI* ppm = NULL);
+    CEditTab(CPaintManagerUI* ppm = NULL);
 };

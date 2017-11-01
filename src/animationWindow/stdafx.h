@@ -29,8 +29,8 @@ using namespace Gdiplus;
 #pragma warning(disable:4192)
 
 #ifdef _UNICODE
-	typedef std::wstring	tstring;
+typedef std::wstring    tstring;
 #else
-	typedef std::string		tstring;
+typedef std::string     tstring;
 #endif
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement height="61" bkcolor="#FF3A3A3A">
+    <VerticalLayout name="SubFrame1" height="61">
+		<HorizontalLayout height="10" />
+		<HorizontalLayout name="SubFrame11" height="41">
+			<VerticalLayout name="SubFrame111" padding="10,0,0,0" width="41" height="41">
+				<Control name="logo" />
+			</VerticalLayout>
+			<VerticalLayout name="SubFrame112" height="41">
+				<HorizontalLayout name="SubFrame1121" height="3" />
+				<HorizontalLayout name="SubFrame1122" height="14">
+					<Label name="nickname" bordersize="0" padding="10,0,0,0" textcolor="#FFD0CFCF" disabledtextcolor="#FF808080" />
+					<Label name="time" bordersize="0" width="18" padding="0,0,12,0" textcolor="#FFD0CFCF" disabledtextcolor="#FF808080" />
+				</HorizontalLayout>
+				<HorizontalLayout name="SubFrame1123" height="8" />	
+				<HorizontalLayout name="SubFrame1124"  height="14">
+					<Label name="message" bordersize="0" textcolor="#FF5E686E" disabledtextcolor="#FF808080" />
+					<Label name="sound" bordersize="0" width="16" textcolor="#FF5E686E" disabledtextcolor="#FF808080" />
+				</HorizontalLayout>
+				<HorizontalLayout name="SubFrame1125" height="2" />
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout height="10" />
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

@@ -11,22 +11,17 @@ namespace UI
 CBaseWnd::CBaseWnd()
     : m_bShadow(true)
 {
-
 };
 
 CBaseWnd::~CBaseWnd()
 {
-
 };
 
 LRESULT CBaseWnd::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
     //m_ShadowWnd.ParentProc(*this, uMsg, wParam, lParam);
     m_shadowui.ParentProc(*this, uMsg, wParam, lParam);
-
     return __super::HandleMessage(uMsg, wParam, lParam);
-
-
 }
 
 LRESULT CBaseWnd::OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
@@ -34,9 +29,7 @@ LRESULT CBaseWnd::OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandl
     //先初始化窗口，再获取阴影数据
     m_shadowui.Create(m_hWnd, &m_PaintManager);
     LRESULT lres = __super::OnCreate(uMsg, wParam, lParam, bHandled);
-    
     m_shadowui.CopyShadow(m_PaintManager.GetShadow());
-
     return lres;
 }
 
@@ -54,7 +47,6 @@ void CBaseWnd::CenterScreen(bool byOwner)
         RECT rcCenter = { 0 };
         HWND hWnd = *this;
         HWND hWndCenter = NULL;
-
         // 处理多显示器模式下屏幕居中
         MONITORINFO oMonitor = {};
         oMonitor.cbSize = sizeof(oMonitor);
@@ -66,7 +58,6 @@ void CBaseWnd::CenterScreen(bool byOwner)
 
         int DlgWidth = rcDlg.right - rcDlg.left;
         int DlgHeight = rcDlg.bottom - rcDlg.top;
-
         // Find dialog's upper left based on rcCenter
         int xLeft = (rcCenter.left + rcCenter.right) / 2 - DlgWidth / 2;
         int yTop = (rcCenter.top + rcCenter.bottom) / 2 - DlgHeight / 2;

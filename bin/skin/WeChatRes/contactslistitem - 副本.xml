@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement  bkcolor="#FF3A3A3A">
+    <VerticalLayout name="SubFrame1">
+		<HorizontalLayout height="28" >
+			<Label name="type" padding="10,0,0,0"  textcolor="#FFD0CFCF" disabledtextcolor="#FF808080" />
+		</HorizontalLayout>
+		<!-- <HorizontalLayout height="28" >
+			<ContactsExList name="ContactsEx" header="hidden" vscrollbar="true"/>
+		</HorizontalLayout> -->
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

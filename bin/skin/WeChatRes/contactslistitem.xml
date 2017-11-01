@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement height="50" bkcolor="#FF3A3A3A">
+    <VerticalLayout name="SubFrame1" height="50">
+		<HorizontalLayout height="10" />
+		<HorizontalLayout name="SubFrame11" height="30">
+			<VerticalLayout name="logo_container" padding="10,0,0,0" width="30" height="30">
+				<Control name="logo" />
+			</VerticalLayout>
+			<VerticalLayout name="SubFrame112" height="30">
+				<Label name="nickname" bordersize="0" padding="10,7,0,0" textcolor="#FFD0CFCF" disabledtextcolor="#FF808080" />	
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout height="10" />
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

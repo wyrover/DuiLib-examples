@@ -9,7 +9,7 @@
 // 如果必须将位于下面指定平台之前的平台作为目标，请修改下列定义。
 // 有关不同平台对应值的最新信息，请参考 MSDN。
 #ifndef WINVER                      // 允许使用特定于 Windows XP 或更高版本的功能。
-   #define WINVER          0x0600        // 将此值更改为相应的值，以适用于 Windows 的其他版本。
+    #define WINVER          0x0600        // 将此值更改为相应的值，以适用于 Windows 的其他版本。
 #endif
 
 #ifndef _WIN32_WINNT                // 允许使用特定于 Windows XP 或更高版本的功能。
@@ -25,7 +25,7 @@
 #endif
 
 #if !defined(WIN32_LEAN_AND_MEAN)
-#define WIN32_LEAN_AND_MEAN         // 从 Windows 头中排除极少使用的资料
+    #define WIN32_LEAN_AND_MEAN         // 从 Windows 头中排除极少使用的资料
 #endif
 
 // Windows 头文件:
@@ -43,7 +43,7 @@
 #include <objbase.h>
 #include <MMSystem.h>
 #include <iostream>
-#include <fstream> 
+#include <fstream>
 #include <iomanip>
 #include <algorithm>
 #include<cmath>
@@ -68,18 +68,18 @@ using namespace Gdiplus;
 #include <atlgdi.h>
 #include <atlfile.h>        // CAtlFileMapping
 #include <atlcomcli.h>
-#include <atlstr.h>			// CString
-#include <atltypes.h>		// CSize, CPoint, CRect
+#include <atlstr.h>         // CString
+#include <atltypes.h>       // CSize, CPoint, CRect
 #include <atlimage.h>
-#include <atlsync.h>		// ATL::CCriticalSection, ATL::CEvent, ATL::CMutex, ATL::CMutexLock, ATL::CSemaphore
+#include <atlsync.h>        // ATL::CCriticalSection, ATL::CEvent, ATL::CMutex, ATL::CMutexLock, ATL::CSemaphore
 #include <shellapi.h>
-#include <atlctrls.h>		// WTL::CImageList
+#include <atlctrls.h>       // WTL::CImageList
 #include <atlctrlx.h>
-#include <atlscrl.h>		// WTL::CScrollImpl
+#include <atlscrl.h>        // WTL::CScrollImpl
 #include <atldlgs.h>
-#include <atlsimpcoll.h>	// CSimpleArray, CSimpleMap
-#include <atltime.h>		// ATL::CTime, ATL::CTimeSpan, ATL::CFileTime
-#include <atlpath.h>		// ATL::ATLPath, ATL::CPathT
+#include <atlsimpcoll.h>    // CSimpleArray, CSimpleMap
+#include <atltime.h>        // ATL::CTime, ATL::CTimeSpan, ATL::CFileTime
+#include <atlpath.h>        // ATL::ATLPath, ATL::CPathT
 
 #include <commctrl.h>       //CComPtr
 #include <Shobjidl.h>       //ITaskbarList3
@@ -107,7 +107,7 @@ using namespace DuiLib;
         #pragma comment(lib, "../../lib/win32d/cactus_dll_mdd.lib")
     #else
         #pragma comment(lib, "DuiLib_d.lib")
-    #endif    
+    #endif
 #else
     #ifdef _UNICODE
         #pragma comment(lib, "../../lib/win32_md/DuiLib.lib")

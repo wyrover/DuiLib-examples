@@ -15,11 +15,13 @@ public:
 
     void CenterScreen(bool byOwner = false);
 
-    HWND Create(CBaseWnd *pParent, LPCTSTR lpszTitle, DWORD dwStyle, DWORD dwExStyle, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int cx = CW_USEDEFAULT, int cy = CW_USEDEFAULT) {
+    HWND Create(CBaseWnd *pParent, LPCTSTR lpszTitle, DWORD dwStyle, DWORD dwExStyle, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int cx = CW_USEDEFAULT, int cy = CW_USEDEFAULT)
+    {
         m_pParentWnd = pParent;
         return __super::Create(pParent ? pParent->GetHWND() : NULL, lpszTitle, dwStyle, dwExStyle, x, y, cx, cy);
     }
-    HWND Create(HWND hWndParent, LPCTSTR lpszTitle, DWORD dwStyle, DWORD dwExStyle, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int cx = CW_USEDEFAULT, int cy = CW_USEDEFAULT) {
+    HWND Create(HWND hWndParent, LPCTSTR lpszTitle, DWORD dwStyle, DWORD dwExStyle, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int cx = CW_USEDEFAULT, int cy = CW_USEDEFAULT)
+    {
         m_pParentWnd = NULL;
         return __super::Create(hWndParent, lpszTitle, dwStyle, dwExStyle, x, y, cx, cy);
     }
@@ -29,7 +31,7 @@ protected:
 private:
     bool m_bShadow;
     CShadowUI   m_shadowui;
-    CBaseWnd*	m_pParentWnd;
+    CBaseWnd*   m_pParentWnd;
 };
 
 

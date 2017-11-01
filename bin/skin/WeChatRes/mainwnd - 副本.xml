@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="854,594" sizebox="4,4,6,6" caption="0,0,0,50" mininfo="854,594" roundcorner="3,3">
+    <Font name="微软雅黑" size="10" bold="false" italic="false" />
+    <Font name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font name="微软雅黑" size="13" bold="false" italic="false" />
+    <Font name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font name="微软雅黑" size="15" bold="true" italic="false" />
+    <Font name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font name="宋体" size="13" bold="true" italic="false" />
+    <Font name="宋体" size="12" bold="true" italic="false" />
+    <Font name="宋体" size="12" bold="false" italic="false" />
+    <Font name="宋体" size="11" bold="false" italic="false" />
+    <Font name="宋体" size="14" bold="false" italic="false" />
+    <Font name="宋体" size="15" bold="false" italic="false" />
+    <Font name="宋体" size="15" bold="true" italic="false" />
+    <VerticalLayout name="MainFrame" bkcolor="#FFFFFFFF">
+        <HorizontalLayout name="HorizontalLayoutUI1">
+            <VerticalLayout name="Frame1" pos="0,0,50,0" width="50" bkcolor="#FF2F2F2F">
+                <HorizontalLayout name="HorizontalLayoutUI2">
+                    <VerticalLayout name="Frame2" pos="0,0,50,0" width="50">
+                        <VerticalLayout name="Frame22" pos="0,0,0,174" height="174">
+                            <Button name="userbtn" pos="0,0,50,58" height="58" bkimage="userbtn.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                            <Button name="chatbtn" tooltip="聊天" pos="0,0,50,58" height="58" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="chatbtn_normal.png" hotimage="chatbtn_hover.png" pushedimage="chatbtn_click.png" />
+                            <Button name="contactsbtn" tooltip="通讯录" pos="0,0,50,58" height="58" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="contactsbtn_normal.png" hotimage="contactsbtn_hover.png" pushedimage="contactsbtn_click.png" />
+                        </VerticalLayout>
+                        <VerticalLayout name="Frame23" />
+                        <VerticalLayout name="Frame24" pos="0,0,0,20" height="20" inset="16,0,0,0">
+                            <Button name="configbtn" tooltip="设置" pos="0,0,20,20" width="20" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="configbtn_normal.png" hotimage="configbtn_hover.png" pushedimage="configbtn_click.png" />
+                        </VerticalLayout>
+                        <VerticalLayout name="Frame25" pos="0,0,0,19" height="19" />
+                    </VerticalLayout>
+                </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout name="Frame3" pos="0,0,254,0" width="250" bkcolor="#FF3A3A3A">
+                <HorizontalLayout name="Frame31" >
+					<!-- <VerticalLayout name="Frame311" width="11" /> -->
+					<VerticalLayout name="Frame312">
+						<HorizontalLayout name="Frame3121" padding="10,0,0,0" height="40">
+							<RichEdit name="searchedt" text="搜索" pos="0,10,200,40" inset="31,9,9,9" borderround="4,4" bordersize="0" float="true" rich="false" multiline="false" readonly="false" mouse="true" enabled="true" bkcolor="#FF515151" textcolor="#ffb9b9b9" disabledtextcolor="#FFA7A6AA" >
+								<Label name="ctrlui" pos="7,8,23,24" width="16" float="true" bkimage="searchui.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+								<!-- <Button name="clearbtn" pos="174,6,192,24" width="16" float="true" bkimage="clearbtn.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" /> -->
+							</RichEdit>
+							<Button name="groupchatbtn" tooltip="发起群聊" pos="203,10,239,40" float="true" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="groupchatbtn_normal.png" hotimage="groupchatbtn_hover.png" pushedimage="groupchatbtn_click.png" />
+						</HorizontalLayout>
+						<HorizontalLayout name="Frame3122" height="6"/>
+						<HorizontalLayout name="Frame3123">
+							<FriendsList name="Friends" header="hidden" vscrollbar="true"/>
+							<ContactsList name="Contacts" header="hidden" vscrollbar="true"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+                </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout name="Frame4" bkcolor="#FFF2F2F2">
+                <HorizontalLayout name="Frame41" height="39">
+                    <VerticalLayout name="Frame411" />
+                    <VerticalLayout name="Frame412" pos="0,0,97,0" width="97">
+                        <HorizontalLayout name="Frame4121" pos="0,0,97,37" width="97" height="37">
+                            <Button name="minbtn" tooltip="最小化" pos="0,0,30,0" width="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="minbtn_normal.png" hotimage="minbtn_hover.png" pushedimage="minbtn_click.png" />
+                            <Button name="maxbtn" tooltip="最大化" pos="0,0,30,0" width="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="maxbtn_normal.png" hotimage="maxbtn_hover.png" pushedimage="maxbtn_click.png" />
+                            <Button name="restorebtn" tooltip="向下还原" visible="false" pos="0,0,30,0" width="30" align="center" normalimage="restorebtn_normal.png" hotimage="restorebtn_hover.png" pushedimage="restorebtn_click.png" />
+                            <Button name="closebtn" tooltip="关闭" pos="0,0,37,0" width="37" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="closebtn_normal.png" hotimage="closebtn_hover.png" pushedimage="closebtn_click.png" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                </HorizontalLayout>
+                <HorizontalLayout name="Frame42" >
+					<Container name="bkgdico" pos="200,200,328,328" relativepos="50,50,0,0" float="true" bkimage="bkgdico.png" />
+					<RichEdit name="outputedt" visible="false"/>
+				</HorizontalLayout>
+                <HorizontalLayout name="Frame43" height="149">
+					<VerticalLayout>
+						<HorizontalLayout name="Frame431" height="44">
+							<Control pos="0,0,6,28"/>
+							<Button name="emojibtn" tooltip="表情" pos="6,0,34,28" float="true" align="center" normalimage="emojibtn_normal.png" hotimage="emojibtn_hover.png" pushedimage="emojibtn_click.png"/>
+							<Button name="cutbtn" tooltip="截图(Ctrl + A)" pos="34,0,62,28" float="true" align="center" normalimage="cutbtn_normal.png" hotimage="cutbtn_hover.png" pushedimage="cutbtn_click.png"/>
+							<Button name="filebtn" tooltip="发送文件" pos="62,0,90,28" float="true" align="center" normalimage="filebtn_normal.png" hotimage="filebtn_hover.png" pushedimage="filebtn_click.png"/>
+							<Button name="videobtn" tooltip="视频聊天" pos="90,0,118,28" float="true" align="center" normalimage="videobtn_normal.png" hotimage="videobtn_hover.png" pushedimage="videobtn_click.png"/>
+							<Button name="voicebtn" tooltip="语音聊天" pos="118,0,146,28" float="true" align="center" normalimage="voicebtn_normal.png" hotimage="voicebtn_hover.png" pushedimage="voicebtn_click.png"/>
+						</HorizontalLayout>
+						<HorizontalLayout name="Frame432" >
+							<RichEdit name="inputedt" bkcolor="#FFFFFFFF" visible="false"/>
+						</HorizontalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+            </VerticalLayout>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

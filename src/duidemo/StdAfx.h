@@ -4,7 +4,7 @@
 
 #pragma once
 
-#define WIN32_LEAN_AND_MEAN	
+#define WIN32_LEAN_AND_MEAN
 #define _CRT_SECURE_NO_DEPRECATE
 
 #include <windows.h>
@@ -16,17 +16,17 @@
 using namespace DuiLib;
 
 #ifdef _DEBUG
-#   ifdef _UNICODE
-#       pragma comment(lib, "..\\..\\lib\\DuiLib_d.lib")
-#   else
-#       pragma comment(lib, "..\\..\\lib\\DuiLibA_d.lib")
-#   endif
+    #ifdef _UNICODE
+        #pragma comment(lib, "..\\..\\lib\\DuiLib_d.lib")
+    #else
+        #pragma comment(lib, "..\\..\\lib\\DuiLibA_d.lib")
+    #endif
 #else
-#   ifdef _UNICODE
-#       pragma comment(lib, "..\\..\\lib\\DuiLib.lib")
-#   else
-#       pragma comment(lib, "..\\..\\lib\\DuiLibA.lib")
-#   endif
+    #ifdef _UNICODE
+        #pragma comment(lib, "..\\..\\lib\\DuiLib.lib")
+    #else
+        #pragma comment(lib, "..\\..\\lib\\DuiLibA.lib")
+    #endif
 #endif
 
 //{{AFX_INSERT_LOCATION}}

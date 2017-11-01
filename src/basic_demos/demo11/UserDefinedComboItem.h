@@ -1,9 +1,9 @@
 #pragma once
 
 class CUserDefinedComboItem :
-	public CContainerUI
+    public CContainerUI
 {
 public:
-	CUserDefinedComboItem(void);
-	~CUserDefinedComboItem(void);
+    CUserDefinedComboItem(void);
+    ~CUserDefinedComboItem(void);
 };

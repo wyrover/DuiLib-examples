@@ -5,19 +5,27 @@
 #define __UI_BUILD_CALLBACK_H__
 
 
-class CListElemUI 
+class CListElemUI
     : public DuiLib::CListContainerElementUI
     , public boost::enable_shared_from_this<CListElemUI>
     , boost::noncopyable
 {
-public:                                                         
-    LPCTSTR GetClass() const {return L"ListElem";} 
-    static LPCTSTR GetInterfaceName() {return _T("ListElemUI");}        
-    LPVOID GetInterface(LPCTSTR pstrName) {                     
-        if( _tcscmp(pstrName, _T("ListElemUI")) == 0 )
-            return this;     
+public:
+    LPCTSTR GetClass() const
+    {
+        return L"ListElem";
+    }
+    static LPCTSTR GetInterfaceName()
+    {
+        return _T("ListElemUI");
+    }
+    LPVOID GetInterface(LPCTSTR pstrName)
+    {
+        if (_tcscmp(pstrName, _T("ListElemUI")) == 0)
+            return this;
+
         return __super::GetInterface(pstrName);
-    }                
+    }
 public:
     CListElemUI();
     virtual ~CListElemUI();
@@ -65,13 +73,21 @@ public:
 
 class CMyListUI : public DuiLib::CListUI
 {
-    LPCTSTR GetClass() const {return L"MyList";} 
-    static LPCTSTR GetInterfaceName() {return _T("MyListUI");}        
-    LPVOID GetInterface(LPCTSTR pstrName) {                     
-        if( _tcscmp(pstrName, _T("MyListUI")) == 0 )
-            return this;     
+    LPCTSTR GetClass() const
+    {
+        return L"MyList";
+    }
+    static LPCTSTR GetInterfaceName()
+    {
+        return _T("MyListUI");
+    }
+    LPVOID GetInterface(LPCTSTR pstrName)
+    {
+        if (_tcscmp(pstrName, _T("MyListUI")) == 0)
+            return this;
+
         return __super::GetInterface(pstrName);
-    }   
+    }
 public:
     CMyListUI();
 
@@ -86,7 +102,7 @@ protected:
 
 private:
     bool m_bScrollMsgSended;
-    CMyListBodyUI*			m_pMyListBody;
+    CMyListBodyUI*          m_pMyListBody;
     boost::function<void(void)>     m_scrollallback;
 
 };
@@ -94,8 +110,8 @@ private:
 class CDuiCallback : public IDialogBuilderCallback
 {
 public:
-	CControlUI* CreateControl(LPCTSTR pstrClass);
-	static CControlUI* StaticCreateControl(LPCTSTR pstrClass);
+    CControlUI* CreateControl(LPCTSTR pstrClass);
+    static CControlUI* StaticCreateControl(LPCTSTR pstrClass);
 };
 
 

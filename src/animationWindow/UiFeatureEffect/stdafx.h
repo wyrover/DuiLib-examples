@@ -22,19 +22,19 @@ using namespace Gdiplus;
 using namespace std;
 
 #ifdef _DEBUG
-#include <crtdbg.h> 
-#define _CRTDBG_MAP_ALLOC 
+    #include <crtdbg.h>
+    #define _CRTDBG_MAP_ALLOC
 #endif
 
-#ifdef _DEBUG 
-#define DEBUG_CLIENTBLOCK    new( _CLIENT_BLOCK, __FILE__, __LINE__) 
-#else 
-#define DEBUG_CLIENTBLOCK 
-#endif 
+#ifdef _DEBUG
+    #define DEBUG_CLIENTBLOCK    new( _CLIENT_BLOCK, __FILE__, __LINE__)
+#else
+    #define DEBUG_CLIENTBLOCK
+#endif
 
-#ifdef _DEBUG 
-#define new DEBUG_CLIENTBLOCK 
-#endif 
+#ifdef _DEBUG
+    #define new DEBUG_CLIENTBLOCK
+#endif
 
 #pragma comment (lib, "gdiplus.lib")
 

@@ -11,19 +11,34 @@
 
 
 class CMainFrm
-    : public DuiLib::WindowImplBase       
+    : public DuiLib::WindowImplBase
 {
 
 public:
     CMainFrm();
     ~CMainFrm();
 
-    virtual LPCTSTR GetWindowClassName() const{return _T("CMainFrm");};
-    virtual CDuiString GetSkinFolder() {return _T("res");}
-    virtual CDuiString GetSkinFile() {return _T("main_frm.xml");}
+    virtual LPCTSTR GetWindowClassName() const
+    {
+        return _T("CMainFrm");
+    };
+    virtual CDuiString GetSkinFolder()
+    {
+        return _T("res");
+    }
+    virtual CDuiString GetSkinFile()
+    {
+        return _T("main_frm.xml");
+    }
     //virtual UILIB_RESOURCETYPE GetResourceType() const {return UILIB_FILE;}
-    virtual CDuiString GetZIPFileName() const {return _T("res.zip");}
-    virtual LPCTSTR GetResourceID() const {return MAKEINTRESOURCE(IDR_ZIPRES_SKIN);}
+    virtual CDuiString GetZIPFileName() const
+    {
+        return _T("res.zip");
+    }
+    virtual LPCTSTR GetResourceID() const
+    {
+        return MAKEINTRESOURCE(IDR_ZIPRES_SKIN);
+    }
     virtual CControlUI* CreateControl(LPCTSTR pstrClass)
     {
         return CDuiCallback::StaticCreateControl(pstrClass);
@@ -42,12 +57,16 @@ public:
             //Close();
             return TRUE;
         }
+
         return FALSE;
     }
 
     void InitWindow();
 
-    virtual void OnFinalMessage(HWND hWnd){__super::OnFinalMessage(hWnd);}
+    virtual void OnFinalMessage(HWND hWnd)
+    {
+        __super::OnFinalMessage(hWnd);
+    }
     virtual void Notify(TNotifyUI& msg);
 
     DUI_DECLARE_MESSAGE_MAP()
@@ -67,7 +86,7 @@ protected:
 private:
 
 private:
-    
+
 };
 
 

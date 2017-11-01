@@ -19,12 +19,12 @@ CListElemUI::CListElemUI()
 
 CListElemUI::~CListElemUI()
 {
-
 }
 
 void CListElemUI::safe_animator_update(boost::weak_ptr<CListElemUI> wpElem)
 {
     boost::shared_ptr<CListElemUI> spItem(wpElem.lock());
+
     if (spItem) {
         spItem->animator_update();
     }
@@ -33,6 +33,7 @@ void CListElemUI::safe_animator_update(boost::weak_ptr<CListElemUI> wpElem)
 void CListElemUI::safe_animator_complete(boost::weak_ptr<CListElemUI> wpElem)
 {
     boost::shared_ptr<CListElemUI> spItem(wpElem.lock());
+
     if (spItem) {
         spItem->animator_complate();
     }
@@ -40,8 +41,7 @@ void CListElemUI::safe_animator_complete(boost::weak_ptr<CListElemUI> wpElem)
 void CListElemUI::Init()
 {
     boost::weak_ptr<CListElemUI> weak_this = boost::weak_ptr<CListElemUI>(shared_from_this());
-
-    animator_.reset(new DuiLib::Animator2());         
+    animator_.reset(new DuiLib::Animator2());
     //animator_->set_update_callback(boost::bind(&CListElemUI::animator_update, this());
     //animator_->set_complete_callback(boost::bind(&CListElemUI::animator_complate, this());
     animator_->set_update_callback(boost::bind(&CListElemUI::safe_animator_update, weak_this));
@@ -51,7 +51,7 @@ void CListElemUI::Init()
     animator_->set_tweener(tween::LINEAR, tween::EASE_IN_OUT);
     animator_->set_name(this->GetInterfaceName());
 
-    if (pFrequenceLabel == NULL){
+    if (pFrequenceLabel == NULL) {
         pFrequenceLabel = (CLabelUI*)m_pManager->FindControl(L"frequence_label");
     }
 
@@ -59,6 +59,7 @@ void CListElemUI::Init()
 
     for (int i = 0; i < ARRAYSIZE(ctrls) ; i++) {
         CControlUI* pControl = GetItemAt(i);
+
         if (pControl) {
             CControlUI** p = (CControlUI**)ctrls[i];
             (*p) = pControl;
@@ -73,9 +74,8 @@ void CListElemUI::SetAttribute(LPCTSTR pstrName, LPCTSTR pstrValue)
 
 void CListElemUI::DoEvent(TEventUI& event)
 {
-    if( event.Type == UIEVENT_INITCONTROLS ){
-    } else if( event.Type == UIEVENT_TIMER ){
-
+    if (event.Type == UIEVENT_INITCONTROLS) {
+    } else if (event.Type == UIEVENT_TIMER) {
         return;
     }
 
@@ -116,12 +116,10 @@ void CListElemUI::animator_update()
 {
     if (animator_ && animator_->is_running()) {
         TCHAR szBuf[MAX_PATH] = {0};
-        _stprintf(szBuf, L"%I64d:%2d", time(NULL)-m_nStartTime, m_nInterval);
+        _stprintf(szBuf, L"%I64d:%2d", time(NULL) - m_nStartTime, m_nInterval);
         m_pInterval->SetText(szBuf);
-
         _stprintf(szBuf, L"%.1lffps", animator_->get_frequence());
         pFrequenceLabel->SetText(szBuf);
-
         int nCurrentValue = (int)boost::math::round(animator_->get_value());
         m_pProgress->SetValue(nCurrentValue);
     }
@@ -144,7 +142,7 @@ void CListElemUI::DoPaint(HDC hDC, const RECT& rcPaint)
 //////////////////////////////////////////////////////////////////////////
 
 CMyListBodyUI::CMyListBodyUI(CListUI* pOwner)
-:CListBodyUI(pOwner)
+    : CListBodyUI(pOwner)
 {
     ASSERT(m_pOwner);
 }
@@ -153,26 +151,29 @@ void CMyListBodyUI::SetScrollPos(SIZE szPos)
 {
     int cx = 0;
     int cy = 0;
-    if( m_pVerticalScrollBar && m_pVerticalScrollBar->IsVisible() ) {
+
+    if (m_pVerticalScrollBar && m_pVerticalScrollBar->IsVisible()) {
         int iLastScrollPos = m_pVerticalScrollBar->GetScrollPos();
         m_pVerticalScrollBar->SetScrollPos(szPos.cy);
         cy = m_pVerticalScrollBar->GetScrollPos() - iLastScrollPos;
     }
 
-    if( m_pHorizontalScrollBar && m_pHorizontalScrollBar->IsVisible() ) {
+    if (m_pHorizontalScrollBar && m_pHorizontalScrollBar->IsVisible()) {
         int iLastScrollPos = m_pHorizontalScrollBar->GetScrollPos();
         m_pHorizontalScrollBar->SetScrollPos(szPos.cx);
         cx = m_pHorizontalScrollBar->GetScrollPos() - iLastScrollPos;
     }
 
-    if( cx == 0 && cy == 0 ) return;
+    if (cx == 0 && cy == 0) return;
 
     RECT rcPos;
-    for( int it2 = 0; it2 < m_items.GetSize(); it2++ ) {
-        CControlUI* pControl = static_cast<CControlUI*>(m_items[it2]);
-        if( !pControl->IsVisible() ) continue;
-        //	if( pControl->IsFloat() ) continue;
 
+    for (int it2 = 0; it2 < m_items.GetSize(); it2++) {
+        CControlUI* pControl = static_cast<CControlUI*>(m_items[it2]);
+
+        if (!pControl->IsVisible()) continue;
+
+        //  if( pControl->IsFloat() ) continue;
         rcPos = pControl->GetPos();
         rcPos.left -= cx;
         rcPos.right -= cx;
@@ -183,21 +184,26 @@ void CMyListBodyUI::SetScrollPos(SIZE szPos)
 
     Invalidate();
 
-    if( cx != 0 && m_pOwner ) {
+    if (cx != 0 && m_pOwner) {
         CListHeaderUI* pHeader = m_pOwner->GetHeader();
-        if( pHeader == NULL ) return;
+
+        if (pHeader == NULL) return;
+
         TListInfoUI* pInfo = m_pOwner->GetListInfo();
         pInfo->nColumns = min(pHeader->GetCount(), UILIST_MAX_COLUMNS);
 
-        if( !pHeader->IsVisible() ) {
-            for( int it = 0; it < pHeader->GetCount(); it++ ) {
+        if (!pHeader->IsVisible()) {
+            for (int it = 0; it < pHeader->GetCount(); it++) {
                 static_cast<CControlUI*>(pHeader->GetItemAt(it))->SetInternVisible(true);
             }
         }
-        for( int i = 0; i < pInfo->nColumns; i++ ) {
+
+        for (int i = 0; i < pInfo->nColumns; i++) {
             CControlUI* pControl = static_cast<CControlUI*>(pHeader->GetItemAt(i));
-            if( !pControl->IsVisible() ) continue;
-            if( pControl->IsFloat() ) continue;
+
+            if (!pControl->IsVisible()) continue;
+
+            if (pControl->IsFloat()) continue;
 
             RECT rcPos = pControl->GetPos();
             rcPos.left -= cx;
@@ -205,8 +211,9 @@ void CMyListBodyUI::SetScrollPos(SIZE szPos)
             pControl->SetPos(rcPos);
             pInfo->rcColumn[i] = pControl->GetPos();
         }
-        if( !pHeader->IsVisible() ) {
-            for( int it = 0; it < pHeader->GetCount(); it++ ) {
+
+        if (!pHeader->IsVisible()) {
+            for (int it = 0; it < pHeader->GetCount(); it++) {
                 static_cast<CControlUI*>(pHeader->GetItemAt(it))->SetInternVisible(false);
             }
         }
@@ -215,16 +222,14 @@ void CMyListBodyUI::SetScrollPos(SIZE szPos)
 //////////////////////////////////////////////////////////////////////////
 
 CMyListUI::CMyListUI()
-: m_bScrollMsgSended(false)
+    : m_bScrollMsgSended(false)
 {
     CVerticalLayoutUI::RemoveAll();
     m_pList = new CMyListBodyUI(this);
-
     m_pHeader = new CListHeaderUI;
-
     Add(m_pHeader);
     CVerticalLayoutUI::Add(m_pList);
-}	
+}
 
 void CMyListUI::DoEvent(TEventUI& event)
 {
@@ -233,10 +238,11 @@ void CMyListUI::DoEvent(TEventUI& event)
 
 void CMyListUI::SendScrollMsg()
 {
-    if( m_scrollallback) {
+    if (m_scrollallback) {
         if (GetVerticalScrollBar()) {
             GetVerticalScrollBar()->OnNotify.Empty();
         }
+
         m_scrollallback();
         m_scrollallback.clear();
     }
@@ -268,7 +274,8 @@ void CMyListUI::ProcessScrollBar(RECT rc, int cxRequired, int cyRequired)
 bool CMyListUI::OnScrollNotify(void* param)
 {
     DuiLib::TNotifyUI* pMsg = (DuiLib::TNotifyUI*)param;
-    if (pMsg->sType == DUI_MSGTYPE_SCROLL){
+
+    if (pMsg->sType == DUI_MSGTYPE_SCROLL) {
         SendScrollMsg();
     }
 
@@ -278,7 +285,7 @@ bool CMyListUI::OnScrollNotify(void* param)
 //////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////
-CControlUI* CDuiCallback::CreateControl(LPCTSTR pstrClass) 
+CControlUI* CDuiCallback::CreateControl(LPCTSTR pstrClass)
 {
     return StaticCreateControl(pstrClass);
 }
@@ -286,6 +293,8 @@ CControlUI* CDuiCallback::CreateControl(LPCTSTR pstrClass)
 DuiLib::CControlUI* CDuiCallback::StaticCreateControl(LPCTSTR pstrClass)
 {
     if (_tcscmp(pstrClass, _T("ListElem")) == 0) return new CListElemUI;
+
     if (_tcscmp(pstrClass, _T("MyList")) == 0) return new CMyListUI;
+
     return NULL;
 }

@@ -3,15 +3,15 @@
 ÐèÒªÔÚWindowImplBaseµÄOnSysCommandº¯ÊýÀï£¬ÔÚif( ::IsZoomed(*this) != bZoomed )ÀïÃæ¼ÓÉÏ´úÂë
 if( ::IsZoomed(*this) != bZoomed )
 {
-	CControlUI* pbtnMax     = static_cast<CControlUI*>(m_PaintManager.FindControl(_T("maxbtn")));       // ×î´ó»¯°´Å¥
-	CControlUI* pbtnRestore = static_cast<CControlUI*>(m_PaintManager.FindControl(_T("restorebtn")));   // »¹Ô­°´Å¥
+    CControlUI* pbtnMax     = static_cast<CControlUI*>(m_PaintManager.FindControl(_T("maxbtn")));       // ×î´ó»¯°´Å¥
+    CControlUI* pbtnRestore = static_cast<CControlUI*>(m_PaintManager.FindControl(_T("restorebtn")));   // »¹Ô­°´Å¥
 
-	// ÇÐ»»×î´ó»¯°´Å¥ºÍ»¹Ô­°´Å¥µÄ×´Ì¬
-	if (pbtnMax && pbtnRestore)
-	{
-	pbtnMax->SetVisible(TRUE == bZoomed);       // ´Ë´¦ÓÃ±í´ïÊ½ÊÇÎªÁË±ÜÃâ±àÒëÆ÷BOOL×ª»»µÄ¾¯¸æ
-	pbtnRestore->SetVisible(FALSE == bZoomed);
-	}
+    // ÇÐ»»×î´ó»¯°´Å¥ºÍ»¹Ô­°´Å¥µÄ×´Ì¬
+    if (pbtnMax && pbtnRestore)
+    {
+    pbtnMax->SetVisible(TRUE == bZoomed);       // ´Ë´¦ÓÃ±í´ïÊ½ÊÇÎªÁË±ÜÃâ±àÒëÆ÷BOOL×ª»»µÄ¾¯¸æ
+    pbtnRestore->SetVisible(FALSE == bZoomed);
+    }
 }
 
 ×¢£ºÒªÖØÐÂ±àÒë¶¯Ì¬¿â
@@ -24,13 +24,13 @@ CDuiStringµÄBug£¬ ³£Á¿·ÅÔÚÇ°Ãæ ×÷±È½Ï ×ÜÊÇÎªfalse  ÒòÎªCDuiStringÃ»ÓÐÖØÔØ´ËÀà==²
 namespace duilib
 {
 #ifdef _UNICODE
-	typedef wchar_t              char_t;
-	typedef std::wstring         string_t;
-	typedef std::wstringstream   stringstream_t;
+    typedef wchar_t              char_t;
+    typedef std::wstring         string_t;
+    typedef std::wstringstream   stringstream_t;
 #else
-	typedef char                 char_t;
-	typedef std::string          string_t;
-	typedef std::stringstream    stringstream_t;
+    typedef char                 char_t;
+    typedef std::string          string_t;
+    typedef std::stringstream    stringstream_t;
 #endif
 }
 
@@ -43,21 +43,25 @@ using namespace DuiLib;
 class DuiFrameWnd : public WindowImplBase
 {
 public:
-	virtual LPCTSTR GetWindowClassName() const { return _T("DUIMainFrame"); }
-	virtual CDuiString GetSkinFile() { return _T("module01/duilib.xml"); }
-	//virtual CDuiString GetSkinFolder() { return _T("../Bug"); }
+    virtual LPCTSTR GetWindowClassName() const
+    {
+        return _T("DUIMainFrame");
+    }
+    virtual CDuiString GetSkinFile()
+    {
+        return _T("module01/duilib.xml");
+    }
+    //virtual CDuiString GetSkinFolder() { return _T("../Bug"); }
 };
 
 
 int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
 {
-	CPaintManagerUI::SetInstance(hInstance);
-	CPaintManagerUI::SetResourcePath(_T("./skin"));
-
-	DuiFrameWnd duiFrame;
-	duiFrame.Create(NULL, _T("DUIWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
-	duiFrame.CenterWindow();
-	duiFrame.ShowModal();
-
-	return 0;
+    CPaintManagerUI::SetInstance(hInstance);
+    CPaintManagerUI::SetResourcePath(_T("./skin"));
+    DuiFrameWnd duiFrame;
+    duiFrame.Create(NULL, _T("DUIWnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
+    duiFrame.CenterWindow();
+    duiFrame.ShowModal();
+    return 0;
 }

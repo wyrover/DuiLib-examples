@@ -1,16 +1,16 @@
 #pragma once
 
 class CDialogBuilderCallbackEx :
-	public IDialogBuilderCallback
+    public IDialogBuilderCallback
 {
 public:
-	CDialogBuilderCallbackEx(CPaintManagerUI* ppm = NULL);
-	~CDialogBuilderCallbackEx(void);
+    CDialogBuilderCallbackEx(CPaintManagerUI* ppm = NULL);
+    ~CDialogBuilderCallbackEx(void);
 
-	virtual CControlUI* CreateControl(LPCTSTR pstrClass); 
+    virtual CControlUI* CreateControl(LPCTSTR pstrClass);
 
 private:
-	// 加一个PAINTMANAGER是为了加载　Default 项
-	CPaintManagerUI* m_pm;
+    // 加一个PAINTMANAGER是为了加载　Default 项
+    CPaintManagerUI* m_pm;
 };
 

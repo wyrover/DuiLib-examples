@@ -1,9 +1,9 @@
 #pragma once
 
 class CComboTab :
-	public CContainerUI
+    public CContainerUI
 {
 public:
-	CComboTab(CPaintManagerUI* ppm = NULL);
-	~CComboTab(void);
+    CComboTab(CPaintManagerUI* ppm = NULL);
+    ~CComboTab(void);
 };

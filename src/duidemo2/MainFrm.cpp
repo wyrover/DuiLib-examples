@@ -9,8 +9,8 @@
 #include "BuilderCallback.h"
 
 #define DUI_SET_CTR(ptr, id) \
-{ CControlUI** p = (CControlUI**)&ptr;      \
-    *p = m_pm.FindControl(id);  }
+    { CControlUI** p = (CControlUI**)&ptr;      \
+        *p = m_pm.FindControl(id);  }
 
 
 DuiLib::CTabLayoutUI *pTab;
@@ -33,12 +33,12 @@ CMainFrm::~CMainFrm()
 }
 
 DUI_BEGIN_MESSAGE_MAP(CMainFrm, DuiLib::WindowImplBase)
-    DUI_ON_MSGTYPE(DUI_MSGTYPE_CLICK,           OnClick)
-    DUI_ON_MSGTYPE(DUI_MSGTYPE_VALUECHANGED,    OnValueChanged)
-    DUI_ON_MSGTYPE(DUI_MSGTYPE_SCROLL,          OnScroll)
+DUI_ON_MSGTYPE(DUI_MSGTYPE_CLICK,           OnClick)
+DUI_ON_MSGTYPE(DUI_MSGTYPE_VALUECHANGED,    OnValueChanged)
+DUI_ON_MSGTYPE(DUI_MSGTYPE_SCROLL,          OnScroll)
 DUI_END_MESSAGE_MAP()
 
-    boost::recursive_mutex                        rec_mutex_;
+boost::recursive_mutex                        rec_mutex_;
 void do_lock_recursive_mutex()
 {
     boost::recursive_mutex::scoped_lock lock(rec_mutex_);
@@ -59,7 +59,6 @@ void CMainFrm::InitWindow()
     ShowWindow();
     CenterWindow();
     ::SetForegroundWindow(m_hWnd);
-
     DUI_SET_CTR(pTab, _T("main_tab"));
     DUI_SET_CTR(pTestUnloadButton, _T("test_unload_control"));
     DUI_SET_CTR(pUnloadLabel, _T("unload_label"));
@@ -71,22 +70,16 @@ void CMainFrm::InitWindow()
     pList->GetList()->SetSelfManaged(true);
     pList->GetList()->SetDelayedDestroy(false);
     //boost::thread t(&do_lock_recursive_mutex);
-
     //::Sleep(5000);
     //boost::recursive_mutex::scoped_lock lock(rec_mutex_);
     //lock.unlock();
-
     boost::shared_ptr<int> sp(new int(10));
     assert(sp.use_count() == 1);
-
     boost::weak_ptr<int> wp(sp);
-
     assert(sp.use_count() == 1);
     boost::shared_ptr<int> sp2 = sp;
     assert(sp.use_count() == 2);
-
     //sp.reset()
-
 }
 
 void CMainFrm::Notify(TNotifyUI& msg)
@@ -105,10 +98,10 @@ void CMainFrm::Notify(TNotifyUI& msg)
 // 5. SetFixedXY X：位置相对于顶部，Y：相对于底部，用移动盲区
 // 6. 必要时配置 SetPos 使用，在全范围内移动
 
-//	void CContainerUI::SetPos(RECT rc)
-//	void CContainerUI::SetFloatPos(int index)
+//  void CContainerUI::SetPos(RECT rc)
+//  void CContainerUI::SetFloatPos(int index)
 //  void CControlUI::NeedUpdate()
- //  void CControlUI::NeedParentUpdate()
+//  void CControlUI::NeedParentUpdate()
 //  UIManager::@676 WM_PAINT m_bUpdateNeeded
 
 void CMainFrm::OnClick(TNotifyUI& msg)
@@ -116,129 +109,97 @@ void CMainFrm::OnClick(TNotifyUI& msg)
     CDuiString sCtrlName = msg.pSender->GetName();
     CDuiString sCtrlUdata = msg.pSender->GetUserData();
     bool bHandled = false;
-    
-    if (sCtrlName == _T("get_fixed_xy_btn"))
-    {
+
+    if (sCtrlName == _T("get_fixed_xy_btn")) {
         CString strPos;
         SIZE szPos = pTargetLabel->GetFixedXY();
         strPos.Format(L"XY: %d,%d", szPos.cx, szPos.cy);
         pXYLabel->SetText(strPos);
-    }
-    else if (sCtrlName == _T("set_fixed_xy_btn"))
-    {
+    } else if (sCtrlName == _T("set_fixed_xy_btn")) {
         SIZE szPos = pTargetLabel->GetFixedXY();
         SIZE sz = {szPos.cx - 20, szPos.cy - 20};
-        
         pTargetLabel->SetFixedXY(sz);
         //pTargetLabel->NeedParentUpdate();
         CContainerUI *pContainer = (CContainerUI *) pTargetLabel->GetParent();
         pContainer ->SetFloatPos(pTargetLabel);
         //pTargetLabel->NeedUpdate();
-    }
-    else if (sCtrlName == _T("get_pos_btn"))
-    {
+    } else if (sCtrlName == _T("get_pos_btn")) {
         CString strPos;
         RECT rcPos = pTargetLabel->GetPos();
         strPos.Format(L"POS: %d,%d,%d,%d", rcPos.left, rcPos.top, rcPos.right, rcPos.bottom);
         pPosLabel->SetText(strPos);
-    }
-    else if (sCtrlName == _T("set_pos_btn"))
-    {
+    } else if (sCtrlName == _T("set_pos_btn")) {
         RECT rc = {0};
         RECT rcNow = pTargetLabel->GetPos();
         rc.left = rcNow.left + 5;
         rc.top = rcNow.top + 5;
         rc.right = rc.left + pTargetLabel->GetFixedWidth();
         rc.bottom = rc.top + pTargetLabel->GetFixedHeight();
-
         pTargetLabel->SetPos(rc);
-    }
-    else if (sCtrlName == _T("reset_pos_btn"))
-    {
+    } else if (sCtrlName == _T("reset_pos_btn")) {
         RECT rc = {0};
         rc.left = 0;
         rc.top = 0;
         rc.right = rc.left + pTargetLabel->GetFixedWidth();
         rc.bottom = rc.top + pTargetLabel->GetFixedHeight();
-
         pTargetLabel->SetPos(rc);
-    } 
-    else if (sCtrlName == _T("toogle_float_btn"))
-    {
+    } else if (sCtrlName == _T("toogle_float_btn")) {
         pTargetLabel->SetFloat(!pTargetLabel->IsFloat());
-    }
-    else if (sCtrlName == _T("toogle_visible_btn"))
-    {
+    } else if (sCtrlName == _T("toogle_visible_btn")) {
         pTargetLabel->SetVisible(!pTargetLabel->IsVisible());
-    }
-    else if (sCtrlName == _T("change_tab"))
-    {
+    } else if (sCtrlName == _T("change_tab")) {
         pTab->SelectItem((pTab->GetCurSel() + 1) % pTab->GetCount());
-    }
-    else if (sCtrlName == _T("init_btn"))
-    {
+    } else if (sCtrlName == _T("init_btn")) {
         CDuiCallback cb;
-        for (int i = 0; i < 1500 ; i++)
-        {
-        	CDialogBuilder builder;
-            boost::shared_ptr<CListElemUI> pItem((CListElemUI*)builder.Create(L"list_item.xml",NULL, &cb));
+
+        for (int i = 0; i < 1500 ; i++) {
+            CDialogBuilder builder;
+            boost::shared_ptr<CListElemUI> pItem((CListElemUI*)builder.Create(L"list_item.xml", NULL, &cb));
             pList->Add(pItem.get());
             pItem->Init();
             vItems.push_back(pItem);
         }
-    }
-    else if (sCtrlName == _T("remove_btn"))
-    {
+    } else if (sCtrlName == _T("remove_btn")) {
         CDuiCallback cb;
-        for (int i = pList->GetCount() - 1; i >= 0 ; i--)
-        {
+
+        for (int i = pList->GetCount() - 1; i >= 0 ; i--) {
             CListElemUI* pItem = (CListElemUI*)pList->GetItemAt(i);
             pItem->Stop();
             pList->RemoveAt(i);
         }
+
         vItems.clear();
-    }
-    else if (sCtrlName == _T("start_btn"))
-    {
-        for (int i = 0; i < pList->GetCount() ; i++)
-        {
+    } else if (sCtrlName == _T("start_btn")) {
+        for (int i = 0; i < pList->GetCount() ; i++) {
             CListElemUI* pItem = (CListElemUI*)pList->GetItemAt(i);
             pItem->SetInterval(i * 1000);
             pItem->Start();
         }
-    }
-    else if (sCtrlName == _T("pause_btn"))
-    {
+    } else if (sCtrlName == _T("pause_btn")) {
         // pList->RemoveAll();
-        for (int i = 0; i < pList->GetCount() ; i++)
-        {
+        for (int i = 0; i < pList->GetCount() ; i++) {
             CListElemUI* pItem = (CListElemUI*)pList->GetItemAt(i);
             pItem->Pause();
         }
-    }
-    else if (sCtrlName == _T("end_btn"))
-    {
+    } else if (sCtrlName == _T("end_btn")) {
         // pList->RemoveAll();
-        for (int i = 0; i < pList->GetCount() ; i++)
-        {
+        for (int i = 0; i < pList->GetCount() ; i++) {
             CListElemUI* pItem = (CListElemUI*)pList->GetItemAt(i);
             pItem->Stop();
         }
     }
-    if(!bHandled) __super::OnClick(msg);
+
+    if (!bHandled) __super::OnClick(msg);
 }
 
 void CMainFrm::OnValueChanged(TNotifyUI& msg)
 {
     CDuiString sCtrlName = msg.pSender->GetName();
     CDuiString sCtrlUdata = msg.pSender->GetUserData();
-
-
 }
 
 void CMainFrm::OnScroll(TNotifyUI& msg)
 {
-
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -252,16 +213,13 @@ LRESULT CMainFrm::OnClose(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandle
 LRESULT CMainFrm::OnDestroy(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 {
     bHandled = FALSE;
-	
     ::PostQuitMessage(0L);
-		
     return 0;
 }
 
 LRESULT CMainFrm::OnTimer(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 {
     bHandled = FALSE;
-
     return TRUE;
 }
 
@@ -293,9 +251,6 @@ LRESULT CMainFrm::OnNcHitTest(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHa
 LRESULT CMainFrm::OnCopyData(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 {
     COPYDATASTRUCT* lpCopy = (COPYDATASTRUCT*)lParam;
-
-
-
     bHandled = TRUE;
     return TRUE;
 }
@@ -307,6 +262,7 @@ LRESULT CMainFrm::HandleCustomMessage(
     case WM_TIMER:
         OnTimer(uMsg, wParam, lParam, bHandled);
         break;
+
     default:
         break;
     }

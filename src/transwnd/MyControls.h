@@ -7,10 +7,10 @@
 class CDialogBuilderCallbackEx : public IDialogBuilderCallback
 {
 public:
-	CControlUI* CreateControl(LPCTSTR pstrClass) 
-	{
-			return NULL;
-	}
+    CControlUI* CreateControl(LPCTSTR pstrClass)
+    {
+        return NULL;
+    }
 };
 
 

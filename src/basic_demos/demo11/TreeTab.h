@@ -1,9 +1,9 @@
 #pragma once
 
 class CTreeTab :
-	public CContainerUI
+    public CContainerUI
 {
 public:
-	CTreeTab(CPaintManagerUI* ppm);
-	~CTreeTab(void);
+    CTreeTab(CPaintManagerUI* ppm);
+    ~CTreeTab(void);
 };
